@@ -1,0 +1,7 @@
+{
+  "dataset_version": "station-photo-set-50-v1",
+  "seed": 42,
+  "imgsz": 640,
+  "epochs": 80,
+  "ultralytics_version": "8.4.138"
+}
