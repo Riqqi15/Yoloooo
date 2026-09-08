@@ -1,0 +1,110 @@
+{
+  "version": "7.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          0.0,
+          560.8519163763066
+        ],
+        [
+          291.9860627177701,
+          446.56620209059236
+        ],
+        [
+          298.95470383275267,
+          458.41289198606285
+        ],
+        [
+          2.0905923344947794,
+          577.576655052265
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          554.7038327526135,
+          667.0
+        ],
+        [
+          584.6689895470384,
+          456.3222996515679
+        ],
+        [
+          615.3310104529619,
+          457.71602787456453
+        ],
+        [
+          645.296167247387,
+          666.0783972125436
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          590.2439024390245,
+          399.87630662020905
+        ],
+        [
+          594.425087108014,
+          351.79268292682923
+        ],
+        [
+          603.4843205574915,
+          353.18641114982586
+        ],
+        [
+          609.0592334494775,
+          429.1445993031359
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          609.0592334494775,
+          433.3257839721255
+        ],
+        [
+          588.1533101045297,
+          456.3222996515679
+        ],
+        [
+          616.02787456446,
+          457.71602787456453
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\..\\samples\\stasiun_tanah_abang_-_bisniscom_dwi_rachmawati_1712569176.webp",
+  "imageData": null,
+  "imageHeight": 667,
+  "imageWidth": 1000
+}

@@ -1,0 +1,36 @@
+{
+  "version": "7.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          85.76900584795331,
+          142.98245614035085
+        ],
+        [
+          79.62865497076032,
+          260.233918128655
+        ],
+        [
+          110.0380116959065,
+          259.9415204678362
+        ],
+        [
+          88.40058479532175,
+          142.1052631578947
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\..\\samples\\jakarta-indonesia-may-142025-commuter-260nw-2627152495.webp",
+  "imageData": null,
+  "imageHeight": 280,
+  "imageWidth": 173
+}

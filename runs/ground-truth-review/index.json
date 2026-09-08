@@ -1,0 +1,125 @@
+{
+  "manifest": "data\\ground_truth\\manifest.csv",
+  "images": 17,
+  "items": [
+    {
+      "sample_id": "images (1).jpg",
+      "source": "data\\samples\\images (1).jpg",
+      "overlay": "runs\\ground-truth-review\\images (1)_jpg.jpg",
+      "review_status": "human_reviewed",
+      "annotation_origin": "ai_assisted"
+    },
+    {
+      "sample_id": "images (2).jpg",
+      "source": "data\\samples\\images (2).jpg",
+      "overlay": "runs\\ground-truth-review\\images (2)_jpg.jpg",
+      "review_status": "human_reviewed",
+      "annotation_origin": "ai_assisted"
+    },
+    {
+      "sample_id": "images (3).jpg",
+      "source": "data\\samples\\images (3).jpg",
+      "overlay": "runs\\ground-truth-review\\images (3)_jpg.jpg",
+      "review_status": "human_reviewed",
+      "annotation_origin": "ai_assisted"
+    },
+    {
+      "sample_id": "images (4).jpg",
+      "source": "data\\samples\\images (4).jpg",
+      "overlay": "runs\\ground-truth-review\\images (4)_jpg.jpg",
+      "review_status": "human_reviewed",
+      "annotation_origin": "ai_assisted"
+    },
+    {
+      "sample_id": "images.jpg",
+      "source": "data\\samples\\images.jpg",
+      "overlay": "runs\\ground-truth-review\\images_jpg.jpg",
+      "review_status": "human_reviewed",
+      "annotation_origin": "ai_assisted"
+    },
+    {
+      "sample_id": "jakarta-indonesia-may-142025-commuter-260nw-2627152495.webp",
+      "source": "data\\samples\\jakarta-indonesia-may-142025-commuter-260nw-2627152495.webp",
+      "overlay": "runs\\ground-truth-review\\jakarta-indonesia-may-142025-commuter-260nw-2627152495_webp.jpg",
+      "review_status": "human_reviewed",
+      "annotation_origin": "ai_assisted"
+    },
+    {
+      "sample_id": "livery-bernuansa-merah-putih-menghiasi-rangkaian-ka-yang-melayani-perjalanan-di-wilayah-kai-daop-8-surabaya-dalam-rangka-semarak-hut-ke-81-kemerdekaan-ri-2026-kai-QtAkk.webp",
+      "source": "data\\samples\\livery-bernuansa-merah-putih-menghiasi-rangkaian-ka-yang-melayani-perjalanan-di-wilayah-kai-daop-8-surabaya-dalam-rangka-semarak-hut-ke-81-kemerdekaan-ri-2026-kai-QtAkk.webp",
+      "overlay": "runs\\ground-truth-review\\livery-bernuansa-merah-putih-menghiasi-rangkaian-ka-yang-melayani-perjalanan-di-wilayah-kai-daop-8-surabaya-dalam-rangka-semarak-hut-ke-81-kemerdekaan-ri-2026-kai-QtAkk_webp.jpg",
+      "review_status": "human_reviewed",
+      "annotation_origin": "ai_assisted"
+    },
+    {
+      "sample_id": "Peron jalur satu Stasiun Catang pada April 2026.jpg",
+      "source": "data\\samples\\Peron jalur satu Stasiun Catang pada April 2026.jpg",
+      "overlay": "runs\\ground-truth-review\\Peron jalur satu Stasiun Catang pada April 2026_jpg.jpg",
+      "review_status": "human_reviewed",
+      "annotation_origin": "ai_assisted"
+    },
+    {
+      "sample_id": "Peron Stasiun ANgke.jpg",
+      "source": "data\\samples\\Peron Stasiun ANgke.jpg",
+      "overlay": "runs\\ground-truth-review\\Peron Stasiun ANgke_jpg.jpg",
+      "review_status": "human_reviewed",
+      "annotation_origin": "ai_assisted"
+    },
+    {
+      "sample_id": "Peron Stasiun Pasar Minggu 2026.jpg",
+      "source": "data\\samples\\Peron Stasiun Pasar Minggu 2026.jpg",
+      "overlay": "runs\\ground-truth-review\\Peron Stasiun Pasar Minggu 2026_jpg.jpg",
+      "review_status": "human_reviewed",
+      "annotation_origin": "ai_assisted"
+    },
+    {
+      "sample_id": "Pintu Gerbang Stasiun Lrt Rawamangun Februari 2026.png",
+      "source": "data\\samples\\Pintu Gerbang Stasiun Lrt Rawamangun Februari 2026.png",
+      "overlay": "runs\\ground-truth-review\\Pintu Gerbang Stasiun Lrt Rawamangun Februari 2026_png.jpg",
+      "review_status": "human_reviewed",
+      "annotation_origin": "ai_assisted"
+    },
+    {
+      "sample_id": "Stasiun Pakisaji 2026.jpg",
+      "source": "data\\samples\\Stasiun Pakisaji 2026.jpg",
+      "overlay": "runs\\ground-truth-review\\Stasiun Pakisaji 2026_jpg.jpg",
+      "review_status": "human_reviewed",
+      "annotation_origin": "ai_assisted"
+    },
+    {
+      "sample_id": "Stasiun Sumberpucung 2026.jpg",
+      "source": "data\\samples\\Stasiun Sumberpucung 2026.jpg",
+      "overlay": "runs\\ground-truth-review\\Stasiun Sumberpucung 2026_jpg.jpg",
+      "review_status": "human_reviewed",
+      "annotation_origin": "ai_assisted"
+    },
+    {
+      "sample_id": "stasiun-jaksel.webp",
+      "source": "data\\samples\\stasiun-jaksel.webp",
+      "overlay": "runs\\ground-truth-review\\stasiun-jaksel_webp.jpg",
+      "review_status": "human_reviewed",
+      "annotation_origin": "ai_assisted"
+    },
+    {
+      "sample_id": "stasiun_tanah_abang_-_bisniscom_dwi_rachmawati_1712569176.webp",
+      "source": "data\\samples\\stasiun_tanah_abang_-_bisniscom_dwi_rachmawati_1712569176.webp",
+      "overlay": "runs\\ground-truth-review\\stasiun_tanah_abang_-_bisniscom_dwi_rachmawati_1712569176_webp.jpg",
+      "review_status": "human_reviewed",
+      "annotation_origin": "ai_assisted"
+    },
+    {
+      "sample_id": "sudut-stasiun-bandung.jpg",
+      "source": "data\\samples\\sudut-stasiun-bandung.jpg",
+      "overlay": "runs\\ground-truth-review\\sudut-stasiun-bandung_jpg.jpg",
+      "review_status": "human_reviewed",
+      "annotation_origin": "ai_assisted"
+    },
+    {
+      "sample_id": "Tampak dalam Stasiun Slawi, 2026.jpg",
+      "source": "data\\samples\\Tampak dalam Stasiun Slawi, 2026.jpg",
+      "overlay": "runs\\ground-truth-review\\Tampak dalam Stasiun Slawi, 2026_jpg.jpg",
+      "review_status": "human_reviewed",
+      "annotation_origin": "ai_assisted"
+    }
+  ]
+}

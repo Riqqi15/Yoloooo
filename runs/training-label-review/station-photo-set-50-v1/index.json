@@ -1,0 +1,347 @@
+{
+  "validation": {
+    "dataset_version": "station-photo-set-50-v1",
+    "dataset_scope": "station_environment",
+    "taxonomy_version": "station-tactile-v1",
+    "taxonomy_approved": true,
+    "require_review": false,
+    "training_ready": true,
+    "summary": {
+      "total_samples": 50,
+      "structurally_valid_samples": 50,
+      "human_reviewed_samples": 0,
+      "ambiguous_samples": 0,
+      "unreviewed_samples": 50,
+      "invalid_samples": 0,
+      "split_counts": {
+        "train": 26,
+        "test": 9,
+        "validation": 15
+      },
+      "object_class_counts": {},
+      "tactile_class_counts": {
+        "tactile_paving": 30
+      },
+      "condition_counts": {
+        "lighting": {
+          "normal_or_unknown": 49,
+          "low_light": 1
+        },
+        "motion": {
+          "static_photo": 50
+        },
+        "surface": {
+          "mixed": 50
+        },
+        "location_type": {
+          "station_track_area": 27,
+          "station_platform": 13,
+          "station_interior": 10
+        }
+      }
+    },
+    "errors": []
+  },
+  "items": [
+    {
+      "sample_id": "8dacf30fc1b39e7fb09e6a3f035370fdef35e6b26eb8c10d85e61cd5e2038437",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\001_juanda.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\8dacf30fc1b39e7fb09e6a3f035370fdef35e6b26eb8c10d85e61cd5e2038437.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "5a34c08ac6ecb998fe808d45e14720b5e6bba84a5c6eb9387dc5e6cd5218d569",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\002_sudirman.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\5a34c08ac6ecb998fe808d45e14720b5e6bba84a5c6eb9387dc5e6cd5218d569.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "8ce6e4a6303ead725a891d7ed356e687dbbf3a5cef40992c7b0414d4a7e62bfa",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\003_tegalluar.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\8ce6e4a6303ead725a891d7ed356e687dbbf3a5cef40992c7b0414d4a7e62bfa.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "62884723948ced16b2016310d8fb1350da7f03f96d64383a8c82d5dba77b15d1",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\004_cikampek_malam.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\62884723948ced16b2016310d8fb1350da7f03f96d64383a8c82d5dba77b15d1.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "fd70eaff8bc4d0ab677eef52d3b09cbb1b337232e973a83aee5ab764b2251f73",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\005_istora_mandiri.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\fd70eaff8bc4d0ab677eef52d3b09cbb1b337232e973a83aee5ab764b2251f73.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "c9b62591f2d70fd66eb08d799f88a8fbd2405a3b314f2efe9e7f4538b4cba9ad",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\006_27824630.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\c9b62591f2d70fd66eb08d799f88a8fbd2405a3b314f2efe9e7f4538b4cba9ad.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "4d33864af28c80af6806e27f4c2f78b7e6d94c60a493f1672c49dba045e4844d",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\007_65003351.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\4d33864af28c80af6806e27f4c2f78b7e6d94c60a493f1672c49dba045e4844d.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "c227eb744ab91b34633d980359415b742058b2367aff36f26052f9fc70fdd495",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\008_85533747.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\c227eb744ab91b34633d980359415b742058b2367aff36f26052f9fc70fdd495.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "a847681910640497d75506497f32a08066d822f4f3997f74acd5ad7c66602e35",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\009_137824158.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\a847681910640497d75506497f32a08066d822f4f3997f74acd5ad7c66602e35.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "67a38a9a58a5013b5cb888a3c2c78b9991579807f39749175d08ec8c102571aa",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\010_137778724.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\67a38a9a58a5013b5cb888a3c2c78b9991579807f39749175d08ec8c102571aa.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "c2c5d0daf868e483e99a39f15229bd69105f85ef06ebbbd9301f3d67b0c99fe1",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\011_39275624.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\c2c5d0daf868e483e99a39f15229bd69105f85ef06ebbbd9301f3d67b0c99fe1.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "36e572ef9f22c0ca676d73498bfe60db115e8e716ac375604ea3b4865d954645",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\012_42460141.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\36e572ef9f22c0ca676d73498bfe60db115e8e716ac375604ea3b4865d954645.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "cb8974ea307e41c71ebe67674eb774fd0cbba41e936fdbbc9676f75c1cfc53a7",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\013_120611353.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\cb8974ea307e41c71ebe67674eb774fd0cbba41e936fdbbc9676f75c1cfc53a7.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "1a245d5c691ad2bc04edaa9af0f57f7819995c147a4875c1e682a4226678fc77",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\014_137778712.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\1a245d5c691ad2bc04edaa9af0f57f7819995c147a4875c1e682a4226678fc77.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "04e3b8acfaa246e6abb3b617cf5c9edfd5cc93cddced94ae13ce9015d31d2c68",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\015_50918222.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\04e3b8acfaa246e6abb3b617cf5c9edfd5cc93cddced94ae13ce9015d31d2c68.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "d152346e1865f01f6f01cda7cc299de5adec0c1aaaa481cc9745063ee5b1077a",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\016_15222597.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\d152346e1865f01f6f01cda7cc299de5adec0c1aaaa481cc9745063ee5b1077a.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "e1379ecf51d468942ee11c5d0468a64b6d6cc5d14adf934bf3125e300683dfd2",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\017_106327604.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\e1379ecf51d468942ee11c5d0468a64b6d6cc5d14adf934bf3125e300683dfd2.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "0f97ad68123a709a18731d3987e81ec41931f346682dfb3ee0a6e0295c491b82",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\018_26110885.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\0f97ad68123a709a18731d3987e81ec41931f346682dfb3ee0a6e0295c491b82.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "f0570aeed32d31069052d96613c546651d15f652ad4680307491c1dc51c239a1",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\019_54646875.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\f0570aeed32d31069052d96613c546651d15f652ad4680307491c1dc51c239a1.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "6c5ca0e5d760b196fd264211188aa66bcc5e343572b6b6ffd86580e14d6ec3bc",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\020_2452061.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\6c5ca0e5d760b196fd264211188aa66bcc5e343572b6b6ffd86580e14d6ec3bc.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "7616551d9c36ac63364d0fdcf7b511879754f19eae1960ce1344330fd7042988",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\021_167019772.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\7616551d9c36ac63364d0fdcf7b511879754f19eae1960ce1344330fd7042988.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "150b686eb78d4bf3a2b92b6624283dbbb8211d01bce6f3d230877c22af745072",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\022_167019789.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\150b686eb78d4bf3a2b92b6624283dbbb8211d01bce6f3d230877c22af745072.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "c06633c1cf1395bff9e2c676ec20755f25f608fee69c1eeb666180865f2971cb",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\023_93365891.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\c06633c1cf1395bff9e2c676ec20755f25f608fee69c1eeb666180865f2971cb.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "832d1b3792b1143fabc9a9820859fa922b28310387f22197f3d2994d4b16392d",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\024_67669998.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\832d1b3792b1143fabc9a9820859fa922b28310387f22197f3d2994d4b16392d.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "76fc87a6fd1b6d30e6c0aafa00e29601024c9a65c07adfd8233c429876593992",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\025_86610215.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\76fc87a6fd1b6d30e6c0aafa00e29601024c9a65c07adfd8233c429876593992.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "5162ec0f93335f9424f00709f14c6b7543dfc25ab13005fed4764bc02b05337e",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\026_116115102.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\5162ec0f93335f9424f00709f14c6b7543dfc25ab13005fed4764bc02b05337e.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "b9e537726ed27ee0c8b1c59fcb76802523a8c94c4f9388156e83b49a2611b46d",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\027_116114944.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\b9e537726ed27ee0c8b1c59fcb76802523a8c94c4f9388156e83b49a2611b46d.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "8b4e6d105a0e2a356858ea9d881f1177b5bbe61030d338a1b336971b4372b2b6",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\028_86610216.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\8b4e6d105a0e2a356858ea9d881f1177b5bbe61030d338a1b336971b4372b2b6.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "a33362710bb083aa6f13de8f519a2e73795c2c799e7145158febfce560d74e78",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\029_42453067.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\a33362710bb083aa6f13de8f519a2e73795c2c799e7145158febfce560d74e78.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "d52ff18907f4455650da8b0525a9eb7b1a07e8bd045d35f74408fe3142cc3cc2",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\030_112796977.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\d52ff18907f4455650da8b0525a9eb7b1a07e8bd045d35f74408fe3142cc3cc2.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "c660f5cfdd9a0adcff67f6d45df9ee4f492e500075cab51e546b8565bd899e8c",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\031_63672159.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\c660f5cfdd9a0adcff67f6d45df9ee4f492e500075cab51e546b8565bd899e8c.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "af69719c95be4d0950a71e4ed93a581237295723a242ab2333d5a04f4e0bf08e",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\032_166526831.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\af69719c95be4d0950a71e4ed93a581237295723a242ab2333d5a04f4e0bf08e.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "1880fa0167357fc3516ade617cf969764556dbe5440f01936bdbad642da362d9",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\033_166526840.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\1880fa0167357fc3516ade617cf969764556dbe5440f01936bdbad642da362d9.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "317f01924764a0834e4b25597c555b4931c353e303868d0166cb30ae5045f886",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\034_166526836.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\317f01924764a0834e4b25597c555b4931c353e303868d0166cb30ae5045f886.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "cb27fb21d2a8c6f61d24b0b13ad32b5283fbd95ee91095a2dcd3edde01cb3498",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\035_166526837.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\cb27fb21d2a8c6f61d24b0b13ad32b5283fbd95ee91095a2dcd3edde01cb3498.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "ea3c36b3f82b00f319bfa4e9f6a55d0acbf4d6de0cc3a1f543eb654fb5e1a326",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\036_166544048.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\ea3c36b3f82b00f319bfa4e9f6a55d0acbf4d6de0cc3a1f543eb654fb5e1a326.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "702660ca68e7e24f0de8e0e8f62a1f6924a6d35503c3ab7a39b5b93e19b2a6c8",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\037_70162939.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\702660ca68e7e24f0de8e0e8f62a1f6924a6d35503c3ab7a39b5b93e19b2a6c8.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "84b515aca4673bbb45238647174f6392a760a83aeaa932014a902f70038b2bc4",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\038_64875030.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\84b515aca4673bbb45238647174f6392a760a83aeaa932014a902f70038b2bc4.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "fa2d972708cc8e1f91b98c1853d5b5e206ddce64e29658ee3a236f5540f2ffb9",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\039_81090396.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\fa2d972708cc8e1f91b98c1853d5b5e206ddce64e29658ee3a236f5540f2ffb9.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "7f65d52c904d87635a13757ca6d6d63ff06a1f10459a96fabb0b3ddc433423ee",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\040_137394087.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\7f65d52c904d87635a13757ca6d6d63ff06a1f10459a96fabb0b3ddc433423ee.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "af0bcb34e31ea9ac5d90bb253a12cf040b71641aeec967d6bac5805cd4f9420e",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\041_77714632.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\af0bcb34e31ea9ac5d90bb253a12cf040b71641aeec967d6bac5805cd4f9420e.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "5ea50c18618de68a700bebc8aaab6c61aa5fc206593a266ce77dfda7027ef257",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\042_140835783.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\5ea50c18618de68a700bebc8aaab6c61aa5fc206593a266ce77dfda7027ef257.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "146793cf2b4f0e535736d521fb2ea9703a510533acdaa9d660e6fb1456dbb10a",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\043_139745179.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\146793cf2b4f0e535736d521fb2ea9703a510533acdaa9d660e6fb1456dbb10a.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "3496c9122f46d003b9404ac0b7b4597edacf675ea0ed57e45962fd563fc98c41",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\044_77601320.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\3496c9122f46d003b9404ac0b7b4597edacf675ea0ed57e45962fd563fc98c41.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "03621537614a4ea7e2da7b00813f24cfc9ea5d6e8ffe19070367e35ff6bbcbef",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\045_77601318.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\03621537614a4ea7e2da7b00813f24cfc9ea5d6e8ffe19070367e35ff6bbcbef.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "5fc2847a0111df8f9feefecacd62afa53fb3e5590d9f3ef00fd7686b07d3284d",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\046_77812819.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\5fc2847a0111df8f9feefecacd62afa53fb3e5590d9f3ef00fd7686b07d3284d.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "d4bad38985b6aa2f46f4d898d1e5bd1a0e25760e482d88012aaceb41f8577003",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\047_77649721.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\d4bad38985b6aa2f46f4d898d1e5bd1a0e25760e482d88012aaceb41f8577003.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "ba9aa2ae6beff7ce326101f5d4e1a9e23ce491c22886adfb4e90833ca234aa5b",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\048_77563734.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\ba9aa2ae6beff7ce326101f5d4e1a9e23ce491c22886adfb4e90833ca234aa5b.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "7acf6bfdb3abaf532a75a620c813afd1a0f02c8b19f0e017213a159dccef9607",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\049_77649720.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\7acf6bfdb3abaf532a75a620c813afd1a0f02c8b19f0e017213a159dccef9607.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "9b2bbbd4eedb8d9b65e2ca6a3ca4f251e06837ee48c6be3a967ef66fea27e099",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\050_77688485.jpg",
+      "overlay": "runs\\training-label-review\\station-photo-set-50-v1\\9b2bbbd4eedb8d9b65e2ca6a3ca4f251e06837ee48c6be3a967ef66fea27e099.jpg",
+      "review_status": "unreviewed"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "warning": "Offline test-set metrics only. Results do not validate safe walking or deployment.",
+  "evaluation_status": "official",
+  "dataset_role": "test_only",
+  "dataset_scope": "station_environment",
+  "annotation_validation": {
+    "total_rows": 17,
+    "valid_annotated_rows": 17,
+    "valid_reviewed_rows": 17,
+    "provisional_rows": 0,
+    "human_reviewed_rows": 17,
+    "ambiguous_rows": 0,
+    "incomplete_rows": 0,
+    "invalid_rows": 0,
+    "positive_rows": 11,
+    "negative_rows": 6,
+    "errors": [],
+    "official_ready": true
+  },
+  "manifest": "data\\ground_truth\\manifest.csv",
+  "predictions": "runs\\sample-evaluation\\report.json",
+  "presence": {
+    "samples": 17,
+    "tp": 9,
+    "fp": 3,
+    "fn": 2,
+    "tn": 3,
+    "accuracy": 0.7058823529411765,
+    "precision": 0.75,
+    "recall": 0.8181818181818182,
+    "f1": 0.7826086956521738
+  },
+  "segmentation": {
+    "positive_ground_truth_samples": 11,
+    "mean_iou": 0.5317613043232804
+  },
+  "images": [
+    {
+      "source": "data\\samples\\images (1).jpg",
+      "ground_truth_present": 1,
+      "prediction_present": 1,
+      "outcome": "TP",
+      "iou": 0.7713154054617469
+    },
+    {
+      "source": "data\\samples\\images (2).jpg",
+      "ground_truth_present": 0,
+      "prediction_present": 0,
+      "outcome": "TN",
+      "iou": null
+    },
+    {
+      "source": "data\\samples\\images (3).jpg",
+      "ground_truth_present": 1,
+      "prediction_present": 0,
+      "outcome": "FN",
+      "iou": 0.0
+    },
+    {
+      "source": "data\\samples\\images (4).jpg",
+      "ground_truth_present": 0,
+      "prediction_present": 0,
+      "outcome": "TN",
+      "iou": null
+    },
+    {
+      "source": "data\\samples\\images.jpg",
+      "ground_truth_present": 0,
+      "prediction_present": 1,
+      "outcome": "FP",
+      "iou": null
+    },
+    {
+      "source": "data\\samples\\jakarta-indonesia-may-142025-commuter-260nw-2627152495.webp",
+      "ground_truth_present": 1,
+      "prediction_present": 1,
+      "outcome": "TP",
+      "iou": 0.8487322733132789
+    },
+    {
+      "source": "data\\samples\\livery-bernuansa-merah-putih-menghiasi-rangkaian-ka-yang-melayani-perjalanan-di-wilayah-kai-daop-8-surabaya-dalam-rangka-semarak-hut-ke-81-kemerdekaan-ri-2026-kai-QtAkk.webp",
+      "ground_truth_present": 1,
+      "prediction_present": 1,
+      "outcome": "TP",
+      "iou": 0.6636016975213728
+    },
+    {
+      "source": "data\\samples\\Peron jalur satu Stasiun Catang pada April 2026.jpg",
+      "ground_truth_present": 0,
+      "prediction_present": 1,
+      "outcome": "FP",
+      "iou": null
+    },
+    {
+      "source": "data\\samples\\Peron Stasiun ANgke.jpg",
+      "ground_truth_present": 1,
+      "prediction_present": 0,
+      "outcome": "FN",
+      "iou": 0.0
+    },
+    {
+      "source": "data\\samples\\Peron Stasiun Pasar Minggu 2026.jpg",
+      "ground_truth_present": 1,
+      "prediction_present": 1,
+      "outcome": "TP",
+      "iou": 0.4994124306858281
+    },
+    {
+      "source": "data\\samples\\Pintu Gerbang Stasiun Lrt Rawamangun Februari 2026.png",
+      "ground_truth_present": 1,
+      "prediction_present": 1,
+      "outcome": "TP",
+      "iou": 0.8581973581973582
+    },
+    {
+      "source": "data\\samples\\Stasiun Pakisaji 2026.jpg",
+      "ground_truth_present": 1,
+      "prediction_present": 1,
+      "outcome": "TP",
+      "iou": 0.8236483401813083
+    },
+    {
+      "source": "data\\samples\\Stasiun Sumberpucung 2026.jpg",
+      "ground_truth_present": 0,
+      "prediction_present": 0,
+      "outcome": "TN",
+      "iou": null
+    },
+    {
+      "source": "data\\samples\\stasiun-jaksel.webp",
+      "ground_truth_present": 1,
+      "prediction_present": 1,
+      "outcome": "TP",
+      "iou": 0.7522850323106479
+    },
+    {
+      "source": "data\\samples\\stasiun_tanah_abang_-_bisniscom_dwi_rachmawati_1712569176.webp",
+      "ground_truth_present": 1,
+      "prediction_present": 1,
+      "outcome": "TP",
+      "iou": 0.6321818098845434
+    },
+    {
+      "source": "data\\samples\\sudut-stasiun-bandung.jpg",
+      "ground_truth_present": 0,
+      "prediction_present": 1,
+      "outcome": "FP",
+      "iou": null
+    },
+    {
+      "source": "data\\samples\\Tampak dalam Stasiun Slawi, 2026.jpg",
+      "ground_truth_present": 1,
+      "prediction_present": 1,
+      "outcome": "TP",
+      "iou": 0.0
+    }
+  ]
+}

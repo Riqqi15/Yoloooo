@@ -1,0 +1,40 @@
+{
+  "version": "7.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          29.774436090225834,
+          2502.2556390977447
+        ],
+        [
+          83.9097744360904,
+          2559.398496240602
+        ],
+        [
+          246.31578947368433,
+          2863.157894736842
+        ],
+        [
+          0.0,
+          2875.0285351934053
+        ],
+        [
+          0.0,
+          2484.21052631579
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\..\\samples\\Stasiun Pakisaji 2026.jpg",
+  "imageData": null,
+  "imageHeight": 2880,
+  "imageWidth": 3840
+}

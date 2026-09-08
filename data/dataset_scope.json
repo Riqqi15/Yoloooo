@@ -1,0 +1,37 @@
+{
+  "scope": "station_environment",
+  "definition": "Station buildings, platforms, tracks, entrances, exits, and sidewalks directly serving or visibly connected to a station.",
+  "included_contexts": [
+    "station_interior",
+    "station_concourse",
+    "station_platform",
+    "station_track_area",
+    "station_access",
+    "station_access_sidewalk"
+  ],
+  "excluded_contexts": [
+    "bus_only",
+    "bus_stop_only",
+    "generic_road",
+    "unrelated_public_sidewalk"
+  ],
+  "samples": {
+    "images (1).jpg": "station_access_sidewalk",
+    "images (2).jpg": "station_platform",
+    "images (3).jpg": "station_concourse",
+    "images (4).jpg": "station_platform",
+    "images.jpg": "station_platform",
+    "jakarta-indonesia-may-142025-commuter-260nw-2627152495.webp": "station_platform",
+    "livery-bernuansa-merah-putih-menghiasi-rangkaian-ka-yang-melayani-perjalanan-di-wilayah-kai-daop-8-surabaya-dalam-rangka-semarak-hut-ke-81-kemerdekaan-ri-2026-kai-QtAkk.webp": "station_platform",
+    "Peron jalur satu Stasiun Catang pada April 2026.jpg": "station_platform",
+    "Peron Stasiun ANgke.jpg": "station_platform",
+    "Peron Stasiun Pasar Minggu 2026.jpg": "station_platform",
+    "Pintu Gerbang Stasiun Lrt Rawamangun Februari 2026.png": "station_access",
+    "Stasiun Pakisaji 2026.jpg": "station_access",
+    "Stasiun Sumberpucung 2026.jpg": "station_platform",
+    "stasiun-jaksel.webp": "station_platform",
+    "stasiun_tanah_abang_-_bisniscom_dwi_rachmawati_1712569176.webp": "station_platform",
+    "sudut-stasiun-bandung.jpg": "station_interior",
+    "Tampak dalam Stasiun Slawi, 2026.jpg": "station_platform"
+  }
+}

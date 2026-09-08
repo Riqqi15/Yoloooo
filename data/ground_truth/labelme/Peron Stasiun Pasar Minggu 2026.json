@@ -1,0 +1,32 @@
+{
+  "version": "7.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          766.6165413533836,
+          1422.5563909774437
+        ],
+        [
+          856.8421052631581,
+          2875.187969924812
+        ],
+        [
+          1283.9097744360902,
+          2875.187969924812
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\..\\samples\\Peron Stasiun Pasar Minggu 2026.jpg",
+  "imageData": null,
+  "imageHeight": 2880,
+  "imageWidth": 3840
+}

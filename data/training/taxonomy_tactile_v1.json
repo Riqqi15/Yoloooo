@@ -1,0 +1,41 @@
+{
+  "taxonomy_version": "station-tactile-v1",
+  "status": "approved",
+  "approved_by": "Riyadh",
+  "approved_at": "2026-09-07",
+  "object_detection": [
+    "person",
+    "chair",
+    "table",
+    "pole",
+    "trash_bin",
+    "luggage",
+    "backpack",
+    "barrier",
+    "bench",
+    "bicycle",
+    "motorcycle",
+    "vehicle",
+    "stairs",
+    "hole",
+    "step_up",
+    "step_down",
+    "platform_edge",
+    "glass_door"
+  ],
+  "tactile_segmentation": [
+    "tactile_paving"
+  ],
+  "critical_review_classes": [
+    "hole",
+    "step_down",
+    "platform_edge",
+    "glass_door"
+  ],
+  "notes": [
+    "One-class tactile taxonomy approved by Riyadh on 2026-09-07.",
+    "Guiding-path and warning-block separation is deferred until enough separately labeled data exists.",
+    "Tactile labels cover visible pixels only.",
+    "Object labels are retained for training-label-gate compatibility; this pipeline trains tactile segmentation only."
+  ]
+}

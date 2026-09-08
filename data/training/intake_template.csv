@@ -1,0 +1,2 @@
+source_path,session_id,location_id,location_type,source_name,usage_permission,device_model,camera_position,lighting,motion,surface,dataset_task,notes
+example.webp,session_001,station_a_platform_1,station_platform,local_capture,consent_record_or_license_reference,phone_model,chest,normal,walking,matte,both,remove this example row

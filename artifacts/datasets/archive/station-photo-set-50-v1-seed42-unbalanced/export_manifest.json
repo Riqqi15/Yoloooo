@@ -1,0 +1,851 @@
+{
+  "dataset_version": "station-photo-set-50-v1",
+  "source_manifest_sha256": "26e4183688ba2a51bdd570d8986619caa4975876410adc2d9a6ecdf46cd16f99",
+  "taxonomy_sha256": "92442454c8424365504dd4307218d7bc7682df3978f0403e47ca54c1690a8f0e",
+  "review_manifest_sha256": "63c2db3fca197e36b56a82451d7d231f857f3964db0627b660e187399cac23c7",
+  "validation": {
+    "dataset_version": "station-photo-set-50-v1",
+    "dataset_scope": "station_environment",
+    "taxonomy_version": "station-tactile-v1",
+    "taxonomy_approved": true,
+    "require_review": true,
+    "training_ready": true,
+    "summary": {
+      "total_samples": 50,
+      "structurally_valid_samples": 50,
+      "human_reviewed_samples": 50,
+      "ambiguous_samples": 0,
+      "unreviewed_samples": 0,
+      "invalid_samples": 0,
+      "split_counts": {
+        "train": 26,
+        "test": 9,
+        "validation": 15
+      },
+      "object_class_counts": {},
+      "tactile_class_counts": {
+        "tactile_paving": 30
+      },
+      "condition_counts": {
+        "lighting": {
+          "normal_or_unknown": 49,
+          "low_light": 1
+        },
+        "motion": {
+          "static_photo": 50
+        },
+        "surface": {
+          "mixed": 50
+        },
+        "location_type": {
+          "station_track_area": 27,
+          "station_platform": 13,
+          "station_interior": 10
+        }
+      }
+    },
+    "errors": []
+  },
+  "samples": [
+    {
+      "sample_id": "8dacf30fc1b39e7fb09e6a3f035370fdef35e6b26eb8c10d85e61cd5e2038437",
+      "source_sha256": "8dacf30fc1b39e7fb09e6a3f035370fdef35e6b26eb8c10d85e61cd5e2038437",
+      "annotation_sha256": "34080be567f9a276d0d2b53192e61008d0f3ba0086103fa5f6d8efca5054612d",
+      "review": {
+        "sample_id": "8dacf30fc1b39e7fb09e6a3f035370fdef35e6b26eb8c10d85e61cd5e2038437",
+        "source_sha256": "8dacf30fc1b39e7fb09e6a3f035370fdef35e6b26eb8c10d85e61cd5e2038437",
+        "annotation_sha256": "34080be567f9a276d0d2b53192e61008d0f3ba0086103fa5f6d8efca5054612d",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "5a34c08ac6ecb998fe808d45e14720b5e6bba84a5c6eb9387dc5e6cd5218d569",
+      "source_sha256": "5a34c08ac6ecb998fe808d45e14720b5e6bba84a5c6eb9387dc5e6cd5218d569",
+      "annotation_sha256": "b45911efc112ec3537ffd80474f2f89f8b8c335611c82701b6c122d76f5d4527",
+      "review": {
+        "sample_id": "5a34c08ac6ecb998fe808d45e14720b5e6bba84a5c6eb9387dc5e6cd5218d569",
+        "source_sha256": "5a34c08ac6ecb998fe808d45e14720b5e6bba84a5c6eb9387dc5e6cd5218d569",
+        "annotation_sha256": "b45911efc112ec3537ffd80474f2f89f8b8c335611c82701b6c122d76f5d4527",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "8ce6e4a6303ead725a891d7ed356e687dbbf3a5cef40992c7b0414d4a7e62bfa",
+      "source_sha256": "8ce6e4a6303ead725a891d7ed356e687dbbf3a5cef40992c7b0414d4a7e62bfa",
+      "annotation_sha256": "0637491e45539ba58abc6f47072b715d39a04e9ea8089d6851668c5f1faf7ff2",
+      "review": {
+        "sample_id": "8ce6e4a6303ead725a891d7ed356e687dbbf3a5cef40992c7b0414d4a7e62bfa",
+        "source_sha256": "8ce6e4a6303ead725a891d7ed356e687dbbf3a5cef40992c7b0414d4a7e62bfa",
+        "annotation_sha256": "0637491e45539ba58abc6f47072b715d39a04e9ea8089d6851668c5f1faf7ff2",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "62884723948ced16b2016310d8fb1350da7f03f96d64383a8c82d5dba77b15d1",
+      "source_sha256": "62884723948ced16b2016310d8fb1350da7f03f96d64383a8c82d5dba77b15d1",
+      "annotation_sha256": "7c9e7dca1bea64dd3d2758b26a55b1eeaab18a213b3234b9a8c8b9a060526397",
+      "review": {
+        "sample_id": "62884723948ced16b2016310d8fb1350da7f03f96d64383a8c82d5dba77b15d1",
+        "source_sha256": "62884723948ced16b2016310d8fb1350da7f03f96d64383a8c82d5dba77b15d1",
+        "annotation_sha256": "7c9e7dca1bea64dd3d2758b26a55b1eeaab18a213b3234b9a8c8b9a060526397",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "fd70eaff8bc4d0ab677eef52d3b09cbb1b337232e973a83aee5ab764b2251f73",
+      "source_sha256": "fd70eaff8bc4d0ab677eef52d3b09cbb1b337232e973a83aee5ab764b2251f73",
+      "annotation_sha256": "a2fdbaa5358c2df9ade64ad79df38efa1d8139ab4ff2787ee2a07995b43b38fa",
+      "review": {
+        "sample_id": "fd70eaff8bc4d0ab677eef52d3b09cbb1b337232e973a83aee5ab764b2251f73",
+        "source_sha256": "fd70eaff8bc4d0ab677eef52d3b09cbb1b337232e973a83aee5ab764b2251f73",
+        "annotation_sha256": "a2fdbaa5358c2df9ade64ad79df38efa1d8139ab4ff2787ee2a07995b43b38fa",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "test",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "c9b62591f2d70fd66eb08d799f88a8fbd2405a3b314f2efe9e7f4538b4cba9ad",
+      "source_sha256": "c9b62591f2d70fd66eb08d799f88a8fbd2405a3b314f2efe9e7f4538b4cba9ad",
+      "annotation_sha256": "6b783277e3160f7a1847570e80807825a96a10f0b0ca2c92fd1f1a91b256599d",
+      "review": {
+        "sample_id": "c9b62591f2d70fd66eb08d799f88a8fbd2405a3b314f2efe9e7f4538b4cba9ad",
+        "source_sha256": "c9b62591f2d70fd66eb08d799f88a8fbd2405a3b314f2efe9e7f4538b4cba9ad",
+        "annotation_sha256": "6b783277e3160f7a1847570e80807825a96a10f0b0ca2c92fd1f1a91b256599d",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "4d33864af28c80af6806e27f4c2f78b7e6d94c60a493f1672c49dba045e4844d",
+      "source_sha256": "4d33864af28c80af6806e27f4c2f78b7e6d94c60a493f1672c49dba045e4844d",
+      "annotation_sha256": "9f21aa752912693c248a774a5f055b8ce3c9aef495d47212f813b0b2f856909b",
+      "review": {
+        "sample_id": "4d33864af28c80af6806e27f4c2f78b7e6d94c60a493f1672c49dba045e4844d",
+        "source_sha256": "4d33864af28c80af6806e27f4c2f78b7e6d94c60a493f1672c49dba045e4844d",
+        "annotation_sha256": "9f21aa752912693c248a774a5f055b8ce3c9aef495d47212f813b0b2f856909b",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "c227eb744ab91b34633d980359415b742058b2367aff36f26052f9fc70fdd495",
+      "source_sha256": "c227eb744ab91b34633d980359415b742058b2367aff36f26052f9fc70fdd495",
+      "annotation_sha256": "49c990cf15269a1cf6f1b8ce84cbf795ba75456d4f8fbda8e1a91af6e5c76019",
+      "review": {
+        "sample_id": "c227eb744ab91b34633d980359415b742058b2367aff36f26052f9fc70fdd495",
+        "source_sha256": "c227eb744ab91b34633d980359415b742058b2367aff36f26052f9fc70fdd495",
+        "annotation_sha256": "49c990cf15269a1cf6f1b8ce84cbf795ba75456d4f8fbda8e1a91af6e5c76019",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "validation",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "a847681910640497d75506497f32a08066d822f4f3997f74acd5ad7c66602e35",
+      "source_sha256": "a847681910640497d75506497f32a08066d822f4f3997f74acd5ad7c66602e35",
+      "annotation_sha256": "0dd182510949f7f7a89ff90fc24e3b7eb8f1306b174703c1494d84aa264f48ad",
+      "review": {
+        "sample_id": "a847681910640497d75506497f32a08066d822f4f3997f74acd5ad7c66602e35",
+        "source_sha256": "a847681910640497d75506497f32a08066d822f4f3997f74acd5ad7c66602e35",
+        "annotation_sha256": "0dd182510949f7f7a89ff90fc24e3b7eb8f1306b174703c1494d84aa264f48ad",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "67a38a9a58a5013b5cb888a3c2c78b9991579807f39749175d08ec8c102571aa",
+      "source_sha256": "67a38a9a58a5013b5cb888a3c2c78b9991579807f39749175d08ec8c102571aa",
+      "annotation_sha256": "c8c66ace078166837e36e90ccd25550a07ad2b9047c6279c03eee20976e738d8",
+      "review": {
+        "sample_id": "67a38a9a58a5013b5cb888a3c2c78b9991579807f39749175d08ec8c102571aa",
+        "source_sha256": "67a38a9a58a5013b5cb888a3c2c78b9991579807f39749175d08ec8c102571aa",
+        "annotation_sha256": "c8c66ace078166837e36e90ccd25550a07ad2b9047c6279c03eee20976e738d8",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "c2c5d0daf868e483e99a39f15229bd69105f85ef06ebbbd9301f3d67b0c99fe1",
+      "source_sha256": "c2c5d0daf868e483e99a39f15229bd69105f85ef06ebbbd9301f3d67b0c99fe1",
+      "annotation_sha256": "8a49aeb451f5397fb04c4a0606d90807829e8eb79165444d9b4b8a2bdd5ec2a7",
+      "review": {
+        "sample_id": "c2c5d0daf868e483e99a39f15229bd69105f85ef06ebbbd9301f3d67b0c99fe1",
+        "source_sha256": "c2c5d0daf868e483e99a39f15229bd69105f85ef06ebbbd9301f3d67b0c99fe1",
+        "annotation_sha256": "8a49aeb451f5397fb04c4a0606d90807829e8eb79165444d9b4b8a2bdd5ec2a7",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "validation",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "36e572ef9f22c0ca676d73498bfe60db115e8e716ac375604ea3b4865d954645",
+      "source_sha256": "36e572ef9f22c0ca676d73498bfe60db115e8e716ac375604ea3b4865d954645",
+      "annotation_sha256": "bc681e51ac68580102e25b2eef282e794c9f82dd5fb05f2cde4018ee381af92d",
+      "review": {
+        "sample_id": "36e572ef9f22c0ca676d73498bfe60db115e8e716ac375604ea3b4865d954645",
+        "source_sha256": "36e572ef9f22c0ca676d73498bfe60db115e8e716ac375604ea3b4865d954645",
+        "annotation_sha256": "bc681e51ac68580102e25b2eef282e794c9f82dd5fb05f2cde4018ee381af92d",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "validation",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "cb8974ea307e41c71ebe67674eb774fd0cbba41e936fdbbc9676f75c1cfc53a7",
+      "source_sha256": "cb8974ea307e41c71ebe67674eb774fd0cbba41e936fdbbc9676f75c1cfc53a7",
+      "annotation_sha256": "304b6c3eb817cbab9c1d2364a6c67fdb4097d7914721dba40bd64c82305fea75",
+      "review": {
+        "sample_id": "cb8974ea307e41c71ebe67674eb774fd0cbba41e936fdbbc9676f75c1cfc53a7",
+        "source_sha256": "cb8974ea307e41c71ebe67674eb774fd0cbba41e936fdbbc9676f75c1cfc53a7",
+        "annotation_sha256": "304b6c3eb817cbab9c1d2364a6c67fdb4097d7914721dba40bd64c82305fea75",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "validation",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "1a245d5c691ad2bc04edaa9af0f57f7819995c147a4875c1e682a4226678fc77",
+      "source_sha256": "1a245d5c691ad2bc04edaa9af0f57f7819995c147a4875c1e682a4226678fc77",
+      "annotation_sha256": "23526a5d4c138f6043f062a255ae265e8d06166862ed516bf1f7b93033f22a55",
+      "review": {
+        "sample_id": "1a245d5c691ad2bc04edaa9af0f57f7819995c147a4875c1e682a4226678fc77",
+        "source_sha256": "1a245d5c691ad2bc04edaa9af0f57f7819995c147a4875c1e682a4226678fc77",
+        "annotation_sha256": "23526a5d4c138f6043f062a255ae265e8d06166862ed516bf1f7b93033f22a55",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "04e3b8acfaa246e6abb3b617cf5c9edfd5cc93cddced94ae13ce9015d31d2c68",
+      "source_sha256": "04e3b8acfaa246e6abb3b617cf5c9edfd5cc93cddced94ae13ce9015d31d2c68",
+      "annotation_sha256": "51a78d9f75a8805d70424667c6f3ceedd879e2348bb46a93c987103f976e16df",
+      "review": {
+        "sample_id": "04e3b8acfaa246e6abb3b617cf5c9edfd5cc93cddced94ae13ce9015d31d2c68",
+        "source_sha256": "04e3b8acfaa246e6abb3b617cf5c9edfd5cc93cddced94ae13ce9015d31d2c68",
+        "annotation_sha256": "51a78d9f75a8805d70424667c6f3ceedd879e2348bb46a93c987103f976e16df",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "test",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "d152346e1865f01f6f01cda7cc299de5adec0c1aaaa481cc9745063ee5b1077a",
+      "source_sha256": "d152346e1865f01f6f01cda7cc299de5adec0c1aaaa481cc9745063ee5b1077a",
+      "annotation_sha256": "f98d6cae0a0ec8b62508767a8285d7d80a3fdf4be96ce68f93083aa787f7f103",
+      "review": {
+        "sample_id": "d152346e1865f01f6f01cda7cc299de5adec0c1aaaa481cc9745063ee5b1077a",
+        "source_sha256": "d152346e1865f01f6f01cda7cc299de5adec0c1aaaa481cc9745063ee5b1077a",
+        "annotation_sha256": "f98d6cae0a0ec8b62508767a8285d7d80a3fdf4be96ce68f93083aa787f7f103",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "e1379ecf51d468942ee11c5d0468a64b6d6cc5d14adf934bf3125e300683dfd2",
+      "source_sha256": "e1379ecf51d468942ee11c5d0468a64b6d6cc5d14adf934bf3125e300683dfd2",
+      "annotation_sha256": "f60619bb878d6630c1861f0ea58291277e22bea703e84c5e14abf195d2f1d66f",
+      "review": {
+        "sample_id": "e1379ecf51d468942ee11c5d0468a64b6d6cc5d14adf934bf3125e300683dfd2",
+        "source_sha256": "e1379ecf51d468942ee11c5d0468a64b6d6cc5d14adf934bf3125e300683dfd2",
+        "annotation_sha256": "f60619bb878d6630c1861f0ea58291277e22bea703e84c5e14abf195d2f1d66f",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "validation",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "0f97ad68123a709a18731d3987e81ec41931f346682dfb3ee0a6e0295c491b82",
+      "source_sha256": "0f97ad68123a709a18731d3987e81ec41931f346682dfb3ee0a6e0295c491b82",
+      "annotation_sha256": "606c13c0a05ea1f489c2792f85fec6da6e6d2e7f504943e462a9690136d4e9b7",
+      "review": {
+        "sample_id": "0f97ad68123a709a18731d3987e81ec41931f346682dfb3ee0a6e0295c491b82",
+        "source_sha256": "0f97ad68123a709a18731d3987e81ec41931f346682dfb3ee0a6e0295c491b82",
+        "annotation_sha256": "606c13c0a05ea1f489c2792f85fec6da6e6d2e7f504943e462a9690136d4e9b7",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "f0570aeed32d31069052d96613c546651d15f652ad4680307491c1dc51c239a1",
+      "source_sha256": "f0570aeed32d31069052d96613c546651d15f652ad4680307491c1dc51c239a1",
+      "annotation_sha256": "4c9c63dc26dd347b77cf47799ed31dd0c8ebe3105c7fe1f1d32097b9fae05629",
+      "review": {
+        "sample_id": "f0570aeed32d31069052d96613c546651d15f652ad4680307491c1dc51c239a1",
+        "source_sha256": "f0570aeed32d31069052d96613c546651d15f652ad4680307491c1dc51c239a1",
+        "annotation_sha256": "4c9c63dc26dd347b77cf47799ed31dd0c8ebe3105c7fe1f1d32097b9fae05629",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "6c5ca0e5d760b196fd264211188aa66bcc5e343572b6b6ffd86580e14d6ec3bc",
+      "source_sha256": "6c5ca0e5d760b196fd264211188aa66bcc5e343572b6b6ffd86580e14d6ec3bc",
+      "annotation_sha256": "f2b8cff8c00d73c0029dcdab39f49b15fc1e8f2e745812a5f765dd5560b4f0f2",
+      "review": {
+        "sample_id": "6c5ca0e5d760b196fd264211188aa66bcc5e343572b6b6ffd86580e14d6ec3bc",
+        "source_sha256": "6c5ca0e5d760b196fd264211188aa66bcc5e343572b6b6ffd86580e14d6ec3bc",
+        "annotation_sha256": "f2b8cff8c00d73c0029dcdab39f49b15fc1e8f2e745812a5f765dd5560b4f0f2",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "7616551d9c36ac63364d0fdcf7b511879754f19eae1960ce1344330fd7042988",
+      "source_sha256": "7616551d9c36ac63364d0fdcf7b511879754f19eae1960ce1344330fd7042988",
+      "annotation_sha256": "1e0aac858cb4687c52c66a53afdb0dfd14026129d1cfae90996946103be27b28",
+      "review": {
+        "sample_id": "7616551d9c36ac63364d0fdcf7b511879754f19eae1960ce1344330fd7042988",
+        "source_sha256": "7616551d9c36ac63364d0fdcf7b511879754f19eae1960ce1344330fd7042988",
+        "annotation_sha256": "1e0aac858cb4687c52c66a53afdb0dfd14026129d1cfae90996946103be27b28",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "150b686eb78d4bf3a2b92b6624283dbbb8211d01bce6f3d230877c22af745072",
+      "source_sha256": "150b686eb78d4bf3a2b92b6624283dbbb8211d01bce6f3d230877c22af745072",
+      "annotation_sha256": "51b19814a81ac44418ca7bdabe8e726d5b6c63d59cbd5bca14e7f58d5b76e79d",
+      "review": {
+        "sample_id": "150b686eb78d4bf3a2b92b6624283dbbb8211d01bce6f3d230877c22af745072",
+        "source_sha256": "150b686eb78d4bf3a2b92b6624283dbbb8211d01bce6f3d230877c22af745072",
+        "annotation_sha256": "51b19814a81ac44418ca7bdabe8e726d5b6c63d59cbd5bca14e7f58d5b76e79d",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "c06633c1cf1395bff9e2c676ec20755f25f608fee69c1eeb666180865f2971cb",
+      "source_sha256": "c06633c1cf1395bff9e2c676ec20755f25f608fee69c1eeb666180865f2971cb",
+      "annotation_sha256": "da10e192f1b7077cb40346b4acd1d60a618fe0ff7c2c0c809d9bd7dce9121698",
+      "review": {
+        "sample_id": "c06633c1cf1395bff9e2c676ec20755f25f608fee69c1eeb666180865f2971cb",
+        "source_sha256": "c06633c1cf1395bff9e2c676ec20755f25f608fee69c1eeb666180865f2971cb",
+        "annotation_sha256": "da10e192f1b7077cb40346b4acd1d60a618fe0ff7c2c0c809d9bd7dce9121698",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "832d1b3792b1143fabc9a9820859fa922b28310387f22197f3d2994d4b16392d",
+      "source_sha256": "832d1b3792b1143fabc9a9820859fa922b28310387f22197f3d2994d4b16392d",
+      "annotation_sha256": "b75397b71a373a7642d695e44cdfec4fed45bd9c7ad210925694eb9f5f91500f",
+      "review": {
+        "sample_id": "832d1b3792b1143fabc9a9820859fa922b28310387f22197f3d2994d4b16392d",
+        "source_sha256": "832d1b3792b1143fabc9a9820859fa922b28310387f22197f3d2994d4b16392d",
+        "annotation_sha256": "b75397b71a373a7642d695e44cdfec4fed45bd9c7ad210925694eb9f5f91500f",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "test",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "76fc87a6fd1b6d30e6c0aafa00e29601024c9a65c07adfd8233c429876593992",
+      "source_sha256": "76fc87a6fd1b6d30e6c0aafa00e29601024c9a65c07adfd8233c429876593992",
+      "annotation_sha256": "278e0ed259f50da8d844c863034231dd395712b418b97413325086ac79857b45",
+      "review": {
+        "sample_id": "76fc87a6fd1b6d30e6c0aafa00e29601024c9a65c07adfd8233c429876593992",
+        "source_sha256": "76fc87a6fd1b6d30e6c0aafa00e29601024c9a65c07adfd8233c429876593992",
+        "annotation_sha256": "278e0ed259f50da8d844c863034231dd395712b418b97413325086ac79857b45",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "5162ec0f93335f9424f00709f14c6b7543dfc25ab13005fed4764bc02b05337e",
+      "source_sha256": "5162ec0f93335f9424f00709f14c6b7543dfc25ab13005fed4764bc02b05337e",
+      "annotation_sha256": "104989bcdcf46458a13e5a0f319c01f43cdb29c2e8c20f82b3b638135e0224e1",
+      "review": {
+        "sample_id": "5162ec0f93335f9424f00709f14c6b7543dfc25ab13005fed4764bc02b05337e",
+        "source_sha256": "5162ec0f93335f9424f00709f14c6b7543dfc25ab13005fed4764bc02b05337e",
+        "annotation_sha256": "104989bcdcf46458a13e5a0f319c01f43cdb29c2e8c20f82b3b638135e0224e1",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "validation",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "b9e537726ed27ee0c8b1c59fcb76802523a8c94c4f9388156e83b49a2611b46d",
+      "source_sha256": "b9e537726ed27ee0c8b1c59fcb76802523a8c94c4f9388156e83b49a2611b46d",
+      "annotation_sha256": "c6d702e9e439366fda48c41ea494e6d8322066fd071db0e930043fe0a4a5cde5",
+      "review": {
+        "sample_id": "b9e537726ed27ee0c8b1c59fcb76802523a8c94c4f9388156e83b49a2611b46d",
+        "source_sha256": "b9e537726ed27ee0c8b1c59fcb76802523a8c94c4f9388156e83b49a2611b46d",
+        "annotation_sha256": "c6d702e9e439366fda48c41ea494e6d8322066fd071db0e930043fe0a4a5cde5",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "validation",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "8b4e6d105a0e2a356858ea9d881f1177b5bbe61030d338a1b336971b4372b2b6",
+      "source_sha256": "8b4e6d105a0e2a356858ea9d881f1177b5bbe61030d338a1b336971b4372b2b6",
+      "annotation_sha256": "9d38a34ef9f7d840e096626fbbec21d7fecc26324f68a249bb55289021b6b395",
+      "review": {
+        "sample_id": "8b4e6d105a0e2a356858ea9d881f1177b5bbe61030d338a1b336971b4372b2b6",
+        "source_sha256": "8b4e6d105a0e2a356858ea9d881f1177b5bbe61030d338a1b336971b4372b2b6",
+        "annotation_sha256": "9d38a34ef9f7d840e096626fbbec21d7fecc26324f68a249bb55289021b6b395",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "a33362710bb083aa6f13de8f519a2e73795c2c799e7145158febfce560d74e78",
+      "source_sha256": "a33362710bb083aa6f13de8f519a2e73795c2c799e7145158febfce560d74e78",
+      "annotation_sha256": "e9f135f80bf7c4082580f7b3fc7d9f2a39e9cdcf89eeb9ce0835906c9bf06e84",
+      "review": {
+        "sample_id": "a33362710bb083aa6f13de8f519a2e73795c2c799e7145158febfce560d74e78",
+        "source_sha256": "a33362710bb083aa6f13de8f519a2e73795c2c799e7145158febfce560d74e78",
+        "annotation_sha256": "e9f135f80bf7c4082580f7b3fc7d9f2a39e9cdcf89eeb9ce0835906c9bf06e84",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "d52ff18907f4455650da8b0525a9eb7b1a07e8bd045d35f74408fe3142cc3cc2",
+      "source_sha256": "d52ff18907f4455650da8b0525a9eb7b1a07e8bd045d35f74408fe3142cc3cc2",
+      "annotation_sha256": "0ae4d63852959a5d6551ec7081d8c4e8b0756e8287fd469aa41e595e91b5d182",
+      "review": {
+        "sample_id": "d52ff18907f4455650da8b0525a9eb7b1a07e8bd045d35f74408fe3142cc3cc2",
+        "source_sha256": "d52ff18907f4455650da8b0525a9eb7b1a07e8bd045d35f74408fe3142cc3cc2",
+        "annotation_sha256": "0ae4d63852959a5d6551ec7081d8c4e8b0756e8287fd469aa41e595e91b5d182",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "test",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "c660f5cfdd9a0adcff67f6d45df9ee4f492e500075cab51e546b8565bd899e8c",
+      "source_sha256": "c660f5cfdd9a0adcff67f6d45df9ee4f492e500075cab51e546b8565bd899e8c",
+      "annotation_sha256": "9fceaca9eb1195c33a09c69300df158faab64bd860a26cd447b50d755b821f59",
+      "review": {
+        "sample_id": "c660f5cfdd9a0adcff67f6d45df9ee4f492e500075cab51e546b8565bd899e8c",
+        "source_sha256": "c660f5cfdd9a0adcff67f6d45df9ee4f492e500075cab51e546b8565bd899e8c",
+        "annotation_sha256": "9fceaca9eb1195c33a09c69300df158faab64bd860a26cd447b50d755b821f59",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "test",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "af69719c95be4d0950a71e4ed93a581237295723a242ab2333d5a04f4e0bf08e",
+      "source_sha256": "af69719c95be4d0950a71e4ed93a581237295723a242ab2333d5a04f4e0bf08e",
+      "annotation_sha256": "0080b1fd5a777c93466e86c17a4b52a354fea9f9eaab4a4bc7087257cb50d636",
+      "review": {
+        "sample_id": "af69719c95be4d0950a71e4ed93a581237295723a242ab2333d5a04f4e0bf08e",
+        "source_sha256": "af69719c95be4d0950a71e4ed93a581237295723a242ab2333d5a04f4e0bf08e",
+        "annotation_sha256": "0080b1fd5a777c93466e86c17a4b52a354fea9f9eaab4a4bc7087257cb50d636",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "validation",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "1880fa0167357fc3516ade617cf969764556dbe5440f01936bdbad642da362d9",
+      "source_sha256": "1880fa0167357fc3516ade617cf969764556dbe5440f01936bdbad642da362d9",
+      "annotation_sha256": "0b75399a23da93344e27ac19c151e07e48980ee80226fefa5bedf65628de1484",
+      "review": {
+        "sample_id": "1880fa0167357fc3516ade617cf969764556dbe5440f01936bdbad642da362d9",
+        "source_sha256": "1880fa0167357fc3516ade617cf969764556dbe5440f01936bdbad642da362d9",
+        "annotation_sha256": "0b75399a23da93344e27ac19c151e07e48980ee80226fefa5bedf65628de1484",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "validation",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "317f01924764a0834e4b25597c555b4931c353e303868d0166cb30ae5045f886",
+      "source_sha256": "317f01924764a0834e4b25597c555b4931c353e303868d0166cb30ae5045f886",
+      "annotation_sha256": "b057ed38ee2fe97172e63f8aaf500fc86e82462a85aaa432c985b7e34cae2f26",
+      "review": {
+        "sample_id": "317f01924764a0834e4b25597c555b4931c353e303868d0166cb30ae5045f886",
+        "source_sha256": "317f01924764a0834e4b25597c555b4931c353e303868d0166cb30ae5045f886",
+        "annotation_sha256": "b057ed38ee2fe97172e63f8aaf500fc86e82462a85aaa432c985b7e34cae2f26",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "validation",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "cb27fb21d2a8c6f61d24b0b13ad32b5283fbd95ee91095a2dcd3edde01cb3498",
+      "source_sha256": "cb27fb21d2a8c6f61d24b0b13ad32b5283fbd95ee91095a2dcd3edde01cb3498",
+      "annotation_sha256": "db5b7dc13c80200b46ded24333f0a852637880556e38caed50c113196ce8a296",
+      "review": {
+        "sample_id": "cb27fb21d2a8c6f61d24b0b13ad32b5283fbd95ee91095a2dcd3edde01cb3498",
+        "source_sha256": "cb27fb21d2a8c6f61d24b0b13ad32b5283fbd95ee91095a2dcd3edde01cb3498",
+        "annotation_sha256": "db5b7dc13c80200b46ded24333f0a852637880556e38caed50c113196ce8a296",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "validation",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "ea3c36b3f82b00f319bfa4e9f6a55d0acbf4d6de0cc3a1f543eb654fb5e1a326",
+      "source_sha256": "ea3c36b3f82b00f319bfa4e9f6a55d0acbf4d6de0cc3a1f543eb654fb5e1a326",
+      "annotation_sha256": "4a72abfc2061894476405379f38d91432a79d56950d2483c6cdc5876241f01b3",
+      "review": {
+        "sample_id": "ea3c36b3f82b00f319bfa4e9f6a55d0acbf4d6de0cc3a1f543eb654fb5e1a326",
+        "source_sha256": "ea3c36b3f82b00f319bfa4e9f6a55d0acbf4d6de0cc3a1f543eb654fb5e1a326",
+        "annotation_sha256": "4a72abfc2061894476405379f38d91432a79d56950d2483c6cdc5876241f01b3",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "validation",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "702660ca68e7e24f0de8e0e8f62a1f6924a6d35503c3ab7a39b5b93e19b2a6c8",
+      "source_sha256": "702660ca68e7e24f0de8e0e8f62a1f6924a6d35503c3ab7a39b5b93e19b2a6c8",
+      "annotation_sha256": "5e43a19900cb63bc5f6516ea84555885dff8bef8200cda7ffdde09e0449c1c41",
+      "review": {
+        "sample_id": "702660ca68e7e24f0de8e0e8f62a1f6924a6d35503c3ab7a39b5b93e19b2a6c8",
+        "source_sha256": "702660ca68e7e24f0de8e0e8f62a1f6924a6d35503c3ab7a39b5b93e19b2a6c8",
+        "annotation_sha256": "5e43a19900cb63bc5f6516ea84555885dff8bef8200cda7ffdde09e0449c1c41",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "84b515aca4673bbb45238647174f6392a760a83aeaa932014a902f70038b2bc4",
+      "source_sha256": "84b515aca4673bbb45238647174f6392a760a83aeaa932014a902f70038b2bc4",
+      "annotation_sha256": "0ff35e22477772414a477bec1f8cfb2b8d8e02c7bf0e29b0644d61fbf2a4679b",
+      "review": {
+        "sample_id": "84b515aca4673bbb45238647174f6392a760a83aeaa932014a902f70038b2bc4",
+        "source_sha256": "84b515aca4673bbb45238647174f6392a760a83aeaa932014a902f70038b2bc4",
+        "annotation_sha256": "0ff35e22477772414a477bec1f8cfb2b8d8e02c7bf0e29b0644d61fbf2a4679b",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "fa2d972708cc8e1f91b98c1853d5b5e206ddce64e29658ee3a236f5540f2ffb9",
+      "source_sha256": "fa2d972708cc8e1f91b98c1853d5b5e206ddce64e29658ee3a236f5540f2ffb9",
+      "annotation_sha256": "0be9f91725da06ed9f34bdcf35e7a145da7b94f597837794c98bbc23e8f8da86",
+      "review": {
+        "sample_id": "fa2d972708cc8e1f91b98c1853d5b5e206ddce64e29658ee3a236f5540f2ffb9",
+        "source_sha256": "fa2d972708cc8e1f91b98c1853d5b5e206ddce64e29658ee3a236f5540f2ffb9",
+        "annotation_sha256": "0be9f91725da06ed9f34bdcf35e7a145da7b94f597837794c98bbc23e8f8da86",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "7f65d52c904d87635a13757ca6d6d63ff06a1f10459a96fabb0b3ddc433423ee",
+      "source_sha256": "7f65d52c904d87635a13757ca6d6d63ff06a1f10459a96fabb0b3ddc433423ee",
+      "annotation_sha256": "1e48c3709ee47b06c2c21a39746e5125dca057ac31a8074f57b45ed7461efb1c",
+      "review": {
+        "sample_id": "7f65d52c904d87635a13757ca6d6d63ff06a1f10459a96fabb0b3ddc433423ee",
+        "source_sha256": "7f65d52c904d87635a13757ca6d6d63ff06a1f10459a96fabb0b3ddc433423ee",
+        "annotation_sha256": "1e48c3709ee47b06c2c21a39746e5125dca057ac31a8074f57b45ed7461efb1c",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "af0bcb34e31ea9ac5d90bb253a12cf040b71641aeec967d6bac5805cd4f9420e",
+      "source_sha256": "af0bcb34e31ea9ac5d90bb253a12cf040b71641aeec967d6bac5805cd4f9420e",
+      "annotation_sha256": "ecf74678266ad587862232fdd81c7973285d7dc9cdaa040c8c9d2991050b68ca",
+      "review": {
+        "sample_id": "af0bcb34e31ea9ac5d90bb253a12cf040b71641aeec967d6bac5805cd4f9420e",
+        "source_sha256": "af0bcb34e31ea9ac5d90bb253a12cf040b71641aeec967d6bac5805cd4f9420e",
+        "annotation_sha256": "ecf74678266ad587862232fdd81c7973285d7dc9cdaa040c8c9d2991050b68ca",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "5ea50c18618de68a700bebc8aaab6c61aa5fc206593a266ce77dfda7027ef257",
+      "source_sha256": "5ea50c18618de68a700bebc8aaab6c61aa5fc206593a266ce77dfda7027ef257",
+      "annotation_sha256": "8eaf79945abf4feae1502f2258b0f1971a13c0eb13fe3db88c759810d0f5f4e9",
+      "review": {
+        "sample_id": "5ea50c18618de68a700bebc8aaab6c61aa5fc206593a266ce77dfda7027ef257",
+        "source_sha256": "5ea50c18618de68a700bebc8aaab6c61aa5fc206593a266ce77dfda7027ef257",
+        "annotation_sha256": "8eaf79945abf4feae1502f2258b0f1971a13c0eb13fe3db88c759810d0f5f4e9",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "validation",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "146793cf2b4f0e535736d521fb2ea9703a510533acdaa9d660e6fb1456dbb10a",
+      "source_sha256": "146793cf2b4f0e535736d521fb2ea9703a510533acdaa9d660e6fb1456dbb10a",
+      "annotation_sha256": "1ab7c66f5f664d6bb492e5debaf7378acf23dc192c8b9e4aaa72cd9bffbc42bb",
+      "review": {
+        "sample_id": "146793cf2b4f0e535736d521fb2ea9703a510533acdaa9d660e6fb1456dbb10a",
+        "source_sha256": "146793cf2b4f0e535736d521fb2ea9703a510533acdaa9d660e6fb1456dbb10a",
+        "annotation_sha256": "1ab7c66f5f664d6bb492e5debaf7378acf23dc192c8b9e4aaa72cd9bffbc42bb",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "validation",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "3496c9122f46d003b9404ac0b7b4597edacf675ea0ed57e45962fd563fc98c41",
+      "source_sha256": "3496c9122f46d003b9404ac0b7b4597edacf675ea0ed57e45962fd563fc98c41",
+      "annotation_sha256": "88a25a1458c7126a3c19fb6008fb51521da3dbf4cf4168f5961e600f813366f1",
+      "review": {
+        "sample_id": "3496c9122f46d003b9404ac0b7b4597edacf675ea0ed57e45962fd563fc98c41",
+        "source_sha256": "3496c9122f46d003b9404ac0b7b4597edacf675ea0ed57e45962fd563fc98c41",
+        "annotation_sha256": "88a25a1458c7126a3c19fb6008fb51521da3dbf4cf4168f5961e600f813366f1",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "validation",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "03621537614a4ea7e2da7b00813f24cfc9ea5d6e8ffe19070367e35ff6bbcbef",
+      "source_sha256": "03621537614a4ea7e2da7b00813f24cfc9ea5d6e8ffe19070367e35ff6bbcbef",
+      "annotation_sha256": "e573cbf582f9112c54e8b3b1801e4364abe556556a3a5743f6a21dc6ce1a339f",
+      "review": {
+        "sample_id": "03621537614a4ea7e2da7b00813f24cfc9ea5d6e8ffe19070367e35ff6bbcbef",
+        "source_sha256": "03621537614a4ea7e2da7b00813f24cfc9ea5d6e8ffe19070367e35ff6bbcbef",
+        "annotation_sha256": "e573cbf582f9112c54e8b3b1801e4364abe556556a3a5743f6a21dc6ce1a339f",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "test",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "5fc2847a0111df8f9feefecacd62afa53fb3e5590d9f3ef00fd7686b07d3284d",
+      "source_sha256": "5fc2847a0111df8f9feefecacd62afa53fb3e5590d9f3ef00fd7686b07d3284d",
+      "annotation_sha256": "80086c70c174bbd434d023d7189b129edb4f4a77fac2ae8b53f751b31ffdb265",
+      "review": {
+        "sample_id": "5fc2847a0111df8f9feefecacd62afa53fb3e5590d9f3ef00fd7686b07d3284d",
+        "source_sha256": "5fc2847a0111df8f9feefecacd62afa53fb3e5590d9f3ef00fd7686b07d3284d",
+        "annotation_sha256": "80086c70c174bbd434d023d7189b129edb4f4a77fac2ae8b53f751b31ffdb265",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "d4bad38985b6aa2f46f4d898d1e5bd1a0e25760e482d88012aaceb41f8577003",
+      "source_sha256": "d4bad38985b6aa2f46f4d898d1e5bd1a0e25760e482d88012aaceb41f8577003",
+      "annotation_sha256": "80a2b64b8a58603616f66ce14ce52c5736d2a7c68e18f5124a338d7161a7d870",
+      "review": {
+        "sample_id": "d4bad38985b6aa2f46f4d898d1e5bd1a0e25760e482d88012aaceb41f8577003",
+        "source_sha256": "d4bad38985b6aa2f46f4d898d1e5bd1a0e25760e482d88012aaceb41f8577003",
+        "annotation_sha256": "80a2b64b8a58603616f66ce14ce52c5736d2a7c68e18f5124a338d7161a7d870",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "test",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "ba9aa2ae6beff7ce326101f5d4e1a9e23ce491c22886adfb4e90833ca234aa5b",
+      "source_sha256": "ba9aa2ae6beff7ce326101f5d4e1a9e23ce491c22886adfb4e90833ca234aa5b",
+      "annotation_sha256": "787e52d0af97644a97cf0096e657876cedd2dfbfec65fcfa36e12835eadfcdc6",
+      "review": {
+        "sample_id": "ba9aa2ae6beff7ce326101f5d4e1a9e23ce491c22886adfb4e90833ca234aa5b",
+        "source_sha256": "ba9aa2ae6beff7ce326101f5d4e1a9e23ce491c22886adfb4e90833ca234aa5b",
+        "annotation_sha256": "787e52d0af97644a97cf0096e657876cedd2dfbfec65fcfa36e12835eadfcdc6",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "train",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "7acf6bfdb3abaf532a75a620c813afd1a0f02c8b19f0e017213a159dccef9607",
+      "source_sha256": "7acf6bfdb3abaf532a75a620c813afd1a0f02c8b19f0e017213a159dccef9607",
+      "annotation_sha256": "1ddaa6504307213be7086aed9fd4ab4685d21d828937812ce925c4f23fce3c7f",
+      "review": {
+        "sample_id": "7acf6bfdb3abaf532a75a620c813afd1a0f02c8b19f0e017213a159dccef9607",
+        "source_sha256": "7acf6bfdb3abaf532a75a620c813afd1a0f02c8b19f0e017213a159dccef9607",
+        "annotation_sha256": "1ddaa6504307213be7086aed9fd4ab4685d21d828937812ce925c4f23fce3c7f",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "test",
+      "dataset_task": "tactile"
+    },
+    {
+      "sample_id": "9b2bbbd4eedb8d9b65e2ca6a3ca4f251e06837ee48c6be3a967ef66fea27e099",
+      "source_sha256": "9b2bbbd4eedb8d9b65e2ca6a3ca4f251e06837ee48c6be3a967ef66fea27e099",
+      "annotation_sha256": "14bad0e43d2927af801d3f96b3acb3b4cadc274843aa6cda0fd9df001221592a",
+      "review": {
+        "sample_id": "9b2bbbd4eedb8d9b65e2ca6a3ca4f251e06837ee48c6be3a967ef66fea27e099",
+        "source_sha256": "9b2bbbd4eedb8d9b65e2ca6a3ca4f251e06837ee48c6be3a967ef66fea27e099",
+        "annotation_sha256": "14bad0e43d2927af801d3f96b3acb3b4cadc274843aa6cda0fd9df001221592a",
+        "review_status": "human_reviewed",
+        "reviewer": "Riyadh",
+        "reviewed_at": "2026-09-08T11:46:10+07:00",
+        "notes": "Reviewed in LabelMe by Riyadh; positive polygons checked and no-polygon images confirmed negative."
+      },
+      "split": "test",
+      "dataset_task": "tactile"
+    }
+  ]
+}

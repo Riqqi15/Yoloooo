@@ -1,0 +1,36 @@
+{
+  "version": "7.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          232.23684210526315,
+          2214.7631578947367
+        ],
+        [
+          1053.2894736842109,
+          1462.1315789473686
+        ],
+        [
+          1024.3421052631581,
+          1459.5
+        ],
+        [
+          0.0,
+          2185.8157894736846
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "003_tegalluar.jpg",
+  "imageData": null,
+  "imageHeight": 2219,
+  "imageWidth": 3946
+}

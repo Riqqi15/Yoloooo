@@ -1,0 +1,36 @@
+{
+  "version": "7.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          407.8846153846154,
+          357.26923076923094
+        ],
+        [
+          468.65384615384613,
+          648.0
+        ],
+        [
+          547.8846153846156,
+          647.2692307692308
+        ],
+        [
+          417.1153846153846,
+          351.1153846153847
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\..\\samples\\stasiun-jaksel.webp",
+  "imageData": null,
+  "imageHeight": 648,
+  "imageWidth": 1152
+}

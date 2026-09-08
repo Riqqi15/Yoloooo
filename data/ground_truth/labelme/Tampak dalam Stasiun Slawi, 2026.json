@@ -1,0 +1,62 @@
+{
+  "version": "7.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          1843.0188679245282,
+          1787.1698113207551
+        ],
+        [
+          2187.1698113207553,
+          1947.1698113207547
+        ],
+        [
+          2193.2075471698113,
+          1913.9622641509438
+        ],
+        [
+          1897.3584905660375,
+          1784.1509433962267
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          3198.490566037736,
+          2318.4905660377367
+        ],
+        [
+          2350.188679245283,
+          2016.6037735849063
+        ],
+        [
+          2380.3773584905657,
+          1986.4150943396232
+        ],
+        [
+          3192.452830188679,
+          2273.207547169812
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\..\\samples\\Tampak dalam Stasiun Slawi, 2026.jpg",
+  "imageData": null,
+  "imageHeight": 2891,
+  "imageWidth": 3840
+}

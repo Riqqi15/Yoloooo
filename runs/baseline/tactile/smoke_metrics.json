@@ -1,0 +1,45 @@
+{
+  "warning": "Tactile candidate baseline only. No result authorizes movement.",
+  "label_notice": "Checkpoint metadata uses 'braille'; upstream config declares 'tactile_paving'. Output remains a binary tactile candidate only.",
+  "model_repo": "DARoSLab/GuideTWSI",
+  "model": "models\\guidetwsi\\yolo11n_tactile.pt",
+  "model_sha256": "79f0bb39a354dd66d367bb5b97184df626c85f91568456e099e49a8cdbfcd878",
+  "task": "segment",
+  "labels": {
+    "0": "braille"
+  },
+  "upstream_config_labels": {
+    "0": "tactile_paving"
+  },
+  "upstream_label_mismatch": true,
+  "device": "cpu",
+  "source_kind": "image",
+  "imgsz": 320,
+  "confidence": 0.25,
+  "warmup": 15,
+  "output": "runs\\baseline\\tactile\\smoke_annotated.jpg",
+  "timing": {
+    "samples": 30,
+    "mean_ms": 25.636233333333333,
+    "p50_ms": 25.683,
+    "p95_ms": 28.44432,
+    "max_ms": 28.8468,
+    "effective_fps": 39.007290462587456
+  },
+  "peak_rss_mb": 353.04296875,
+  "status_counts": {
+    "STOP_UNCERTAIN": 1
+  },
+  "instance_count": 1,
+  "class_counts": {
+    "braille": 1
+  },
+  "frames_with_masks": 1,
+  "mean_mask_coverage": 0.02091064453125,
+  "max_mask_coverage": 0.02091064453125,
+  "ultralytics_speed_ms": {
+    "preprocess": 0.9418000117875636,
+    "inference": 24.299400000018068,
+    "postprocess": 1.4425000117626041
+  }
+}

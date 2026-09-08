@@ -1,0 +1,36 @@
+{
+  "version": "7.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          438.899444163719,
+          387.0
+        ],
+        [
+          468.4092976250631,
+          362.9795351187469
+        ],
+        [
+          352.7953511874683,
+          189.55861546235477
+        ],
+        [
+          344.71045982819606,
+          190.7713491662456
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\..\\samples\\images (3).jpg",
+  "imageData": null,
+  "imageHeight": 387,
+  "imageWidth": 516
+}

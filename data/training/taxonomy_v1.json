@@ -1,0 +1,18 @@
+{
+  "taxonomy_version": "station-v1-draft",
+  "status": "draft_requires_human_approval_before_bulk_annotation",
+  "object_detection": [
+    "person", "chair", "table", "pole", "trash_bin", "luggage", "backpack", "barrier", "bench", "bicycle", "motorcycle", "vehicle", "stairs", "hole", "step_up", "step_down", "platform_edge", "glass_door"
+  ],
+  "tactile_segmentation": [
+    "tactile_guiding_path", "tactile_warning_block"
+  ],
+  "critical_review_classes": [
+    "hole", "step_down", "platform_edge", "glass_door"
+  ],
+  "notes": [
+    "Bounding boxes alone are insufficient evidence for height-change hazards.",
+    "Tactile labels cover visible pixels only.",
+    "Classes without adequate data and holdout coverage must be removed or marked unsupported."
+  ]
+}

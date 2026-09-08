@@ -1,0 +1,84 @@
+{
+  "version": "7.4.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          1235.8882681564246,
+          2905.027932960894
+        ],
+        [
+          1352.0893854748606,
+          2869.273743016761
+        ],
+        [
+          1356.558659217877,
+          2913.9664804469285
+        ],
+        [
+          1289.519553072626,
+          2945.2513966480456
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          1512.9832402234638,
+          2837.9888268156424
+        ],
+        [
+          2514.100558659218,
+          2614.5251396648046
+        ],
+        [
+          2527.5083798882683,
+          2632.402234636872
+        ],
+        [
+          1566.6145251396651,
+          2873.7430167597777
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          5526.391061452515,
+          2918.4357541899453
+        ],
+        [
+          5705.1620111731845,
+          3007.8212290502806
+        ],
+        [
+          5705.1620111731845,
+          2900.558659217878
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    }
+  ],
+  "imagePath": "..\\..\\samples\\Peron Stasiun ANgke.jpg",
+  "imageData": null,
+  "imageHeight": 4284,
+  "imageWidth": 5712
+}

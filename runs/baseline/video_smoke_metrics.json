@@ -1,0 +1,42 @@
+{
+  "warning": "Baseline only. No result grants permission to proceed.",
+  "model": "models\\yolo11n.pt",
+  "device": "cpu",
+  "source_kind": "video",
+  "imgsz": 320,
+  "confidence": 0.25,
+  "warmup": 1,
+  "corridor_normalized": [
+    [
+      0.4,
+      0.45
+    ],
+    [
+      0.6,
+      0.45
+    ],
+    [
+      0.9,
+      1.0
+    ],
+    [
+      0.1,
+      1.0
+    ]
+  ],
+  "output": "runs\\baseline\\video_smoke.mp4",
+  "timing": {
+    "samples": 3,
+    "mean_ms": 21.8813,
+    "p50_ms": 21.6538,
+    "p95_ms": 22.26976,
+    "max_ms": 22.3382,
+    "effective_fps": 45.701123790634014
+  },
+  "peak_rss_mb": 383.51171875,
+  "status_counts": {
+    "STOP_OBSTACLE": 3
+  },
+  "object_count": 15,
+  "corridor_object_count": 6
+}
