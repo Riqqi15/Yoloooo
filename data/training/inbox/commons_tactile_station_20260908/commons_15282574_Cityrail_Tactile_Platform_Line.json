@@ -1,0 +1,35 @@
+{
+  "version": "5.8.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          576.0,
+          0.0
+        ],
+        [
+          883.2,
+          160.72
+        ],
+        [
+          0.0,
+          183.68
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "commons_15282574_Cityrail_Tactile_Platform_Line.jpg",
+  "imageData": null,
+  "imageHeight": 1148,
+  "imageWidth": 1920
+}

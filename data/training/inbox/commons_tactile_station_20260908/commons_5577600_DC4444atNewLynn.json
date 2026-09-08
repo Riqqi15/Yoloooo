@@ -1,0 +1,35 @@
+{
+  "version": "5.8.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          200.0,
+          558.0
+        ],
+        [
+          344.0,
+          558.0
+        ],
+        [
+          448.0,
+          366.0
+        ],
+        [
+          360.0,
+          366.0
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "commons_5577600_DC4444atNewLynn.jpg",
+  "imageData": null,
+  "imageHeight": 600,
+  "imageWidth": 800
+}

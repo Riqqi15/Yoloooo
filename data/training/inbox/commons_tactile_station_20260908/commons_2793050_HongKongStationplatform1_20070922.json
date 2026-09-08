@@ -1,0 +1,60 @@
+{
+  "version": "5.8.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          1152.0,
+          1152.0
+        ],
+        [
+          1456.0,
+          1152.0
+        ],
+        [
+          1584.0,
+          792.0
+        ],
+        [
+          1328.0,
+          792.0
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          0.0,
+          876.0
+        ],
+        [
+          320.0,
+          876.0
+        ],
+        [
+          640.0,
+          696.0
+        ],
+        [
+          400.0,
+          672.0
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "commons_2793050_HongKongStationplatform1_20070922.jpg",
+  "imageData": null,
+  "imageHeight": 1200,
+  "imageWidth": 1600
+}

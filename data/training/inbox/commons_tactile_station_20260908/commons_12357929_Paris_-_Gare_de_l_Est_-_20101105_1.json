@@ -1,0 +1,85 @@
+{
+  "version": "5.8.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          1094.4,
+          1425.6
+        ],
+        [
+          1209.6,
+          1425.6
+        ],
+        [
+          1593.6,
+          763.2
+        ],
+        [
+          1516.8,
+          748.8
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          1286.4,
+          1425.6
+        ],
+        [
+          1401.6,
+          1425.6
+        ],
+        [
+          1747.2,
+          792.0
+        ],
+        [
+          1670.4,
+          777.6
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          1536.0,
+          1425.6
+        ],
+        [
+          1651.2,
+          1425.6
+        ],
+        [
+          1881.6,
+          777.6
+        ],
+        [
+          1804.8,
+          777.6
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "commons_12357929_Paris_-_Gare_de_l_Est_-_20101105_1.jpg",
+  "imageData": null,
+  "imageHeight": 1440,
+  "imageWidth": 1920
+}

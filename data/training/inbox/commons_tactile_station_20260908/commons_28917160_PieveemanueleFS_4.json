@@ -1,0 +1,60 @@
+{
+  "version": "5.8.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          0.0,
+          2415.36
+        ],
+        [
+          276.0,
+          2741.76
+        ],
+        [
+          920.0,
+          1860.48
+        ],
+        [
+          791.2,
+          1729.92
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          920.0,
+          3133.44
+        ],
+        [
+          1214.4,
+          3133.44
+        ],
+        [
+          1803.2,
+          2088.96
+        ],
+        [
+          1637.6,
+          1893.12
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "commons_28917160_PieveemanueleFS_4.jpg",
+  "imageData": null,
+  "imageHeight": 3264,
+  "imageWidth": 1840
+}

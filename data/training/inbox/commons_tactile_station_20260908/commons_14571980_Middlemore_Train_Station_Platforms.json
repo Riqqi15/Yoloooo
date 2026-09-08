@@ -1,0 +1,60 @@
+{
+  "version": "5.8.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          864.0,
+          1584.0
+        ],
+        [
+          1176.0,
+          1584.0
+        ],
+        [
+          1080.0,
+          880.0
+        ],
+        [
+          912.0,
+          880.0
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          96.0,
+          1088.0
+        ],
+        [
+          288.0,
+          1088.0
+        ],
+        [
+          348.0,
+          848.0
+        ],
+        [
+          216.0,
+          832.0
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "commons_14571980_Middlemore_Train_Station_Platforms.jpg",
+  "imageData": null,
+  "imageHeight": 1600,
+  "imageWidth": 1200
+}

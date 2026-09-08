@@ -1,0 +1,35 @@
+{
+  "version": "5.8.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          64.0,
+          1140.0
+        ],
+        [
+          448.0,
+          1140.0
+        ],
+        [
+          496.0,
+          696.0
+        ],
+        [
+          288.0,
+          696.0
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "commons_17952932_KiwiRail_Locomotive_At_Britomart.jpg",
+  "imageData": null,
+  "imageHeight": 1200,
+  "imageWidth": 1600
+}

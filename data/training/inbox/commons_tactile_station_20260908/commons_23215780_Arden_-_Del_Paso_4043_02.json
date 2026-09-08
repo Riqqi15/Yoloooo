@@ -1,0 +1,35 @@
+{
+  "version": "5.8.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          787.2,
+          1425.6
+        ],
+        [
+          1152.0,
+          1425.6
+        ],
+        [
+          1094.4,
+          792.0
+        ],
+        [
+          921.6,
+          792.0
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "commons_23215780_Arden_-_Del_Paso_4043_02.jpg",
+  "imageData": null,
+  "imageHeight": 1440,
+  "imageWidth": 1920
+}

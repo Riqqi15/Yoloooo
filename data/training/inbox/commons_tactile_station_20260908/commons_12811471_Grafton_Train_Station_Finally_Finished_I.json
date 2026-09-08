@@ -1,0 +1,60 @@
+{
+  "version": "5.8.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          1104.0,
+          1164.0
+        ],
+        [
+          1376.0,
+          1104.0
+        ],
+        [
+          1312.0,
+          756.0
+        ],
+        [
+          1152.0,
+          744.0
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          144.0,
+          1080.0
+        ],
+        [
+          304.0,
+          1080.0
+        ],
+        [
+          480.0,
+          720.0
+        ],
+        [
+          384.0,
+          708.0
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "commons_12811471_Grafton_Train_Station_Finally_Finished_I.jpg",
+  "imageData": null,
+  "imageHeight": 1200,
+  "imageWidth": 1600
+}

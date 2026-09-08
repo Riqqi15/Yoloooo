@@ -1,0 +1,85 @@
+{
+  "version": "5.8.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          163.84,
+          706.56
+        ],
+        [
+          307.2,
+          706.56
+        ],
+        [
+          440.32,
+          437.76
+        ],
+        [
+          378.88,
+          422.4
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          593.92,
+          698.88
+        ],
+        [
+          778.24,
+          675.84
+        ],
+        [
+          716.8,
+          407.04
+        ],
+        [
+          593.92,
+          414.72
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          163.84,
+          552.96
+        ],
+        [
+          768.0,
+          552.96
+        ],
+        [
+          768.0,
+          614.4
+        ],
+        [
+          163.84,
+          614.4
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "commons_10004207_Grafton_station.jpg",
+  "imageData": null,
+  "imageHeight": 768,
+  "imageWidth": 1024
+}

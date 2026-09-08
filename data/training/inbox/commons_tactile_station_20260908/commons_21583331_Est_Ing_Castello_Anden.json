@@ -1,0 +1,35 @@
+{
+  "version": "5.8.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          998.4,
+          1377.88
+        ],
+        [
+          1382.4,
+          1377.88
+        ],
+        [
+          1440.0,
+          815.48
+        ],
+        [
+          1113.6,
+          815.48
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "commons_21583331_Est_Ing_Castello_Anden.jpg",
+  "imageData": null,
+  "imageHeight": 1406,
+  "imageWidth": 1920
+}

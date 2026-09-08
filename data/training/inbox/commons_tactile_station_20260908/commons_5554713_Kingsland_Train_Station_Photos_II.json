@@ -1,0 +1,35 @@
+{
+  "version": "5.8.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          256.0,
+          1140.0
+        ],
+        [
+          464.0,
+          1140.0
+        ],
+        [
+          624.0,
+          696.0
+        ],
+        [
+          496.0,
+          696.0
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "commons_5554713_Kingsland_Train_Station_Photos_II.jpg",
+  "imageData": null,
+  "imageHeight": 1200,
+  "imageWidth": 1600
+}

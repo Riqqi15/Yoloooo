@@ -1,0 +1,60 @@
+{
+  "version": "5.8.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          160.0,
+          1128.0
+        ],
+        [
+          416.0,
+          1128.0
+        ],
+        [
+          544.0,
+          696.0
+        ],
+        [
+          432.0,
+          696.0
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          1072.0,
+          1056.0
+        ],
+        [
+          1312.0,
+          1056.0
+        ],
+        [
+          1264.0,
+          696.0
+        ],
+        [
+          1120.0,
+          696.0
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "commons_14703064_Newmarket_Train_Station_Is_Finished_II.jpg",
+  "imageData": null,
+  "imageHeight": 1200,
+  "imageWidth": 1600
+}

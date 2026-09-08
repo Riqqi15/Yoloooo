@@ -1,0 +1,35 @@
+{
+  "version": "5.8.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          844.8,
+          1425.6
+        ],
+        [
+          1075.2,
+          1425.6
+        ],
+        [
+          1478.4,
+          792.0
+        ],
+        [
+          1305.6,
+          792.0
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "commons_11548638_ADL_807_at_Onehunga.jpg",
+  "imageData": null,
+  "imageHeight": 1440,
+  "imageWidth": 1920
+}

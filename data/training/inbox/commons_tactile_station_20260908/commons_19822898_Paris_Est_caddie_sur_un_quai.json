@@ -1,0 +1,60 @@
+{
+  "version": "5.8.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          0.0,
+          998.4
+        ],
+        [
+          230.4,
+          1062.4
+        ],
+        [
+          652.8,
+          691.2
+        ],
+        [
+          537.6,
+          640.0
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          998.4,
+          1267.2
+        ],
+        [
+          1305.6,
+          1267.2
+        ],
+        [
+          1900.8,
+          716.8
+        ],
+        [
+          1747.2,
+          665.6
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "commons_19822898_Paris_Est_caddie_sur_un_quai.jpg",
+  "imageData": null,
+  "imageHeight": 1280,
+  "imageWidth": 1920
+}

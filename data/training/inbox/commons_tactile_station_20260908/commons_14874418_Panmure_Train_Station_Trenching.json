@@ -1,0 +1,85 @@
+{
+  "version": "5.8.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          160.0,
+          1092.0
+        ],
+        [
+          400.0,
+          1092.0
+        ],
+        [
+          544.0,
+          708.0
+        ],
+        [
+          432.0,
+          708.0
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          1136.0,
+          1056.0
+        ],
+        [
+          1392.0,
+          1056.0
+        ],
+        [
+          1248.0,
+          720.0
+        ],
+        [
+          1104.0,
+          720.0
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          128.0,
+          888.0
+        ],
+        [
+          1344.0,
+          888.0
+        ],
+        [
+          1344.0,
+          984.0
+        ],
+        [
+          128.0,
+          984.0
+        ]
+      ],
+      "group_id": null,
+      "description": "provisional seed; inspect in LabelMe",
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "imagePath": "commons_14874418_Panmure_Train_Station_Trenching.jpg",
+  "imageData": null,
+  "imageHeight": 1200,
+  "imageWidth": 1600
+}
