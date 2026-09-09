@@ -1,0 +1,9 @@
+{
+  "dataset_version": "station-tactile-v2",
+  "seed": 42,
+  "imgsz": 640,
+  "epochs": 80,
+  "batch": 4,
+  "device": "cpu",
+  "ultralytics_version": "8.4.138"
+}

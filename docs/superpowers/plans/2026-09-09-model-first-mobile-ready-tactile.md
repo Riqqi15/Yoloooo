@@ -124,15 +124,17 @@ Expected: zero invalid/unreviewed rows and nonempty train, validation, and test 
 - Create: `artifacts/candidates/tactile-one-class-v2/`
 
 - [x] **Step 1: Add a static notebook test requiring dataset version `station-tactile-v2`, run name `tactile-one-class-v2`, `imgsz=640`, and unique output paths.**
-- [ ] **Step 2: Clone the Riqqi15 repository with Git LFS and copy the v2 export in Colab.**
-- [ ] **Step 3: Train with the pinned seed/dependency/config and preserve every metric/config/environment file.**
-- [ ] **Step 4: Validate the v2 candidate locally.**
+- [x] **Step 2: Load the Riqqi15 v2 export in an isolated training environment.** Colab UI automation was dropped at the user's request; the equivalent run used a local CPU environment and a disposable dataset copy.
+- [x] **Step 3: Train with the pinned seed/dependency/config and preserve every metric/config/environment file.**
+- [x] **Step 4: Validate the v2 candidate locally.**
 
 ```powershell
 rtk .\.venv\Scripts\python.exe scripts\verify_tactile_candidate.py artifacts\candidates\tactile-one-class-v2
 ```
 
 Expected: `candidate_valid`; this does not yet mean mobile-ready.
+
+Observed 2026-09-09: `candidate_valid`, checkpoint SHA-256 `6f018803f0382b02d8f35dd6cc481bca2fb3c5b9cdc0ab5b9c42f8320965dd0a`. Validation mask recall was `0.24` and mask mAP50 was `0.2533`, so the candidate is structurally valid but does not pass the Task 4 deployment-quality gate.
 
 ### Task 4: Evaluate and lock the model threshold
 
