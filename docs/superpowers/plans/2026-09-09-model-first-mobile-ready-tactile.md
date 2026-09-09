@@ -143,7 +143,7 @@ Observed 2026-09-09: `candidate_valid`, checkpoint SHA-256 `6f018803f0382b02d8f3
 - Create: `tests/test_evaluate_tactile_candidate.py`
 - Create: `artifacts/candidates/tactile-one-class-v2/evaluation_report.json`
 
-- [ ] **Step 1: Write deterministic mask-IoU, precision, recall, empty-mask, and false-positive tests.**
+- [x] **Step 1: Write deterministic mask-IoU, precision, recall, empty-mask, and false-positive tests.**
 - [ ] **Step 2: Implement evaluation using the existing ground-truth manifest and visible-pixel masks.**
 - [ ] **Step 3: Tune confidence/mask thresholds on validation only.**
 - [ ] **Step 4: Lock configuration, then run the 17-image protected local test once.**
