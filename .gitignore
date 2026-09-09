@@ -7,5 +7,8 @@ __pycache__/
 runs/segment/
 runs/training-data-v2/
 runs/tactile-v2-training.*.log
+runs/public-data-cache/
+.venv-public-data/
+artifacts/datasets/tactile-v3-*/
 Thumbs.db
 .DS_Store

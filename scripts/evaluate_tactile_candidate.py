@@ -87,6 +87,14 @@ def select_best_threshold(reports: Sequence[dict[str, Any]]) -> dict[str, Any]:
     )
 
 
+def validate_evaluation_manifest(
+    config: dict[str, Any], training_manifest: dict[str, Any]
+) -> None:
+    expected = config.get("validation_manifest_version", config.get("dataset_version"))
+    if training_manifest.get("dataset_version") != expected:
+        raise ValueError("candidate and training manifest dataset versions differ")
+
+
 def annotation_mask(path: Path, shape: tuple[int, int]) -> np.ndarray:
     payload = json.loads(path.read_text(encoding="utf-8"))
     output = np.zeros(shape, dtype=np.uint8)
@@ -239,8 +247,7 @@ def evaluate(args: argparse.Namespace) -> dict[str, Any]:
         (args.candidate_dir / "training_config.json").read_text(encoding="utf-8")
     )
     training_manifest = json.loads(args.training_manifest.read_text(encoding="utf-8"))
-    if training_manifest.get("dataset_version") != config.get("dataset_version"):
-        raise ValueError("candidate and training manifest dataset versions differ")
+    validate_evaluation_manifest(config, training_manifest)
 
     model = YOLO(str(args.candidate_dir / "best.pt"))
     validation = validation_samples(args.training_manifest, args.annotations_dir)

@@ -13,6 +13,7 @@ from evaluate_tactile_candidate import (  # noqa: E402
     rasterize_polygons,
     select_best_threshold,
     summarize_presence,
+    validate_evaluation_manifest,
 )
 
 
@@ -52,6 +53,20 @@ class EvaluateTactileCandidateTest(unittest.TestCase):
             {"confidence": 0.05, "recall": 1.0, "mean_iou": 0.6, "false_positive_rate": 0.5},
         ]
         self.assertEqual(select_best_threshold(reports)["confidence"], 0.05)
+
+    def test_v3_candidate_can_use_declared_station_validation_manifest(self) -> None:
+        validate_evaluation_manifest(
+            {
+                "dataset_version": "tactile-v3-public4-station1",
+                "validation_manifest_version": "station-tactile-v2",
+            },
+            {"dataset_version": "station-tactile-v2"},
+        )
+        with self.assertRaisesRegex(ValueError, "differ"):
+            validate_evaluation_manifest(
+                {"dataset_version": "tactile-v3-public4-station1"},
+                {"dataset_version": "station-tactile-v2"},
+            )
 
 
 if __name__ == "__main__":
