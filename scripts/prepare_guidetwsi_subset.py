@@ -115,15 +115,16 @@ def prepare_subset(
         if set(pair) != {"image", "label"}:
             rejected["unpaired"] += 1
             continue
+        image_path = _local_file(cache_root, pair["image"])
+        label_path = _local_file(cache_root, pair["label"])
+        if cv2.imread(str(image_path), cv2.IMREAD_COLOR) is None:
+            rejected["invalid_pair"] += 1
+            continue
         try:
-            image_path = _local_file(cache_root, pair["image"])
-            label_path = _local_file(cache_root, pair["label"])
-            if cv2.imread(str(image_path), cv2.IMREAD_COLOR) is None:
-                raise ValueError("corrupt image")
             polygons = parse_yolo_polygons(label_path)
             if not polygons:
                 raise ValueError("empty annotation")
-        except (OSError, ValueError, KeyError, json.JSONDecodeError):
+        except (OSError, ValueError, UnicodeError):
             rejected["invalid_pair"] += 1
             continue
 

@@ -6,6 +6,7 @@ from pathlib import Path
 
 
 NOTEBOOK = Path("notebooks/train_tactile_one_class_colab.ipynb")
+V3_NOTEBOOK = Path("notebooks/train_tactile_v3_public_colab.ipynb")
 
 
 class TactileTrainingNotebookTest(unittest.TestCase):
@@ -63,6 +64,32 @@ class TactileTrainingNotebookTest(unittest.TestCase):
             if source.lstrip().startswith("!"):
                 continue
             compile(source, f"notebook-cell-{index}", "exec")
+
+    def test_v3_notebook_acquires_builds_and_trains_without_protected_data(self) -> None:
+        notebook = json.loads(V3_NOTEBOOK.read_text(encoding="utf-8"))
+        source = "\n".join(
+            "".join(cell.get("source", []))
+            for cell in notebook["cells"]
+            if cell.get("cell_type") == "code"
+        )
+        for required in (
+            "kagglehub==1.0.2",
+            "acquire_guidetwsi_subset.py",
+            "prepare_guidetwsi_subset.py",
+            "build_tactile_v3_dataset.py",
+            "train_tactile_v3.py",
+            "models/guidetwsi/yolo11n_tactile.pt",
+            "--public-to-station",
+            "codex/model-first-mobile-ready",
+        ):
+            self.assertIn(required, source)
+        self.assertIn("for ratio in (4, 2)", source)
+        self.assertNotIn("evaluate_tactile_candidate.py", source)
+        self.assertNotIn("data/ground_truth", source)
+        for cell in notebook["cells"]:
+            if cell.get("cell_type") == "code":
+                self.assertIsNone(cell.get("execution_count"))
+                self.assertEqual(cell.get("outputs"), [])
 
 
 if __name__ == "__main__":

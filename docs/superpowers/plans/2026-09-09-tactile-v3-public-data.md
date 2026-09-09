@@ -34,25 +34,25 @@
 - Create: `scripts/acquire_guidetwsi_subset.py`
 - Create: `tests/test_acquire_guidetwsi_subset.py`
 
-- [ ] **Step 1: Write failing policy tests**
+- [x] **Step 1: Write failing policy tests**
 
 Cover an allowed `guidedogrobot/guidetwsi` RBar path, rejection of unrelated paths, missing/unknown license, path traversal, duplicate inventory entries, and a selection that would exceed `5_000_000_000` bytes.
 
-- [ ] **Step 2: Run the focused tests and confirm failure**
+- [x] **Step 2: Run the focused tests and confirm failure**
 
 ```powershell
 rtk .\.venv-preprocess\Scripts\python.exe -m unittest tests.test_acquire_guidetwsi_subset -v
 ```
 
-- [ ] **Step 3: Implement the minimal inventory/selection core**
+- [x] **Step 3: Implement the minimal inventory/selection core**
 
 Keep network access behind an injected downloader so tests remain offline. Sort eligible image/label pairs by a stable seeded hash, retain complete pairs only, and stop before the configured byte limit.
 
-- [ ] **Step 4: Add atomic download and provenance writing**
+- [x] **Step 4: Add atomic download and provenance writing**
 
 Download to `runs/public-data-cache/guidetwsi-rbar-v1/.staging`, verify byte size and SHA-256, then move into the cache. Write only compact provenance to `data/public/guidetwsi-rbar-v1/provenance.json`. An interrupted or mismatched file must never be marked retained.
 
-- [ ] **Step 5: Install the pinned optional dependency in a dedicated ignored environment and query the public inventory**
+- [x] **Step 5: Install the pinned optional dependency in a dedicated ignored environment and query the public inventory**
 
 ```powershell
 rtk py -3.12 -m venv .venv-public-data
@@ -69,15 +69,15 @@ Expected: the inventory identifies the RBar train images and labels without down
 - Create: `tests/test_prepare_guidetwsi_subset.py`
 - Create: `data/training/manifests/guidetwsi-rbar-2k-v1.json`
 
-- [ ] **Step 1: Write failing annotation and deduplication tests**
+- [x] **Step 1: Write failing annotation and deduplication tests**
 
 Cover normalized YOLO segmentation parsing, invalid class/coordinates, missing image-label pairs, corrupt images, exact duplicates, dHash near-duplicates, and matches against `data/samples` protected hashes.
 
-- [ ] **Step 2: Implement validation and source-aware deterministic sampling**
+- [x] **Step 2: Implement validation and source-aware deterministic sampling**
 
 Use upstream source/group metadata when present; otherwise derive a conservative group from the upstream directory. Preserve only class `0 = tactile_paving`, nondegenerate polygons, and decoded walking-scene images.
 
-- [ ] **Step 3: Produce the capped local subset and manifest**
+- [x] **Step 3: Produce the capped local subset and manifest**
 
 ```powershell
 rtk .\.venv-public-data\Scripts\python.exe scripts\acquire_guidetwsi_subset.py download --inventory runs\public-data-cache\guidetwsi-inventory.json --max-bytes 5000000000 --max-images 2000
@@ -94,15 +94,15 @@ Expected: no invalid samples, no protected leakage, no exact duplicates, and a r
 - Create: `data/training/manifests/tactile-v3-public4-station1.json`
 - Create: `data/training/manifests/tactile-v3-public2-station1.json`
 
-- [ ] **Step 1: Write failing ratio and leakage tests**
+- [x] **Step 1: Write failing ratio and leakage tests**
 
 Assert that public samples remain train-only, reviewed station train/validation assignments are preserved, protected samples never appear, public-to-station ratios are exact within one sample, and every exported label has a matching image.
 
-- [ ] **Step 2: Implement immutable YOLO dataset exports**
+- [x] **Step 2: Implement immutable YOLO dataset exports**
 
 Create independent `4:1` and `2:1` exports under ignored `artifacts/datasets/`. Use deterministic oversampling/list generation instead of copying large images repeatedly when Ultralytics input permits it.
 
-- [ ] **Step 3: Validate both manifests and exports**
+- [x] **Step 3: Validate both manifests and exports**
 
 Expected: hashes, source groups, ratios, class names, and split counts match the manifest; station validation is unchanged.
 
@@ -114,11 +114,11 @@ Expected: hashes, source groups, ratios, class names, and split counts match the
 - Create: `artifacts/candidates/tactile-one-class-v3-public4-station1/`
 - Create: `artifacts/candidates/tactile-one-class-v3-public2-station1/`
 
-- [ ] **Step 1: Write failing static configuration tests**
+- [x] **Step 1: Write failing static configuration tests**
 
 Require the GuideTWSI checkpoint as initialization, seed `42`, `imgsz=640`, early stopping, unique non-overwriting run directories, and complete environment/config/checksum capture.
 
-- [ ] **Step 2: Implement the training entry point**
+- [x] **Step 2: Implement the training entry point**
 
 Support resumable background execution and a `--dry-run` mode. Refuse the regressed v2 checkpoint as initialization.
 
@@ -145,14 +145,13 @@ No protected-set thresholds or results are used to choose among experiments.
 
 ### Task 6: Final verification and GitHub handoff
 
-- [ ] **Step 1: Run focused tests after each task, then the full suite.**
+- [x] **Step 1: Run focused tests after each task, then the full suite.**
 
 ```powershell
 rtk .\.venv-preprocess\Scripts\python.exe -m unittest discover -s tests -q
 rtk .\.venv-preprocess\Scripts\python.exe -m compileall -q scripts tests
 ```
 
-- [ ] **Step 2: Confirm raw public images, virtual environments, and training runs are ignored and absent from the staged diff.**
+- [x] **Step 2: Confirm raw public images, virtual environments, and training runs are ignored and absent from the staged diff.**
 - [ ] **Step 3: Commit only code, manifests, provenance, compact reports, and approved candidate artifacts; push to `Riqqi15/Yoloooo`.**
 - [ ] **Step 4: Report measured gates plainly. Do not claim mobile readiness or walking safety from this phase.**
-

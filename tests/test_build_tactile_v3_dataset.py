@@ -69,6 +69,10 @@ class BuildTactileV3DatasetTest(unittest.TestCase):
             self.assertEqual(report["summary"]["validation_station"], 1)
             self.assertFalse((root / "output" / "images" / "test").exists())
             self.assertTrue((root / "output" / "dataset.yaml").is_file())
+            exported_station = next(
+                (root / "output" / "images" / "train").glob("station-*.jpg")
+            )
+            self.assertFalse(exported_station.samefile(station / "images" / "train" / f"{exported_station.stem.split('-')[-1]}.jpg"))
 
 
 if __name__ == "__main__":

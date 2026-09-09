@@ -3,7 +3,6 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import os
 import shutil
 import sys
 from pathlib import Path, PurePosixPath
@@ -13,14 +12,11 @@ from acquire_guidetwsi_subset import IMAGE_SUFFIXES
 from model_manifest import sha256_file
 
 
-def _link(source: Path, target: Path) -> None:
+def _copy(source: Path, target: Path) -> None:
     if not source.is_file():
         raise FileNotFoundError(source)
     target.parent.mkdir(parents=True, exist_ok=True)
-    try:
-        os.link(source, target)
-    except OSError:
-        shutil.copy2(source, target)
+    shutil.copy2(source, target)
 
 
 def _cache_path(cache_root: Path, key: str) -> Path:
@@ -91,8 +87,8 @@ def build_dataset(
                 if sha256_file(label) != sample["label_sha256"]:
                     raise ValueError(f"public label hash mismatch: {sample['sample_id']}")
                 name = f"public-{sample['sample_id']}"
-                _link(image, output_root / "images" / split / f"{name}{image.suffix.lower()}")
-                _link(label, output_root / "labels" / split / f"{name}.txt")
+                _copy(image, output_root / "images" / split / f"{name}{image.suffix.lower()}")
+                _copy(label, output_root / "labels" / split / f"{name}.txt")
                 records.append({"split": split, "source": "public", "sample_id": sample["sample_id"]})
 
         ranked_station = sorted(
@@ -102,13 +98,13 @@ def build_dataset(
         for index in range(station_needed):
             image, label = ranked_station[index % len(ranked_station)]
             name = f"station-{index:04d}-{image.stem}"
-            _link(image, output_root / "images" / "train" / f"{name}{image.suffix.lower()}")
-            _link(label, output_root / "labels" / "train" / f"{name}.txt")
+            _copy(image, output_root / "images" / "train" / f"{name}{image.suffix.lower()}")
+            _copy(label, output_root / "labels" / "train" / f"{name}.txt")
             records.append({"split": "train", "source": "station", "sample_id": image.stem})
         for image, label in station_validation:
             name = f"station-{image.stem}"
-            _link(image, output_root / "images" / "val" / f"{name}{image.suffix.lower()}")
-            _link(label, output_root / "labels" / "val" / f"{name}.txt")
+            _copy(image, output_root / "images" / "val" / f"{name}{image.suffix.lower()}")
+            _copy(label, output_root / "labels" / "val" / f"{name}.txt")
             records.append({"split": "val", "source": "station", "sample_id": image.stem})
 
         yaml_path = output_root.resolve().as_posix().replace("'", "''")

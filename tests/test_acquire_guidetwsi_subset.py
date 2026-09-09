@@ -13,12 +13,17 @@ from acquire_guidetwsi_subset import (  # noqa: E402
     materialize_selection,
     select_pairs,
     validate_source,
+    versioned_dataset_handle,
 )
 
 
 class AcquireGuideTWSISubsetTest(unittest.TestCase):
     def test_accepts_expected_public_source(self) -> None:
         validate_source("guidedogrobot/guidetwsi", "CC0: Public Domain")
+        self.assertEqual(
+            versioned_dataset_handle("guidedogrobot/guidetwsi", 1),
+            "guidedogrobot/guidetwsi/versions/1",
+        )
 
     def test_rejects_wrong_source_or_unknown_license(self) -> None:
         with self.assertRaisesRegex(ValueError, "dataset handle"):

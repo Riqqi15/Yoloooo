@@ -7,6 +7,7 @@ import json
 import shutil
 import sys
 import time
+import threading
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path, PurePosixPath
@@ -144,17 +145,68 @@ def select_pairs(
     return selected
 
 
-def _kaggle_download(remote_path: str, staging: Path) -> Path:
+def versioned_dataset_handle(handle: str, version: int) -> str:
+    if handle != DATASET_HANDLE or not isinstance(version, int) or version <= 0:
+        raise ValueError("valid GuideTWSI dataset version is required")
+    return f"{handle}/versions/{version}"
+
+
+def _kaggle_download(
+    remote_path: str, staging: Path, handle: str = DATASET_HANDLE
+) -> Path:
     import kagglehub
 
     return Path(
         kagglehub.dataset_download(
-            DATASET_HANDLE,
+            handle,
             path=remote_path,
             output_dir=str(staging),
             force_download=True,
         )
     )
+
+
+class KaggleFileDownloader:
+    """Reuse one authenticated HTTP session per worker thread."""
+
+    def __init__(self, handle: str) -> None:
+        from kagglehub.handle import parse_dataset_handle
+
+        self.handle = parse_dataset_handle(handle)
+        if not self.handle.is_versioned():
+            raise ValueError("Kaggle downloader requires a versioned handle")
+        self.local = threading.local()
+
+    def __call__(self, remote_path: str, staging: Path) -> Path:
+        from kagglehub.clients import build_kaggle_client, download_file
+        from kagglehub.exceptions import handle_call
+        from kagglesdk.datasets.types.dataset_api_service import ApiDownloadDatasetRequest
+
+        client = getattr(self.local, "client", None)
+        if client is None:
+            client = build_kaggle_client()
+            self.local.client = client
+        request = ApiDownloadDatasetRequest()
+        request.owner_slug = self.handle.owner
+        request.dataset_slug = self.handle.dataset
+        request.dataset_version_number = self.handle.version
+        request.file_name = remote_path
+        response = handle_call(
+            lambda: client.datasets.dataset_api_client.download_dataset(request),
+            self.handle,
+        )
+        parts = _safe_parts(remote_path)
+        if parts is None:
+            raise ValueError(f"unsafe download path: {remote_path}")
+        output = staging.joinpath(*parts)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        download_file(
+            response,
+            str(output),
+            self.handle,
+            extract_auto_compressed_file=True,
+        )
+        return output
 
 
 def download_with_retries(
@@ -360,8 +412,14 @@ def main() -> int:
         selected_bytes = sum(pair["total_bytes"] for pair in selected)
         if shutil.disk_usage(args.cache.parent).free < selected_bytes + 1_000_000_000:
             raise OSError("insufficient free space after 1 GB safety reserve")
+        versioned_handle = versioned_dataset_handle(
+            payload["dataset_handle"], payload["dataset_version"]
+        )
         materialized = materialize_selection(
-            selected, args.cache, workers=args.workers
+            selected,
+            args.cache,
+            downloader=KaggleFileDownloader(versioned_handle),
+            workers=args.workers,
         )
         provenance = {
             "provenance_version": 1,

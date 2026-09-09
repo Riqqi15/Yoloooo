@@ -85,6 +85,43 @@ class PrepareGuideTWSISubsetTest(unittest.TestCase):
             self.assertEqual(rejected["summary"]["retained_samples"], 0)
             self.assertEqual(rejected["summary"]["rejected"]["protected_exact"], 1)
 
+    def test_aborts_on_provenance_hash_mismatch(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            image = root / "cache" / "a.jpg"
+            label = root / "cache" / "a.txt"
+            self.write_image(image)
+            label.write_text("0 0.1 0.1 0.9 0.1 0.9 0.9\n", encoding="utf-8")
+            provenance = root / "provenance.json"
+            provenance.write_text(
+                json.dumps(
+                    {
+                        "dataset_handle": "guidedogrobot/guidetwsi",
+                        "dataset_version": 1,
+                        "license": "CC0: Public Domain",
+                        "files": [
+                            {
+                                "pair_key": "train/a",
+                                "role": "image",
+                                "bytes": image.stat().st_size,
+                                "sha256": "0" * 64,
+                                "local_cache_key": "a.jpg",
+                            },
+                            {
+                                "pair_key": "train/a",
+                                "role": "label",
+                                "bytes": label.stat().st_size,
+                                "sha256": sha256_file(label),
+                                "local_cache_key": "a.txt",
+                            },
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "SHA-256 mismatch"):
+                prepare_subset(provenance, root / "cache", [], [], limit=10)
+
 
 if __name__ == "__main__":
     unittest.main()
