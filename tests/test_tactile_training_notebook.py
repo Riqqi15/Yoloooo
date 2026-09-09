@@ -43,6 +43,17 @@ class TactileTrainingNotebookTest(unittest.TestCase):
                 self.assertIsNone(cell.get("execution_count"))
                 self.assertEqual(cell.get("outputs"), [])
 
+    def test_notebook_replaces_stale_candidate_and_downloads_archive(self) -> None:
+        notebook = json.loads(NOTEBOOK.read_text(encoding="utf-8"))
+        source = "\n".join(
+            "".join(cell.get("source", []))
+            for cell in notebook["cells"]
+            if cell.get("cell_type") == "code"
+        )
+        self.assertIn("shutil.rmtree(CANDIDATE_DIR)", source)
+        self.assertIn("shutil.make_archive", source)
+        self.assertIn("files.download", source)
+
     def test_python_cells_compile(self) -> None:
         notebook = json.loads(NOTEBOOK.read_text(encoding="utf-8"))
         for index, cell in enumerate(notebook["cells"]):
