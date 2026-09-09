@@ -25,6 +25,7 @@ class TactileTrainingNotebookTest(unittest.TestCase):
             "epochs=80",
             "imgsz=640",
             "station-tactile-v2",
+            "--branch codex/model-first-mobile-ready --single-branch",
             'RUN_NAME = "tactile-one-class-v2"',
             "export_manifest.json",
             "best.pt",
