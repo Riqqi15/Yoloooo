@@ -123,7 +123,7 @@ Expected: zero invalid/unreviewed rows and nonempty train, validation, and test 
 - Modify: `notebooks/train_tactile_one_class_colab.ipynb`
 - Create: `artifacts/candidates/tactile-one-class-v2/`
 
-- [ ] **Step 1: Add a static notebook test requiring dataset version `station-tactile-v2`, run name `tactile-one-class-v2`, `imgsz=640`, and unique output paths.**
+- [x] **Step 1: Add a static notebook test requiring dataset version `station-tactile-v2`, run name `tactile-one-class-v2`, `imgsz=640`, and unique output paths.**
 - [ ] **Step 2: Clone the Riqqi15 repository with Git LFS and copy the v2 export in Colab.**
 - [ ] **Step 3: Train with the pinned seed/dependency/config and preserve every metric/config/environment file.**
 - [ ] **Step 4: Validate the v2 candidate locally.**

@@ -24,12 +24,16 @@ class TactileTrainingNotebookTest(unittest.TestCase):
             "seed=42",
             "epochs=80",
             "imgsz=640",
+            "station-tactile-v2",
+            'RUN_NAME = "tactile-one-class-v2"',
             "export_manifest.json",
             "best.pt",
             "sha256.txt",
         ):
             self.assertIn(required, source)
         self.assertNotIn("data/samples", source)
+        self.assertNotIn("station-photo-set-50-v1", source)
+        self.assertNotIn('RUN_NAME = "tactile-one-class-v1"', source)
 
     def test_notebook_has_no_saved_execution_outputs(self) -> None:
         notebook = json.loads(NOTEBOOK.read_text(encoding="utf-8"))
