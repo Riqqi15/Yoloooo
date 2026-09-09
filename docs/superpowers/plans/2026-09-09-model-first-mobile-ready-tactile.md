@@ -144,10 +144,12 @@ Observed 2026-09-09: `candidate_valid`, checkpoint SHA-256 `6f018803f0382b02d8f3
 - Create: `artifacts/candidates/tactile-one-class-v2/evaluation_report.json`
 
 - [x] **Step 1: Write deterministic mask-IoU, precision, recall, empty-mask, and false-positive tests.**
-- [ ] **Step 2: Implement evaluation using the existing ground-truth manifest and visible-pixel masks.**
-- [ ] **Step 3: Tune confidence/mask thresholds on validation only.**
-- [ ] **Step 4: Lock configuration, then run the 17-image protected local test once.**
-- [ ] **Step 5: Reject mobile export unless mean IoU is at least 0.75 and mask recall at least 0.90.**
+- [x] **Step 2: Implement evaluation using the existing ground-truth manifest and visible-pixel masks.**
+- [x] **Step 3: Tune confidence/mask thresholds on validation only.**
+- [x] **Step 4: Lock configuration, then run the 17-image protected local test once.**
+- [x] **Step 5: Reject mobile export unless mean IoU is at least 0.75 and mask recall at least 0.90.**
+
+Observed 2026-09-09: validation selected confidence `0.15` (recall `0.7143`, mean IoU `0.4010`). The single protected-set run measured recall `0.7273`, mean IoU `0.5192`, precision `0.7273`, and false-positive rate `0.50`. Mobile export was rejected; Task 5 remains blocked until a stronger candidate passes the Task 4 gate.
 
 ### Task 5: Export and verify the mobile package
 

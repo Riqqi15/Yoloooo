@@ -1,0 +1,795 @@
+{
+  "warning": "Offline model evaluation only. This does not authorize walking or deployment.",
+  "created_at": "2026-09-09T11:58:00.671899+00:00",
+  "candidate": {
+    "status": "candidate_valid",
+    "candidate_dir": "C:\\Users\\riyadh\\Downloads\\AI Camera\\artifacts\\candidates\\tactile-one-class-v2",
+    "checkpoint_sha256": "6f018803f0382b02d8f35dd6cc481bca2fb3c5b9cdc0ab5b9c42f8320965dd0a",
+    "dataset_version": "station-tactile-v2",
+    "ultralytics_version": "8.4.138",
+    "task": "segment",
+    "labels": {
+      "0": "tactile_paving"
+    },
+    "warning": "Candidate integrity only; not approved for deployment."
+  },
+  "training_manifest": "data\\training\\manifests\\station-tactile-v2.json",
+  "training_manifest_sha256": "76c66cc37bc6be015b059b994fbd533bb17c217478fc635c97615667064d5e61",
+  "protected_manifest": "data\\ground_truth\\manifest.csv",
+  "protected_manifest_sha256": "d16c50acfcc5ce9c9245f82126c44a069e76b8e5426f6ca63f312ee5baa02cd7",
+  "protected_manifest_validation": {
+    "total_rows": 17,
+    "valid_annotated_rows": 17,
+    "valid_reviewed_rows": 17,
+    "provisional_rows": 0,
+    "human_reviewed_rows": 17,
+    "ambiguous_rows": 0,
+    "incomplete_rows": 0,
+    "invalid_rows": 0,
+    "positive_rows": 11,
+    "negative_rows": 6,
+    "errors": [],
+    "official_ready": true
+  },
+  "selection_policy": "highest validation recall, then mean IoU, then lowest false-positive rate",
+  "mask_threshold_note": "Ultralytics polygon outputs are already binarized; mask threshold is locked at 0.5.",
+  "imgsz": 640,
+  "validation_thresholds": [
+    {
+      "confidence": 0.05,
+      "mask_threshold": 0.5,
+      "true_positive": 5,
+      "false_negative": 2,
+      "false_positive": 0,
+      "true_negative": 6,
+      "precision": 1.0,
+      "recall": 0.7142857142857143,
+      "false_positive_rate": 0.0,
+      "mean_iou": 0.3805450581247079,
+      "median_latency_ms": 228.4317000012379,
+      "images": [
+        {
+          "sample_id": "229c484660165220b25747206ca7546dcd241862cc7be29c6affcdbd0cef645f",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_15282574_Cityrail_Tactile_Platform_Line.jpg",
+          "ground_truth_present": true,
+          "prediction_present": false,
+          "iou": 0.0,
+          "latency_ms": 4626.731900003506
+        },
+        {
+          "sample_id": "49bdca6539d137006903ac858c40014a8ffa23531652ee525498e52009423627",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_21583331_Est_Ing_Castello_Anden.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.42409109838079206,
+          "latency_ms": 446.7676999993273
+        },
+        {
+          "sample_id": "5162ec0f93335f9424f00709f14c6b7543dfc25ab13005fed4764bc02b05337e",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\026_116115102.jpg",
+          "ground_truth_present": true,
+          "prediction_present": false,
+          "iou": 0.0,
+          "latency_ms": 228.4317000012379
+        },
+        {
+          "sample_id": "62884723948ced16b2016310d8fb1350da7f03f96d64383a8c82d5dba77b15d1",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\004_cikampek_malam.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 190.3102999967814
+        },
+        {
+          "sample_id": "702660ca68e7e24f0de8e0e8f62a1f6924a6d35503c3ab7a39b5b93e19b2a6c8",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\037_70162939.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 167.64040000271052
+        },
+        {
+          "sample_id": "8b4e6d105a0e2a356858ea9d881f1177b5bbe61030d338a1b336971b4372b2b6",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\028_86610216.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 317.3547999977018
+        },
+        {
+          "sample_id": "9b2bbbd4eedb8d9b65e2ca6a3ca4f251e06837ee48c6be3a967ef66fea27e099",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\050_77688485.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 198.74669999990147
+        },
+        {
+          "sample_id": "aa8876af47c1b0ced4541b58ed25ce098c7cad259192801f002b009fd4ef8ce3",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_14874418_Panmure_Train_Station_Trenching.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.795887679382825,
+          "latency_ms": 197.83020000249962
+        },
+        {
+          "sample_id": "b9e537726ed27ee0c8b1c59fcb76802523a8c94c4f9388156e83b49a2611b46d",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\027_116114944.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.11084321685842774,
+          "latency_ms": 370.24190000011004
+        },
+        {
+          "sample_id": "bfd3bb8be9f5140c431d6d63a403761f54e5c9d3ee8b1bb0e9469a30ab120459",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_12811471_Grafton_Train_Station_Finally_Finished_I.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.7093198564542501,
+          "latency_ms": 272.8267999991658
+        },
+        {
+          "sample_id": "d4bad38985b6aa2f46f4d898d1e5bd1a0e25760e482d88012aaceb41f8577003",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\047_77649721.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 254.02949999988778
+        },
+        {
+          "sample_id": "f38db5271db6c0a9af56b6e701b8794d26ce26d7b40548e2d2af1feb5be48da6",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_14703064_Newmarket_Train_Station_Is_Finished_II.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.6236735557966604,
+          "latency_ms": 209.13840000139317
+        },
+        {
+          "sample_id": "fa2d972708cc8e1f91b98c1853d5b5e206ddce64e29658ee3a236f5540f2ffb9",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\039_81090396.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 165.09790000054636
+        }
+      ]
+    },
+    {
+      "confidence": 0.1,
+      "mask_threshold": 0.5,
+      "true_positive": 5,
+      "false_negative": 2,
+      "false_positive": 0,
+      "true_negative": 6,
+      "precision": 1.0,
+      "recall": 0.7142857142857143,
+      "false_positive_rate": 0.0,
+      "mean_iou": 0.39157512310447545,
+      "median_latency_ms": 228.4317000012379,
+      "images": [
+        {
+          "sample_id": "229c484660165220b25747206ca7546dcd241862cc7be29c6affcdbd0cef645f",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_15282574_Cityrail_Tactile_Platform_Line.jpg",
+          "ground_truth_present": true,
+          "prediction_present": false,
+          "iou": 0.0,
+          "latency_ms": 4626.731900003506
+        },
+        {
+          "sample_id": "49bdca6539d137006903ac858c40014a8ffa23531652ee525498e52009423627",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_21583331_Est_Ing_Castello_Anden.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.427597849422904,
+          "latency_ms": 446.7676999993273
+        },
+        {
+          "sample_id": "5162ec0f93335f9424f00709f14c6b7543dfc25ab13005fed4764bc02b05337e",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\026_116115102.jpg",
+          "ground_truth_present": true,
+          "prediction_present": false,
+          "iou": 0.0,
+          "latency_ms": 228.4317000012379
+        },
+        {
+          "sample_id": "62884723948ced16b2016310d8fb1350da7f03f96d64383a8c82d5dba77b15d1",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\004_cikampek_malam.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 190.3102999967814
+        },
+        {
+          "sample_id": "702660ca68e7e24f0de8e0e8f62a1f6924a6d35503c3ab7a39b5b93e19b2a6c8",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\037_70162939.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 167.64040000271052
+        },
+        {
+          "sample_id": "8b4e6d105a0e2a356858ea9d881f1177b5bbe61030d338a1b336971b4372b2b6",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\028_86610216.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 317.3547999977018
+        },
+        {
+          "sample_id": "9b2bbbd4eedb8d9b65e2ca6a3ca4f251e06837ee48c6be3a967ef66fea27e099",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\050_77688485.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 198.74669999990147
+        },
+        {
+          "sample_id": "aa8876af47c1b0ced4541b58ed25ce098c7cad259192801f002b009fd4ef8ce3",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_14874418_Panmure_Train_Station_Trenching.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.8218626222959478,
+          "latency_ms": 197.83020000249962
+        },
+        {
+          "sample_id": "b9e537726ed27ee0c8b1c59fcb76802523a8c94c4f9388156e83b49a2611b46d",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\027_116114944.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.11084321685842774,
+          "latency_ms": 370.24190000011004
+        },
+        {
+          "sample_id": "bfd3bb8be9f5140c431d6d63a403761f54e5c9d3ee8b1bb0e9469a30ab120459",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_12811471_Grafton_Train_Station_Finally_Finished_I.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.6943488732152073,
+          "latency_ms": 272.8267999991658
+        },
+        {
+          "sample_id": "d4bad38985b6aa2f46f4d898d1e5bd1a0e25760e482d88012aaceb41f8577003",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\047_77649721.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 254.02949999988778
+        },
+        {
+          "sample_id": "f38db5271db6c0a9af56b6e701b8794d26ce26d7b40548e2d2af1feb5be48da6",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_14703064_Newmarket_Train_Station_Is_Finished_II.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.6863732999388414,
+          "latency_ms": 209.13840000139317
+        },
+        {
+          "sample_id": "fa2d972708cc8e1f91b98c1853d5b5e206ddce64e29658ee3a236f5540f2ffb9",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\039_81090396.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 165.09790000054636
+        }
+      ]
+    },
+    {
+      "confidence": 0.15,
+      "mask_threshold": 0.5,
+      "true_positive": 5,
+      "false_negative": 2,
+      "false_positive": 0,
+      "true_negative": 6,
+      "precision": 1.0,
+      "recall": 0.7142857142857143,
+      "false_positive_rate": 0.0,
+      "mean_iou": 0.4010009304150646,
+      "median_latency_ms": 228.4317000012379,
+      "images": [
+        {
+          "sample_id": "229c484660165220b25747206ca7546dcd241862cc7be29c6affcdbd0cef645f",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_15282574_Cityrail_Tactile_Platform_Line.jpg",
+          "ground_truth_present": true,
+          "prediction_present": false,
+          "iou": 0.0,
+          "latency_ms": 4626.731900003506
+        },
+        {
+          "sample_id": "49bdca6539d137006903ac858c40014a8ffa23531652ee525498e52009423627",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_21583331_Est_Ing_Castello_Anden.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.427597849422904,
+          "latency_ms": 446.7676999993273
+        },
+        {
+          "sample_id": "5162ec0f93335f9424f00709f14c6b7543dfc25ab13005fed4764bc02b05337e",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\026_116115102.jpg",
+          "ground_truth_present": true,
+          "prediction_present": false,
+          "iou": 0.0,
+          "latency_ms": 228.4317000012379
+        },
+        {
+          "sample_id": "62884723948ced16b2016310d8fb1350da7f03f96d64383a8c82d5dba77b15d1",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\004_cikampek_malam.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 190.3102999967814
+        },
+        {
+          "sample_id": "702660ca68e7e24f0de8e0e8f62a1f6924a6d35503c3ab7a39b5b93e19b2a6c8",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\037_70162939.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 167.64040000271052
+        },
+        {
+          "sample_id": "8b4e6d105a0e2a356858ea9d881f1177b5bbe61030d338a1b336971b4372b2b6",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\028_86610216.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 317.3547999977018
+        },
+        {
+          "sample_id": "9b2bbbd4eedb8d9b65e2ca6a3ca4f251e06837ee48c6be3a967ef66fea27e099",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\050_77688485.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 198.74669999990147
+        },
+        {
+          "sample_id": "aa8876af47c1b0ced4541b58ed25ce098c7cad259192801f002b009fd4ef8ce3",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_14874418_Panmure_Train_Station_Trenching.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.8218626222959478,
+          "latency_ms": 197.83020000249962
+        },
+        {
+          "sample_id": "b9e537726ed27ee0c8b1c59fcb76802523a8c94c4f9388156e83b49a2611b46d",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\027_116114944.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.1301855232199002,
+          "latency_ms": 370.24190000011004
+        },
+        {
+          "sample_id": "bfd3bb8be9f5140c431d6d63a403761f54e5c9d3ee8b1bb0e9469a30ab120459",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_12811471_Grafton_Train_Station_Finally_Finished_I.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.7409872180278587,
+          "latency_ms": 272.8267999991658
+        },
+        {
+          "sample_id": "d4bad38985b6aa2f46f4d898d1e5bd1a0e25760e482d88012aaceb41f8577003",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\047_77649721.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 254.02949999988778
+        },
+        {
+          "sample_id": "f38db5271db6c0a9af56b6e701b8794d26ce26d7b40548e2d2af1feb5be48da6",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_14703064_Newmarket_Train_Station_Is_Finished_II.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.6863732999388414,
+          "latency_ms": 209.13840000139317
+        },
+        {
+          "sample_id": "fa2d972708cc8e1f91b98c1853d5b5e206ddce64e29658ee3a236f5540f2ffb9",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\039_81090396.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 165.09790000054636
+        }
+      ]
+    },
+    {
+      "confidence": 0.2,
+      "mask_threshold": 0.5,
+      "true_positive": 5,
+      "false_negative": 2,
+      "false_positive": 0,
+      "true_negative": 6,
+      "precision": 1.0,
+      "recall": 0.7142857142857143,
+      "false_positive_rate": 0.0,
+      "mean_iou": 0.4010009304150646,
+      "median_latency_ms": 228.4317000012379,
+      "images": [
+        {
+          "sample_id": "229c484660165220b25747206ca7546dcd241862cc7be29c6affcdbd0cef645f",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_15282574_Cityrail_Tactile_Platform_Line.jpg",
+          "ground_truth_present": true,
+          "prediction_present": false,
+          "iou": 0.0,
+          "latency_ms": 4626.731900003506
+        },
+        {
+          "sample_id": "49bdca6539d137006903ac858c40014a8ffa23531652ee525498e52009423627",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_21583331_Est_Ing_Castello_Anden.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.427597849422904,
+          "latency_ms": 446.7676999993273
+        },
+        {
+          "sample_id": "5162ec0f93335f9424f00709f14c6b7543dfc25ab13005fed4764bc02b05337e",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\026_116115102.jpg",
+          "ground_truth_present": true,
+          "prediction_present": false,
+          "iou": 0.0,
+          "latency_ms": 228.4317000012379
+        },
+        {
+          "sample_id": "62884723948ced16b2016310d8fb1350da7f03f96d64383a8c82d5dba77b15d1",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\004_cikampek_malam.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 190.3102999967814
+        },
+        {
+          "sample_id": "702660ca68e7e24f0de8e0e8f62a1f6924a6d35503c3ab7a39b5b93e19b2a6c8",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\037_70162939.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 167.64040000271052
+        },
+        {
+          "sample_id": "8b4e6d105a0e2a356858ea9d881f1177b5bbe61030d338a1b336971b4372b2b6",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\028_86610216.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 317.3547999977018
+        },
+        {
+          "sample_id": "9b2bbbd4eedb8d9b65e2ca6a3ca4f251e06837ee48c6be3a967ef66fea27e099",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\050_77688485.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 198.74669999990147
+        },
+        {
+          "sample_id": "aa8876af47c1b0ced4541b58ed25ce098c7cad259192801f002b009fd4ef8ce3",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_14874418_Panmure_Train_Station_Trenching.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.8218626222959478,
+          "latency_ms": 197.83020000249962
+        },
+        {
+          "sample_id": "b9e537726ed27ee0c8b1c59fcb76802523a8c94c4f9388156e83b49a2611b46d",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\027_116114944.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.1301855232199002,
+          "latency_ms": 370.24190000011004
+        },
+        {
+          "sample_id": "bfd3bb8be9f5140c431d6d63a403761f54e5c9d3ee8b1bb0e9469a30ab120459",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_12811471_Grafton_Train_Station_Finally_Finished_I.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.7409872180278587,
+          "latency_ms": 272.8267999991658
+        },
+        {
+          "sample_id": "d4bad38985b6aa2f46f4d898d1e5bd1a0e25760e482d88012aaceb41f8577003",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\047_77649721.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 254.02949999988778
+        },
+        {
+          "sample_id": "f38db5271db6c0a9af56b6e701b8794d26ce26d7b40548e2d2af1feb5be48da6",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_14703064_Newmarket_Train_Station_Is_Finished_II.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.6863732999388414,
+          "latency_ms": 209.13840000139317
+        },
+        {
+          "sample_id": "fa2d972708cc8e1f91b98c1853d5b5e206ddce64e29658ee3a236f5540f2ffb9",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\039_81090396.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 165.09790000054636
+        }
+      ]
+    },
+    {
+      "confidence": 0.25,
+      "mask_threshold": 0.5,
+      "true_positive": 4,
+      "false_negative": 3,
+      "false_positive": 0,
+      "true_negative": 6,
+      "precision": 1.0,
+      "recall": 0.5714285714285714,
+      "false_positive_rate": 0.0,
+      "mean_iou": 0.27654768166538474,
+      "median_latency_ms": 228.4317000012379,
+      "images": [
+        {
+          "sample_id": "229c484660165220b25747206ca7546dcd241862cc7be29c6affcdbd0cef645f",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_15282574_Cityrail_Tactile_Platform_Line.jpg",
+          "ground_truth_present": true,
+          "prediction_present": false,
+          "iou": 0.0,
+          "latency_ms": 4626.731900003506
+        },
+        {
+          "sample_id": "49bdca6539d137006903ac858c40014a8ffa23531652ee525498e52009423627",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_21583331_Est_Ing_Castello_Anden.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.427597849422904,
+          "latency_ms": 446.7676999993273
+        },
+        {
+          "sample_id": "5162ec0f93335f9424f00709f14c6b7543dfc25ab13005fed4764bc02b05337e",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\026_116115102.jpg",
+          "ground_truth_present": true,
+          "prediction_present": false,
+          "iou": 0.0,
+          "latency_ms": 228.4317000012379
+        },
+        {
+          "sample_id": "62884723948ced16b2016310d8fb1350da7f03f96d64383a8c82d5dba77b15d1",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\004_cikampek_malam.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 190.3102999967814
+        },
+        {
+          "sample_id": "702660ca68e7e24f0de8e0e8f62a1f6924a6d35503c3ab7a39b5b93e19b2a6c8",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\037_70162939.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 167.64040000271052
+        },
+        {
+          "sample_id": "8b4e6d105a0e2a356858ea9d881f1177b5bbe61030d338a1b336971b4372b2b6",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\028_86610216.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 317.3547999977018
+        },
+        {
+          "sample_id": "9b2bbbd4eedb8d9b65e2ca6a3ca4f251e06837ee48c6be3a967ef66fea27e099",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\050_77688485.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 198.74669999990147
+        },
+        {
+          "sample_id": "aa8876af47c1b0ced4541b58ed25ce098c7cad259192801f002b009fd4ef8ce3",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_14874418_Panmure_Train_Station_Trenching.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.8218626222959478,
+          "latency_ms": 197.83020000249962
+        },
+        {
+          "sample_id": "b9e537726ed27ee0c8b1c59fcb76802523a8c94c4f9388156e83b49a2611b46d",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\027_116114944.jpg",
+          "ground_truth_present": true,
+          "prediction_present": false,
+          "iou": 0.0,
+          "latency_ms": 370.24190000011004
+        },
+        {
+          "sample_id": "bfd3bb8be9f5140c431d6d63a403761f54e5c9d3ee8b1bb0e9469a30ab120459",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_12811471_Grafton_Train_Station_Finally_Finished_I.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.0,
+          "latency_ms": 272.8267999991658
+        },
+        {
+          "sample_id": "d4bad38985b6aa2f46f4d898d1e5bd1a0e25760e482d88012aaceb41f8577003",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\047_77649721.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 254.02949999988778
+        },
+        {
+          "sample_id": "f38db5271db6c0a9af56b6e701b8794d26ce26d7b40548e2d2af1feb5be48da6",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_14703064_Newmarket_Train_Station_Is_Finished_II.jpg",
+          "ground_truth_present": true,
+          "prediction_present": true,
+          "iou": 0.6863732999388414,
+          "latency_ms": 209.13840000139317
+        },
+        {
+          "sample_id": "fa2d972708cc8e1f91b98c1853d5b5e206ddce64e29658ee3a236f5540f2ffb9",
+          "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\station_photo_set_50\\039_81090396.jpg",
+          "ground_truth_present": false,
+          "prediction_present": false,
+          "iou": null,
+          "latency_ms": 165.09790000054636
+        }
+      ]
+    }
+  ],
+  "locked_threshold": {
+    "confidence": 0.15,
+    "mask_threshold": 0.5
+  },
+  "protected_test": {
+    "confidence": 0.15,
+    "mask_threshold": 0.5,
+    "true_positive": 8,
+    "false_negative": 3,
+    "false_positive": 3,
+    "true_negative": 3,
+    "precision": 0.7272727272727273,
+    "recall": 0.7272727272727273,
+    "false_positive_rate": 0.5,
+    "mean_iou": 0.5192317013013857,
+    "median_latency_ms": 148.19940000234055,
+    "images": [
+      {
+        "sample_id": "images (1).jpg",
+        "source": "data\\samples\\images (1).jpg",
+        "ground_truth_present": true,
+        "prediction_present": true,
+        "iou": 0.812557286892759,
+        "latency_ms": 138.6614999973972
+      },
+      {
+        "sample_id": "images (2).jpg",
+        "source": "data\\samples\\images (2).jpg",
+        "ground_truth_present": false,
+        "prediction_present": false,
+        "iou": null,
+        "latency_ms": 148.19940000234055
+      },
+      {
+        "sample_id": "images (3).jpg",
+        "source": "data\\samples\\images (3).jpg",
+        "ground_truth_present": true,
+        "prediction_present": false,
+        "iou": 0.0,
+        "latency_ms": 124.08800000048359
+      },
+      {
+        "sample_id": "images (4).jpg",
+        "source": "data\\samples\\images (4).jpg",
+        "ground_truth_present": false,
+        "prediction_present": true,
+        "iou": null,
+        "latency_ms": 142.61009999972885
+      },
+      {
+        "sample_id": "images.jpg",
+        "source": "data\\samples\\images.jpg",
+        "ground_truth_present": false,
+        "prediction_present": true,
+        "iou": null,
+        "latency_ms": 113.5744999992312
+      },
+      {
+        "sample_id": "jakarta-indonesia-may-142025-commuter-260nw-2627152495.webp",
+        "source": "data\\samples\\jakarta-indonesia-may-142025-commuter-260nw-2627152495.webp",
+        "ground_truth_present": true,
+        "prediction_present": true,
+        "iou": 0.8980183663605606,
+        "latency_ms": 138.3332999976119
+      },
+      {
+        "sample_id": "livery-bernuansa-merah-putih-menghiasi-rangkaian-ka-yang-melayani-perjalanan-di-wilayah-kai-daop-8-surabaya-dalam-rangka-semarak-hut-ke-81-kemerdekaan-ri-2026-kai-QtAkk.webp",
+        "source": "data\\samples\\livery-bernuansa-merah-putih-menghiasi-rangkaian-ka-yang-melayani-perjalanan-di-wilayah-kai-daop-8-surabaya-dalam-rangka-semarak-hut-ke-81-kemerdekaan-ri-2026-kai-QtAkk.webp",
+        "ground_truth_present": true,
+        "prediction_present": true,
+        "iou": 0.46028044647576405,
+        "latency_ms": 102.19330000109039
+      },
+      {
+        "sample_id": "Peron jalur satu Stasiun Catang pada April 2026.jpg",
+        "source": "data\\samples\\Peron jalur satu Stasiun Catang pada April 2026.jpg",
+        "ground_truth_present": false,
+        "prediction_present": true,
+        "iou": null,
+        "latency_ms": 222.4300999987463
+      },
+      {
+        "sample_id": "Peron Stasiun ANgke.jpg",
+        "source": "data\\samples\\Peron Stasiun ANgke.jpg",
+        "ground_truth_present": true,
+        "prediction_present": true,
+        "iou": 0.2812272805247637,
+        "latency_ms": 524.9935000028927
+      },
+      {
+        "sample_id": "Peron Stasiun Pasar Minggu 2026.jpg",
+        "source": "data\\samples\\Peron Stasiun Pasar Minggu 2026.jpg",
+        "ground_truth_present": true,
+        "prediction_present": true,
+        "iou": 0.5877227730351098,
+        "latency_ms": 267.7530000000843
+      },
+      {
+        "sample_id": "Pintu Gerbang Stasiun Lrt Rawamangun Februari 2026.png",
+        "source": "data\\samples\\Pintu Gerbang Stasiun Lrt Rawamangun Februari 2026.png",
+        "ground_truth_present": true,
+        "prediction_present": true,
+        "iou": 0.882011217948718,
+        "latency_ms": 252.2699000001012
+      },
+      {
+        "sample_id": "Stasiun Pakisaji 2026.jpg",
+        "source": "data\\samples\\Stasiun Pakisaji 2026.jpg",
+        "ground_truth_present": true,
+        "prediction_present": true,
+        "iou": 0.9276916830209109,
+        "latency_ms": 270.33700000174576
+      },
+      {
+        "sample_id": "Stasiun Sumberpucung 2026.jpg",
+        "source": "data\\samples\\Stasiun Sumberpucung 2026.jpg",
+        "ground_truth_present": false,
+        "prediction_present": false,
+        "iou": null,
+        "latency_ms": 242.93039999975008
+      },
+      {
+        "sample_id": "stasiun-jaksel.webp",
+        "source": "data\\samples\\stasiun-jaksel.webp",
+        "ground_truth_present": true,
+        "prediction_present": false,
+        "iou": 0.0,
+        "latency_ms": 123.93720000181929
+      },
+      {
+        "sample_id": "stasiun_tanah_abang_-_bisniscom_dwi_rachmawati_1712569176.webp",
+        "source": "data\\samples\\stasiun_tanah_abang_-_bisniscom_dwi_rachmawati_1712569176.webp",
+        "ground_truth_present": true,
+        "prediction_present": true,
+        "iou": 0.8620396600566572,
+        "latency_ms": 153.53959999993094
+      },
+      {
+        "sample_id": "sudut-stasiun-bandung.jpg",
+        "source": "data\\samples\\sudut-stasiun-bandung.jpg",
+        "ground_truth_present": false,
+        "prediction_present": false,
+        "iou": null,
+        "latency_ms": 127.72310000218567
+      },
+      {
+        "sample_id": "Tampak dalam Stasiun Slawi, 2026.jpg",
+        "source": "data\\samples\\Tampak dalam Stasiun Slawi, 2026.jpg",
+        "ground_truth_present": true,
+        "prediction_present": false,
+        "iou": 0.0,
+        "latency_ms": 240.4019999994489
+      }
+    ]
+  },
+  "deployment_gate": {
+    "minimum_mean_iou": 0.75,
+    "minimum_recall": 0.9,
+    "passed": false,
+    "status": "mobile_export_rejected"
+  }
+}
