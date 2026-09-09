@@ -1,0 +1,22 @@
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: "person"
+  1: "chair"
+  2: "table"
+  3: "pole"
+  4: "trash_bin"
+  5: "luggage"
+  6: "backpack"
+  7: "barrier"
+  8: "bench"
+  9: "bicycle"
+  10: "motorcycle"
+  11: "vehicle"
+  12: "stairs"
+  13: "hole"
+  14: "step_up"
+  15: "step_down"
+  16: "platform_edge"
+  17: "glass_door"

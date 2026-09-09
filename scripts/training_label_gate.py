@@ -7,6 +7,7 @@ import math
 import shutil
 import sys
 import tempfile
+import time
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
@@ -438,7 +439,14 @@ def export_yolo(
             "samples": exported,
         }
         (staging / "export_manifest.json").write_text(json.dumps(export_manifest, indent=2, ensure_ascii=False), encoding="utf-8")
-        staging.replace(output_dir)
+        for attempt in range(20):
+            try:
+                staging.replace(output_dir)
+                break
+            except PermissionError:
+                if attempt == 19:
+                    raise
+                time.sleep(0.25)
         return export_manifest
     except Exception:
         shutil.rmtree(staging, ignore_errors=True)

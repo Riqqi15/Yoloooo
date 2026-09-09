@@ -103,11 +103,11 @@ Expected: review rows bind the exact source and annotation hashes; later edits i
 - Create: `data/training/review_station_tactile_v2.csv`
 - Create: `artifacts/datasets/station-tactile-v2/`
 
-- [ ] **Step 1: Merge the reviewed local 50-image set and reviewed Commons batch by content hash and source group.**
-- [ ] **Step 2: Run exact-hash and dHash leakage checks; reject a derivative crossing train/validation/test.**
-- [ ] **Step 3: Keep the existing 17-image local ground-truth set protected and outside training.**
-- [ ] **Step 4: Export YOLO segmentation only after `training_ready: true`.**
-- [ ] **Step 5: Commit the immutable dataset manifest and checksums.**
+- [x] **Step 1: Merge the reviewed local 50-image set and reviewed Commons batch by content hash and source group.**
+- [x] **Step 2: Run exact-hash and dHash leakage checks; reject a derivative crossing train/validation/test.**
+- [x] **Step 3: Keep the existing 17-image local ground-truth set protected and outside training.**
+- [x] **Step 4: Export YOLO segmentation only after `training_ready: true`.**
+- [x] **Step 5: Commit the immutable dataset manifest and checksums.**
 
 Verification:
 
