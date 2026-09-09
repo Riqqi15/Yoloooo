@@ -10,9 +10,25 @@ from typing import Any
 import cv2
 
 from baseline_object_inference import IMAGE_SUFFIXES, STOP_FAILURE
-from build_training_manifest import METADATA_FIELDS
 from model_manifest import sha256_file
 from training_label_gate import load_taxonomy, validate_annotation
+
+
+METADATA_FIELDS = (
+    "source_path",
+    "session_id",
+    "location_id",
+    "location_type",
+    "source_name",
+    "usage_permission",
+    "device_model",
+    "camera_position",
+    "lighting",
+    "motion",
+    "surface",
+    "dataset_task",
+    "notes",
+)
 
 
 # Only sequences known to share a location/session are grouped. Other published
@@ -41,6 +57,31 @@ GROUP_OVERRIDES = {
     "044_77601320.jpg": ("blok_m", "blok_m_044"),
     "048_77563734.jpg": ("blok_m", "blok_m_048"),
 }
+
+
+def read_source_rows(source_dir: Path) -> list[dict[str, Any]]:
+    json_path = source_dir / "sources.json"
+    if json_path.is_file():
+        rows = json.loads(json_path.read_text(encoding="utf-8"))
+    else:
+        csv_path = source_dir / "sources.csv"
+        if not csv_path.is_file():
+            raise FileNotFoundError("sources.json or sources.csv is required")
+        with csv_path.open(encoding="utf-8-sig", newline="") as handle:
+            rows = [
+                {
+                    "set_index": index,
+                    "filename": row["filename"],
+                    "title": row["title"],
+                    "source": row["source_url"],
+                    "license": row["license"],
+                    "artist": row["artist"],
+                }
+                for index, row in enumerate(csv.DictReader(handle), start=1)
+            ]
+    if not isinstance(rows, list) or not rows:
+        raise ValueError("source table must contain a nonempty list")
+    return rows
 
 
 def default_groups(rows: list[dict[str, Any]]) -> dict[str, tuple[str, str]]:
@@ -93,9 +134,7 @@ def prepare_dataset(
     groups: dict[str, tuple[str, str]] | None = None,
     taxonomy_path: Path = Path("data/training/taxonomy_tactile_v1.json"),
 ) -> dict[str, Any]:
-    source_rows = json.loads((source_dir / "sources.json").read_text(encoding="utf-8"))
-    if not isinstance(source_rows, list) or not source_rows:
-        raise ValueError("sources.json must contain a nonempty list")
+    source_rows = read_source_rows(source_dir)
     source_rows = sorted(source_rows, key=lambda row: int(row["set_index"]))
     names = [str(row["filename"]) for row in source_rows]
     images = sorted(
@@ -104,7 +143,7 @@ def prepare_dataset(
         if path.is_file() and path.suffix.lower() in IMAGE_SUFFIXES
     )
     if len(names) != len(set(names)) or sorted(names) != images:
-        raise ValueError("sources.json and source images do not match exactly")
+        raise ValueError("source table and source images do not match exactly")
     groups = groups or default_groups(source_rows)
     if set(groups) != set(names):
         raise ValueError("group mapping must cover every source image exactly")

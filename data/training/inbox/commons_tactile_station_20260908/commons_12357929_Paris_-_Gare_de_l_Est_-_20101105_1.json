@@ -1,81 +1,58 @@
 {
-  "version": "5.8.1",
+  "version": "trial",
   "flags": {},
   "shapes": [
     {
       "label": "tactile_paving",
       "points": [
         [
-          1094.4,
-          1425.6
+          635.9398496240602,
+          1431.578947368421
         ],
         [
-          1209.6,
-          1425.6
+          1550.2885580198254,
+          152.31343578813323
         ],
         [
-          1593.6,
-          763.2
+          1561.2999284566893,
+          152.31343578813323
         ],
         [
-          1516.8,
-          748.8
+          820.4262001502861,
+          1438.0106231011196
         ]
       ],
       "group_id": null,
-      "description": "provisional seed; inspect in LabelMe",
+      "description": "",
       "shape_type": "polygon",
-      "flags": {}
+      "flags": {},
+      "mask": null
     },
     {
       "label": "tactile_paving",
       "points": [
         [
-          1286.4,
-          1425.6
+          1335.3274568827815,
+          1435.138091682807
         ],
         [
-          1401.6,
-          1425.6
+          1595.2915502400526,
+          154.22845673367488
         ],
         [
-          1747.2,
-          792.0
+          1607.2604311496877,
+          154.22845673367488
         ],
         [
-          1670.4,
-          777.6
+          1527.7870619097116,
+          1439.4468888102758
         ]
       ],
       "group_id": null,
-      "description": "provisional seed; inspect in LabelMe",
+      "description": "",
       "shape_type": "polygon",
-      "flags": {}
-    },
-    {
-      "label": "tactile_paving",
-      "points": [
-        [
-          1536.0,
-          1425.6
-        ],
-        [
-          1651.2,
-          1425.6
-        ],
-        [
-          1881.6,
-          777.6
-        ],
-        [
-          1804.8,
-          777.6
-        ]
-      ],
-      "group_id": null,
-      "description": "provisional seed; inspect in LabelMe",
-      "shape_type": "polygon",
-      "flags": {}
+      "flags": {},
+      "mask": null
     }
   ],
   "imagePath": "commons_12357929_Paris_-_Gare_de_l_Est_-_20101105_1.jpg",

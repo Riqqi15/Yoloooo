@@ -1,56 +1,114 @@
 {
-  "version": "5.8.1",
+  "version": "trial",
   "flags": {},
   "shapes": [
     {
       "label": "tactile_paving",
       "points": [
         [
-          160.0,
-          1092.0
+          0.5159930091270652,
+          1124.0408355757763
         ],
         [
-          432.0,
-          1092.0
+          119.58276694315762,
+          1148.4977945460098
         ],
         [
-          512.0,
-          708.0
+          1193.9293173792528,
+          300.3376165297036
         ],
         [
-          352.0,
-          696.0
+          1209.3462760337727,
+          300.3376165297036
+        ],
+        [
+          142.12523081146696,
+          1200.0
+        ],
+        [
+          0.0,
+          1183.2757871232623
         ]
       ],
       "group_id": null,
-      "description": "provisional seed; inspect in LabelMe",
+      "description": "",
       "shape_type": "polygon",
-      "flags": {}
+      "flags": {},
+      "mask": null
     },
     {
       "label": "tactile_paving",
       "points": [
         [
-          1216.0,
-          1056.0
+          1254.551962222689,
+          1195.334883927601
         ],
         [
-          1488.0,
-          1056.0
+          1277.628885299612,
+          1058.0567774187252
         ],
         [
-          1344.0,
-          696.0
+          1346.8596545303812,
+          1068.7076649926898
         ],
         [
-          1216.0,
-          696.0
+          1335.1371246190145,
+          1200.0
         ]
       ],
       "group_id": null,
-      "description": "provisional seed; inspect in LabelMe",
+      "description": "",
       "shape_type": "polygon",
-      "flags": {}
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          1389.8868279409448,
+          426.98922063827337
+        ],
+        [
+          1405.1104245156355,
+          327.2746630740488
+        ],
+        [
+          1423.1884454480808,
+          327.8455479455997
+        ],
+        [
+          1415.3863522035517,
+          402.0605812472172
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
+    },
+    {
+      "label": "tactile_paving",
+      "points": [
+        [
+          1415.0057622891845,
+          422.99302653741705
+        ],
+        [
+          1396.3568564851882,
+          422.80273158023346
+        ],
+        [
+          1416.33782698947,
+          401.4896963756663
+        ]
+      ],
+      "group_id": null,
+      "description": "",
+      "shape_type": "polygon",
+      "flags": {},
+      "mask": null
     }
   ],
   "imagePath": "commons_14572036_Middlemore_Train_Station_Shelters.jpg",

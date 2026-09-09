@@ -8,13 +8,13 @@ import sys
 import time
 from collections import Counter
 from pathlib import Path
-from typing import Any, Sequence
+from typing import TYPE_CHECKING, Any, Sequence
 
 import cv2
 import numpy as np
-import psutil
-from ultralytics import YOLO
-from ultralytics.utils.downloads import attempt_download_asset
+
+if TYPE_CHECKING:
+    from ultralytics import YOLO
 
 from model_manifest import (
     DEFAULT_MODEL_MANIFEST,
@@ -102,6 +102,9 @@ def default_output(source_kind: str) -> Path:
 def load_model(
     model_path: str, manifest_path: Path = DEFAULT_MODEL_MANIFEST
 ) -> YOLO:
+    from ultralytics import YOLO
+    from ultralytics.utils.downloads import attempt_download_asset
+
     path = Path(model_path)
     path.parent.mkdir(parents=True, exist_ok=True)
     resolved = Path(attempt_download_asset(path))
@@ -121,6 +124,8 @@ def load_model(
 def predict_frame(
     model: YOLO, frame: np.ndarray, imgsz: int, confidence: float
 ) -> tuple[Any, float, int]:
+    import psutil
+
     started_ns = time.perf_counter_ns()
     result = model.predict(frame, imgsz=imgsz, conf=confidence, device="cpu", verbose=False)[0]
     latency_ms = (time.perf_counter_ns() - started_ns) / 1_000_000.0

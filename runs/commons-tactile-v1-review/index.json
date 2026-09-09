@@ -1,0 +1,159 @@
+{
+  "validation": {
+    "dataset_version": "commons-tactile-v1",
+    "dataset_scope": "station_environment",
+    "taxonomy_version": "station-tactile-v1",
+    "taxonomy_approved": true,
+    "require_review": false,
+    "training_ready": true,
+    "summary": {
+      "total_samples": 19,
+      "structurally_valid_samples": 19,
+      "human_reviewed_samples": 0,
+      "ambiguous_samples": 0,
+      "unreviewed_samples": 19,
+      "invalid_samples": 0,
+      "split_counts": {
+        "train": 10,
+        "test": 4,
+        "validation": 5
+      },
+      "object_class_counts": {},
+      "tactile_class_counts": {
+        "tactile_paving": 77
+      },
+      "condition_counts": {
+        "lighting": {
+          "normal_or_unknown": 19
+        },
+        "motion": {
+          "static_photo": 19
+        },
+        "surface": {
+          "mixed": 19
+        },
+        "location_type": {
+          "station_platform": 4,
+          "station_track_area": 15
+        }
+      }
+    },
+    "errors": []
+  },
+  "items": [
+    {
+      "sample_id": "4a125ca1176ed939ad18b4209d3f77aecd4f10a1370d42669613979e8050e68d",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_2793050_HongKongStationplatform1_20070922.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\4a125ca1176ed939ad18b4209d3f77aecd4f10a1370d42669613979e8050e68d.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "a852f77e78c9fc061d49d6c7f0b72459a2e309c2a7d664c107cbc5bfddf3efb0",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_5554713_Kingsland_Train_Station_Photos_II.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\a852f77e78c9fc061d49d6c7f0b72459a2e309c2a7d664c107cbc5bfddf3efb0.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "742e286d394292b2f0a8a5ef6656417523f38606068a8c12a03bd1331f51af4c",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_5554790_Kingsland_Train_Station_Photos_I.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\742e286d394292b2f0a8a5ef6656417523f38606068a8c12a03bd1331f51af4c.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "e050b8af57c176a1857046dd6f6e5c366fc1d068b600ec68d6ca66b46a2d2bcf",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_5577600_DC4444atNewLynn.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\e050b8af57c176a1857046dd6f6e5c366fc1d068b600ec68d6ca66b46a2d2bcf.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "189cf1409c27465beb44bfecee939d04da3fd4c0a4786e56d8f6994113a0f0f1",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_10004207_Grafton_station.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\189cf1409c27465beb44bfecee939d04da3fd4c0a4786e56d8f6994113a0f0f1.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "352723a0ca5af937713a3a7661cd4c24a8138f5c8f03c57b85763f4cc81158e2",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_11548638_ADL_807_at_Onehunga.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\352723a0ca5af937713a3a7661cd4c24a8138f5c8f03c57b85763f4cc81158e2.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "6cd609622bbc1ef9b38031586a211c6a711aaaa60b7cab7848018d31ac373021",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_12357929_Paris_-_Gare_de_l_Est_-_20101105_1.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\6cd609622bbc1ef9b38031586a211c6a711aaaa60b7cab7848018d31ac373021.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "bfd3bb8be9f5140c431d6d63a403761f54e5c9d3ee8b1bb0e9469a30ab120459",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_12811471_Grafton_Train_Station_Finally_Finished_I.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\bfd3bb8be9f5140c431d6d63a403761f54e5c9d3ee8b1bb0e9469a30ab120459.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "3af52987c95ffb14f9109662f23cec710eb19bd5644032f506f5fca6bffe9484",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_14571980_Middlemore_Train_Station_Platforms.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\3af52987c95ffb14f9109662f23cec710eb19bd5644032f506f5fca6bffe9484.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "fcbc2aa6bc607e44a85fa664e475db4a79a251b4d8d1674f1d904af230b7413d",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_14572036_Middlemore_Train_Station_Shelters.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\fcbc2aa6bc607e44a85fa664e475db4a79a251b4d8d1674f1d904af230b7413d.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "f38db5271db6c0a9af56b6e701b8794d26ce26d7b40548e2d2af1feb5be48da6",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_14703064_Newmarket_Train_Station_Is_Finished_II.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\f38db5271db6c0a9af56b6e701b8794d26ce26d7b40548e2d2af1feb5be48da6.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "aa8876af47c1b0ced4541b58ed25ce098c7cad259192801f002b009fd4ef8ce3",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_14874418_Panmure_Train_Station_Trenching.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\aa8876af47c1b0ced4541b58ed25ce098c7cad259192801f002b009fd4ef8ce3.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "229c484660165220b25747206ca7546dcd241862cc7be29c6affcdbd0cef645f",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_15282574_Cityrail_Tactile_Platform_Line.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\229c484660165220b25747206ca7546dcd241862cc7be29c6affcdbd0cef645f.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "abf4561bbea4d8a941102c2c5e8a570711755266d6d6a0e9f8f36f2a6e1bc4c5",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_17952932_KiwiRail_Locomotive_At_Britomart.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\abf4561bbea4d8a941102c2c5e8a570711755266d6d6a0e9f8f36f2a6e1bc4c5.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "c24586e70d1082b74977526b0b976108ab8366307663e8f5f048fc5cb9350332",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_19170842_Manukau_Station.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\c24586e70d1082b74977526b0b976108ab8366307663e8f5f048fc5cb9350332.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "57f1e87bba3b1a8e2a9e1e00ab8be4b411ee5afd260467a5ecd25fe6fc2fde41",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_20765001_Platform_end_marker.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\57f1e87bba3b1a8e2a9e1e00ab8be4b411ee5afd260467a5ecd25fe6fc2fde41.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "49bdca6539d137006903ac858c40014a8ffa23531652ee525498e52009423627",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_21583331_Est_Ing_Castello_Anden.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\49bdca6539d137006903ac858c40014a8ffa23531652ee525498e52009423627.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "2fae9b34c081d079ecf600f9de89366b9a821758c1cd43f88d2c12997c97b2c4",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_23215780_Arden_-_Del_Paso_4043_02.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\2fae9b34c081d079ecf600f9de89366b9a821758c1cd43f88d2c12997c97b2c4.jpg",
+      "review_status": "unreviewed"
+    },
+    {
+      "sample_id": "a9afeffb7bf2ac445f93e728950230a6957ba500f4a213346995a82323bac7a0",
+      "source": "C:\\Users\\riyadh\\Downloads\\AI Camera\\data\\training\\inbox\\commons_tactile_station_20260908\\commons_28917160_PieveemanueleFS_4.jpg",
+      "overlay": "runs\\commons-tactile-v1-review\\a9afeffb7bf2ac445f93e728950230a6957ba500f4a213346995a82323bac7a0.jpg",
+      "review_status": "unreviewed"
+    }
+  ]
+}

@@ -1,31 +1,36 @@
 {
-  "version": "5.8.1",
+  "version": "trial",
   "flags": {},
   "shapes": [
     {
       "label": "tactile_paving",
       "points": [
         [
-          0.0,
+          4.074746008707848,
+          641.9015481373979
+        ],
+        [
+          1916.5275761973871,
+          81.90154813739753
+        ],
+        [
+          1859.9410520297306,
           0.0
         ],
         [
-          576.0,
+          373.8860667634248,
           0.0
         ],
         [
-          883.2,
-          160.72
-        ],
-        [
-          0.0,
-          183.68
+          1.055878084179568,
+          89.4487179487183
         ]
       ],
       "group_id": null,
-      "description": "provisional seed; inspect in LabelMe",
+      "description": "",
       "shape_type": "polygon",
-      "flags": {}
+      "flags": {},
+      "mask": null
     }
   ],
   "imagePath": "commons_15282574_Cityrail_Tactile_Platform_Line.jpg",

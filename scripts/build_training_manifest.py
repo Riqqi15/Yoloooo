@@ -12,7 +12,6 @@ from typing import Any
 import cv2
 
 from baseline_object_inference import IMAGE_SUFFIXES, STOP_FAILURE
-from evaluate_samples import STATION_CONTEXTS
 from model_manifest import sha256_file
 
 
@@ -32,6 +31,16 @@ METADATA_FIELDS = (
     "notes",
 )
 DATASET_TASKS = {"object", "tactile", "both"}
+STATION_CONTEXTS = frozenset(
+    {
+        "station_interior",
+        "station_concourse",
+        "station_platform",
+        "station_track_area",
+        "station_access",
+        "station_access_sidewalk",
+    }
+)
 
 
 def content_hashes(paths: list[Path]) -> set[str]:

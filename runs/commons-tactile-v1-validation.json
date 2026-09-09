@@ -1,0 +1,41 @@
+{
+  "dataset_version": "commons-tactile-v1",
+  "dataset_scope": "station_environment",
+  "taxonomy_version": "station-tactile-v1",
+  "taxonomy_approved": true,
+  "require_review": true,
+  "training_ready": true,
+  "summary": {
+    "total_samples": 19,
+    "structurally_valid_samples": 19,
+    "human_reviewed_samples": 19,
+    "ambiguous_samples": 0,
+    "unreviewed_samples": 0,
+    "invalid_samples": 0,
+    "split_counts": {
+      "train": 10,
+      "test": 4,
+      "validation": 5
+    },
+    "object_class_counts": {},
+    "tactile_class_counts": {
+      "tactile_paving": 77
+    },
+    "condition_counts": {
+      "lighting": {
+        "normal_or_unknown": 19
+      },
+      "motion": {
+        "static_photo": 19
+      },
+      "surface": {
+        "mixed": 19
+      },
+      "location_type": {
+        "station_platform": 4,
+        "station_track_area": 15
+      }
+    }
+  },
+  "errors": []
+}

@@ -1,6 +1,8 @@
 # Batch review LabelMe — 2026-09-08
 
-Batch ini berisi 20 foto stasiun dari Wikimedia Commons dengan lisensi yang tercatat di `sources.csv`. JSON di folder ini adalah polygon awal yang dibuat otomatis dari pemeriksaan visual; statusnya **provisional**, belum boleh masuk training.
+Batch ini awalnya berisi 20 foto stasiun dari Wikimedia Commons dengan lisensi yang tercatat di `sources.csv`. Setelah revisi manual, 19 foto memiliki anotasi `tactile_paving` yang diterima untuk tahap validasi berikutnya.
+
+Foto `commons_19822898_Paris_Est_caddie_sur_un_quai.jpg` dikecualikan karena menampilkan troli di peron dan tidak dipakai untuk training. Berkas sumbernya disimpan di folder `excluded/` untuk audit lisensi, tanpa JSON anotasi dan tanpa baris di `intake.csv`.
 
 ## Cara merevisi
 

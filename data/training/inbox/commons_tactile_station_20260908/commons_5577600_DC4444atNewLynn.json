@@ -1,31 +1,32 @@
 {
-  "version": "5.8.1",
+  "version": "trial",
   "flags": {},
   "shapes": [
     {
       "label": "tactile_paving",
       "points": [
         [
-          200.0,
-          558.0
+          248.08144087705566,
+          595.7713390759593
         ],
         [
-          344.0,
-          558.0
+          729.9089302420997,
+          291.66907490764066
         ],
         [
-          448.0,
-          366.0
+          717.1573304747933,
+          288.8767537907122
         ],
         [
-          360.0,
-          366.0
+          102.29054205529481,
+          599.8998307954344
         ]
       ],
       "group_id": null,
-      "description": "provisional seed; inspect in LabelMe",
+      "description": "",
       "shape_type": "polygon",
-      "flags": {}
+      "flags": {},
+      "mask": null
     }
   ],
   "imagePath": "commons_5577600_DC4444atNewLynn.jpg",

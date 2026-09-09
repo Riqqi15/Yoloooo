@@ -16,7 +16,6 @@ import cv2
 import numpy as np
 
 from baseline_object_inference import IMAGE_SUFFIXES, STOP_FAILURE
-from evaluate_samples import write_image
 from model_manifest import sha256_file
 
 
@@ -140,9 +139,9 @@ def validate_annotation(
             raise ValueError("tactile polygon contains non-finite coordinates")
         if (
             (points[:, 0] < 0).any()
-            or (points[:, 0] >= width).any()
+            or (points[:, 0] > width).any()
             or (points[:, 1] < 0).any()
-            or (points[:, 1] >= height).any()
+            or (points[:, 1] > height).any()
         ):
             raise ValueError("tactile polygon outside image")
         if cv2.contourArea(points.astype(np.float32)) <= 0:
@@ -349,7 +348,9 @@ def render_qa(
         cv2.rectangle(overlay, (0, 0), (min(overlay.shape[1], 560), 28), (0, 0, 0), -1)
         cv2.putText(overlay, f"{status} | {sample_id[:12]}", (6, 19), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1, cv2.LINE_AA)
         destination = output_dir / f"{sample_id}.jpg"
-        write_image(destination, overlay)
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        if not cv2.imwrite(str(destination), overlay):
+            raise OSError(f"unable to write image: {destination}")
         items.append({"sample_id": sample_id, "source": sample["source_path"], "overlay": str(destination), "review_status": status})
     report = {"validation": validation, "items": items}
     (output_dir / "index.json").write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")

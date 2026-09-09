@@ -1,31 +1,32 @@
 {
-  "version": "5.8.1",
+  "version": "trial",
   "flags": {},
   "shapes": [
     {
       "label": "tactile_paving",
       "points": [
         [
-          64.0,
-          1140.0
+          557.3667711598748,
+          1195.9247648902822
         ],
         [
-          448.0,
-          1140.0
+          344.1318498648765,
+          557.1766178753975
         ],
         [
-          496.0,
-          696.0
+          369.53301067061216,
+          550.8946103643016
         ],
         [
-          288.0,
-          696.0
+          790.0637781184951,
+          1196.7730790164294
         ]
       ],
       "group_id": null,
-      "description": "provisional seed; inspect in LabelMe",
+      "description": "",
       "shape_type": "polygon",
-      "flags": {}
+      "flags": {},
+      "mask": null
     }
   ],
   "imagePath": "commons_17952932_KiwiRail_Locomotive_At_Britomart.jpg",

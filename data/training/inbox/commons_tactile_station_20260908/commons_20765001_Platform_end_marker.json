@@ -1,31 +1,32 @@
 {
-  "version": "5.8.1",
+  "version": "trial",
   "flags": {},
   "shapes": [
     {
       "label": "tactile_paving",
       "points": [
         [
+          2.965096569586592,
+          573.7389241175322
+        ],
+        [
+          1023.7645335441844,
+          578.627789726109
+        ],
+        [
+          1022.5578970434306,
+          233.52975051042245
+        ],
+        [
           0.0,
-          168.96
-        ],
-        [
-          1003.52,
-          168.96
-        ],
-        [
-          1003.52,
-          407.04
-        ],
-        [
-          0.0,
-          407.04
+          227.5568655977855
         ]
       ],
       "group_id": null,
-      "description": "provisional seed; inspect in LabelMe",
+      "description": "",
       "shape_type": "polygon",
-      "flags": {}
+      "flags": {},
+      "mask": null
     }
   ],
   "imagePath": "commons_20765001_Platform_end_marker.jpg",

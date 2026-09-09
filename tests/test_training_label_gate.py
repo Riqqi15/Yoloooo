@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import importlib.util
 import json
 import sys
 import tempfile
@@ -10,7 +11,6 @@ from unittest.mock import patch
 
 import cv2
 import numpy as np
-from ultralytics.data.utils import check_det_dataset
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
@@ -34,7 +34,10 @@ class TrainingLabelGateTest(unittest.TestCase):
         self.assertEqual(taxonomy["tactile_segmentation"], ["tactile_paving"])
         self.assertTrue(taxonomy["object_detection"])
 
+    @unittest.skipUnless(importlib.util.find_spec("ultralytics"), "ultralytics not installed")
     def test_exported_yaml_resolves_from_its_own_directory(self) -> None:
+        from ultralytics.data.utils import check_det_dataset
+
         with tempfile.TemporaryDirectory() as directory:
             dataset = Path(directory) / "tactile"
             for split in ("train", "val", "test"):

@@ -17,6 +17,68 @@ from prepare_station_training_set import prepare_dataset  # noqa: E402
 
 
 class PrepareStationTrainingSetTest(unittest.TestCase):
+    def test_converts_commons_csv_source_table(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / "source"
+            source.mkdir()
+            image = np.full((20, 30, 3), 80, dtype=np.uint8)
+            self.assertTrue(cv2.imwrite(str(source / "station.jpg"), image))
+            with (source / "sources.csv").open("w", encoding="utf-8", newline="") as handle:
+                writer = csv.DictWriter(
+                    handle,
+                    fieldnames=(
+                        "filename",
+                        "title",
+                        "source_url",
+                        "license",
+                        "artist",
+                    ),
+                )
+                writer.writeheader()
+                writer.writerow(
+                    {
+                        "filename": "station.jpg",
+                        "title": "Station platform",
+                        "source_url": "https://commons.wikimedia.org/wiki/File:Station.jpg",
+                        "license": "CC BY-SA 4.0",
+                        "artist": "Photographer",
+                    }
+                )
+            (source / "station.json").write_text(
+                json.dumps(
+                    {
+                        "imagePath": "station.jpg",
+                        "imageWidth": 30,
+                        "imageHeight": 20,
+                        "shapes": [
+                            {
+                                "label": "tactile_paving",
+                                "shape_type": "polygon",
+                                "points": [[0, 0], [30, 0], [30, 20], [0, 20]],
+                            }
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            metadata = root / "intake.csv"
+            report = prepare_dataset(
+                source,
+                metadata,
+                root / "annotations",
+                groups={"station.jpg": ("station", "session")},
+            )
+
+            self.assertEqual(report["samples"], 1)
+            self.assertEqual(report["positive_labelme"], 1)
+            with metadata.open(encoding="utf-8", newline="") as handle:
+                rows = list(csv.DictReader(handle))
+            self.assertEqual(
+                rows[0]["usage_permission"],
+                "CC BY-SA 4.0; https://commons.wikimedia.org/wiki/File:Station.jpg",
+            )
+
     def test_converts_labelme_and_keeps_missing_json_unreviewed(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
