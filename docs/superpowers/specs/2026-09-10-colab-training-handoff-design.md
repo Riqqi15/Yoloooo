@@ -36,6 +36,21 @@ This final goal requires separate people/obstacle and hazard perception, depth o
 - The local `public2-station1` run was stopped during epoch 5 and is not a completed candidate. A collaborator must train this candidate from the GuideTWSI checkpoint.
 - The public cache contains 3,960 files in a 329.33 MiB ZIP and is licensed CC0/Public Domain.
 
+### Score sementara yang ditampilkan dalam handoff
+
+The handoff must show the completed 4:1 candidate as follows, without collapsing unlike metrics into a single accuracy percentage:
+
+| Evaluation | Metric | Score sementara | Target | Status |
+| --- | --- | ---: | ---: | --- |
+| Training validation | Mask mAP50 | `82.50%` | Informational | Recorded |
+| Training validation | Mask mAP50-95 | `69.79%` | Informational | Recorded |
+| Protected test | Mask recall | `100.00%` | `>= 90%` | Pass |
+| Protected test | Positive mean IoU | `56.41%` | `>= 75%` | Fail |
+| Protected test | Precision | `64.71%` | Informational | Recorded |
+| Protected test | False-positive rate | `100.00%` | `<= 50%` | Fail |
+
+Overall temporary result: **rejected / not mobile-ready**. There is no valid single “accuracy score” because training mAP, protected recall, overlap quality, and false-positive rate measure different behavior. The next candidate must improve overlap quality and negative-scene rejection without losing recall.
+
 ## Repository layout
 
 - `AGENTS.md`: short, automatically discovered Codex context and a pointer to the full handoff.
