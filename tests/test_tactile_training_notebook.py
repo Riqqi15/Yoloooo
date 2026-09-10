@@ -65,31 +65,42 @@ class TactileTrainingNotebookTest(unittest.TestCase):
                 continue
             compile(source, f"notebook-cell-{index}", "exec")
 
-    def test_v3_notebook_uses_uploaded_cache_and_trains_selected_ratios(self) -> None:
+    def test_v3_notebook_is_self_contained_and_trains_only_ratio_two(self) -> None:
         notebook = json.loads(V3_NOTEBOOK.read_text(encoding="utf-8"))
+        self.assertEqual(len(notebook["cells"]), 6)
         source = "\n".join(
             "".join(cell.get("source", []))
             for cell in notebook["cells"]
             if cell.get("cell_type") == "code"
         )
         for required in (
-            "guidetwsi-rbar-v1.zip",
+            "GIT_LFS_SKIP_SMUDGE",
+            "--include",
+            "data/public/guidetwsi-rbar-v1/guidetwsi-rbar-v1.zip",
+            "data/public/guidetwsi-rbar-v1/sha256.txt",
+            "models/guidetwsi/yolo11n_tactile.pt",
+            "artifacts/datasets/station-tactile-v2",
+            "artifacts/candidates/tactile-one-class-v3-public4-station1",
+            "hashlib.sha256",
             "EXPECTED_CACHE_FILES = 3960",
-            "ZipFile",
             "TRAIN_RATIOS = (2,)",
             "build_tactile_v3_dataset.py",
             "train_tactile_v3.py",
-            "models/guidetwsi/yolo11n_tactile.pt",
-            "--public-to-station",
-            "codex/model-first-mobile-ready",
+            "torch.cuda.is_available",
+            "REQUIRED_OUTPUTS",
+            "files.download",
         ):
             self.assertIn(required, source)
-        self.assertIn("for ratio in TRAIN_RATIOS", source)
-        self.assertNotIn("acquire_guidetwsi_subset.py", source)
-        self.assertNotIn("prepare_guidetwsi_subset.py", source)
-        self.assertNotIn("evaluate_tactile_candidate.py", source)
-        self.assertNotIn("data/ground_truth", source)
-        self.assertNotIn("data/samples", source)
+        for forbidden in (
+            "files.upload",
+            "Upload guidetwsi-rbar-v1.zip",
+            "acquire_guidetwsi_subset.py",
+            "prepare_guidetwsi_subset.py",
+            "evaluate_tactile_candidate.py",
+            "data/ground_truth",
+            "data/samples",
+        ):
+            self.assertNotIn(forbidden, source)
         for cell in notebook["cells"]:
             if cell.get("cell_type") == "code":
                 self.assertIsNone(cell.get("execution_count"))
