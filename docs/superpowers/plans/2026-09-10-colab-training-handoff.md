@@ -319,7 +319,16 @@ rtk git lfs fsck
 
 Expected: the public ZIP, GuideTWSI checkpoint, dataset images, and candidate model are listed; `git lfs fsck` reports `Git LFS fsck OK`.
 
-- [ ] **Step 4: Perform a clean-clone smoke check**
+- [ ] **Step 4: Push commits and LFS objects**
+
+```powershell
+rtk git push origin codex/model-first-mobile-ready
+rtk git lfs push origin codex/model-first-mobile-ready
+```
+
+Expected: Git and LFS uploads complete without error.
+
+- [ ] **Step 5: Perform a clean-clone smoke check**
 
 Use a fixed, validated temporary path and clone with LFS smudging disabled:
 
@@ -343,15 +352,6 @@ Resolve and verify the exact cleanup target, then remove only that temporary clo
 ```powershell
 rtk powershell -NoProfile -Command '$smokePath = "C:\Users\riyadh\Downloads\AI Camera\.handoff-smoke"; $resolvedSmoke = (Resolve-Path -LiteralPath $smokePath).Path; if ($resolvedSmoke -ne "C:\Users\riyadh\Downloads\AI Camera\.handoff-smoke") { throw "Unsafe cleanup target: $resolvedSmoke" }; Remove-Item -LiteralPath $resolvedSmoke -Recurse -Force'
 ```
-
-- [ ] **Step 5: Push commits and LFS objects**
-
-```powershell
-rtk git push origin codex/model-first-mobile-ready
-rtk git lfs push origin codex/model-first-mobile-ready
-```
-
-Expected: Git and LFS uploads complete without error.
 
 - [ ] **Step 6: Verify remote branch equality**
 
