@@ -4,11 +4,35 @@
 
 Make the tactile-paving training work reproducible for a collaborator from a fresh Google Colab runtime, with every required input hosted in `Riqqi15/Yoloooo` and an accurate project handoff that Codex can discover immediately.
 
+## Target model saat ini
+
+The current trainable artifact is a **single-class instance-segmentation model** for `tactile_paving`. Its immediate job is to produce a stable corridor mask that a later navigation decision layer can use. It is not yet a detector for people, holes, platform edges, train doors, or distance.
+
+A candidate may continue to mobile export only when all of these gates pass:
+
+- protected/local-test mask recall is at least `0.90`;
+- protected/local-test positive mean IoU is at least `0.75`;
+- protected/local-test false-positive rate does not exceed the current baseline of `0.50`;
+- it beats the baseline model without a class mismatch;
+- 20 repeated controlled trials produce no critical miss in each scenario: straight tactile corridor, tactile corridor partially blocked by a person or bag, left/right turn, and yellow non-tactile hard negative;
+- the candidate bundle is complete and known failure cases are recorded in its model card.
+
+The next training target is `tactile-one-class-v3-public2-station1`. It must be trained from the GuideTWSI checkpoint, compared with the completed 4:1 candidate, then tested through the protected gate above.
+
+## Target sistem akhir
+
+The eventual camera application should guide a blind user along tactile paving, announce a stable left or right turn, detect people or obstacles crossing the walking corridor, and issue `STOP` for holes, drop-offs, or a platform edge near railway tracks. Five metres is the target observation range when supported by depth calibration; it is not a guaranteed safe distance from a monocular segmentation model.
+
+The controlled demonstration goal ends at entering a Commuter train carriage. Crossing the platform-train gap must require explicit user confirmation or human supervision. Hazard alerts always override route guidance, and missing, stale, or ambiguous perception must result in `STOP` or `Uncertain`.
+
+This final goal requires separate people/obstacle and hazard perception, depth or distance estimation, temporal stability, and a navigation decision layer. Passing the current tactile-model gate is only the first component milestone and must not be presented as proof that the complete safety system is ready.
+
 ## Current truth
 
-- The `public4-station1` candidate completed 80 epochs on a Colab T4.
-- Its mask metrics are mAP50 `0.8250` and mAP50-95 `0.6979`.
-- Protected evaluation rejected it: recall `1.0`, precision `0.6471`, mean IoU `0.5641`, and false positives on all 6 negative images.
+- The `public4-station1` candidate completed 80 epochs in about 28 minutes on a Colab T4.
+- Training validation reported box precision `0.9005`, box recall `0.7354`, box mAP50 `0.8378`, box mAP50-95 `0.6984`, mask precision `0.8958`, mask recall `0.7385`, mask mAP50 `0.8250`, and mask mAP50-95 `0.6979`.
+- Protected evaluation at confidence `0.05` produced TP `11`, FN `0`, FP `6`, TN `0`, recall `1.0`, precision `0.6471`, positive mean IoU `0.5641`, false-positive rate `1.0`, and median CPU latency `92.1 ms`.
+- The protected gate rejected the 4:1 candidate because mean IoU missed the `0.75` target and all 6 negative images produced false positives. The high training mAP is not equivalent to deployment accuracy.
 - The local `public2-station1` run was stopped during epoch 5 and is not a completed candidate. A collaborator must train this candidate from the GuideTWSI checkpoint.
 - The public cache contains 3,960 files in a 329.33 MiB ZIP and is licensed CC0/Public Domain.
 
