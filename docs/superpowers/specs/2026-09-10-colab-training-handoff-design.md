@@ -51,6 +51,58 @@ The handoff must show the completed 4:1 candidate as follows, without collapsing
 
 Overall temporary result: **rejected / not mobile-ready**. There is no valid single “accuracy score” because training mAP, protected recall, overlap quality, and false-positive rate measure different behavior. The next candidate must improve overlap quality and negative-scene rejection without losing recall.
 
+## Improvement roadmap
+
+The handoff must preserve this order. Later-stage work must not hide an unresolved failure in an earlier stage.
+
+### P0 — complete the next controlled comparison
+
+1. Train `tactile-one-class-v3-public2-station1` from the GuideTWSI checkpoint with the committed seed, split, Ultralytics version, image size, and training configuration.
+2. Validate the resulting bundle before describing the run as complete. Record the commit, dataset version, manifest checksum, checkpoint checksum, seed, GPU, elapsed time, epoch count, and all box/mask metrics.
+3. Select the confidence threshold on the ordinary validation split only, freeze it, and run the protected test once. Never tune hyperparameters or labels from protected-test images.
+4. Compare the 2:1 candidate with the completed 4:1 candidate and the baseline. Select by the full protected gate, not by training mAP alone.
+5. Keep a downloadable `last.pt` or an optional Google Drive copy so a Colab interruption can resume with the same configuration instead of restarting. A partial checkpoint remains marked incomplete.
+
+### P0 — reduce the observed errors
+
+- Prioritize false-positive reduction because the current protected false-positive rate is `100%`. Add legal, newly sourced hard negatives covering ordinary yellow floor tiles, painted lines, platform markings, floor seams, shadows, rails, platform edges, and other repeating textures that resemble tactile paving.
+- Improve mask boundaries because protected positive mean IoU is only `56.41%`. Audit polygon consistency for thin or distant paths, turns, intersections, partial visibility, perspective narrowing, occlusion, low light, blur, glare, and cropped paths.
+- Do not copy protected-test images or labels into training. Collect visually analogous training examples instead.
+- Preserve the user's exclusion of the trolley source image; do not silently restore it. Obstacles such as trolleys belong in a separately reviewed obstacle dataset later.
+- Use realistic augmentations only. Avoid transforms that destroy tactile geometry or create impossible platform scenes.
+
+### P1 — strengthen data and evaluation quality
+
+- Expand the independent station validation coverage; the current 4:1 manifest has only 13 station validation samples, which is too small to represent all conditions reliably.
+- Split by station, source group, or capture sequence rather than by individual frame alone, and audit hashes and near-duplicates to prevent closely related scenes leaking across train, validation, and protected test.
+- Add scenario tags and report metrics separately for straight paths, turns, intersections, distant paths, occlusion, low light, blur, glare, non-tactile yellow surfaces, platform edges, and crowded scenes.
+- Expand the protected set beyond its current 17 images before making any safety claim. Keep it immutable and inaccessible to the training notebook.
+- After the main 2:1 experiment, repeat the winning configuration with additional seeds when GPU quota allows. Promote it only if the result is stable rather than a lucky single run.
+- Store qualitative overlays for failures and review whether each error comes from the model, an inconsistent label, or an ambiguous scene before changing the dataset.
+- Track both image-level false-positive rate and false-positive region count so one image containing many incorrect masks is not understated.
+
+### P1 — validate navigation behaviour on video
+
+- Convert the tactile mask into a walkable corridor only after the segmentation gate passes.
+- Require at least three consecutive confident frames before announcing a left or right turn; otherwise continue straight, say `Uncertain`, or issue `STOP` as appropriate.
+- Test 20 repetitions per controlled scenario and record critical misses, unstable direction changes, time-to-alert, and recovery after brief occlusion.
+- Test the 5-metre observation target using measured distances, multiple camera heights and angles, day/night lighting, motion blur, and representative phone cameras. Do not infer a guaranteed distance from pixel area alone.
+
+### P2 — add the missing safety components
+
+- Add a separate people/obstacle detector and intersect its detections with the tactile corridor. A person or object outside the corridor should not trigger the same warning as one blocking the route.
+- Build separately reviewed classes or models for holes/drop-offs, platform edge/track danger, train door, and platform-train gap. Hazard output always overrides route guidance.
+- Add calibrated depth estimation or a depth-capable sensor before giving metre-based proximity warnings.
+- Require explicit confirmation or human supervision before crossing the platform-train gap in the controlled Commuter demonstration.
+- Design fail-safe audio and vibration states: `Straight`, `Left`, `Right`, `Obstacle`, `STOP`, and `Uncertain`. Missing frames, stale inference, low confidence, or model failure must never default to “safe”.
+
+### P2 — optimize only after accuracy gates pass
+
+- Keep YOLO11n segmentation as the first mobile-sized candidate. Try a larger segmentation model or higher input resolution only if data and label improvements still cannot reach the gate, and record the latency trade-off.
+- Benchmark the exported model on the actual target phone. The current `92.1 ms` median CPU measurement is provisional and includes slow outliers; it is not a mobile real-time guarantee.
+- Measure end-to-end camera latency, thermal throttling, memory use, battery draw, and speech/haptic delay, not just neural-network inference time.
+- Re-run mask agreement and protected safety gates after FP32, FP16, or INT8 conversion. A successful export is not proof of equivalent behaviour.
+
 ## Repository layout
 
 - `AGENTS.md`: short, automatically discovered Codex context and a pointer to the full handoff.
