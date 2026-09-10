@@ -16,7 +16,7 @@
 - Create: `tests/test_tactile_handoff.py`
 - Modify: `tests/test_tactile_training_notebook.py`
 
-- [ ] **Step 1: Write the failing handoff test**
+- [x] **Step 1: Write the failing handoff test**
 
 Create `tests/test_tactile_handoff.py` with assertions that the handoff files exist and expose the required facts:
 
@@ -63,7 +63,7 @@ if __name__ == "__main__":
     unittest.main()
 ```
 
-- [ ] **Step 2: Strengthen the notebook contract**
+- [x] **Step 2: Strengthen the notebook contract**
 
 Replace the v3 notebook assertions in `tests/test_tactile_training_notebook.py` so the test requires:
 
@@ -101,7 +101,7 @@ for forbidden in (
 
 Keep the existing checks that every Python cell compiles and every code cell has `execution_count: null` and `outputs: []`.
 
-- [ ] **Step 3: Run the tests and confirm the new contract fails**
+- [x] **Step 3: Run the tests and confirm the new contract fails**
 
 Run:
 
@@ -111,7 +111,7 @@ rtk python -m unittest tests.test_tactile_handoff tests.test_tactile_training_no
 
 Expected: failure because `AGENTS.md`, `docs/HANDOFF_TACTILE_V3.md`, and the tracked public ZIP/checksum do not exist yet and the notebook still uses manual upload.
 
-- [ ] **Step 4: Commit the failing tests**
+- [x] **Step 4: Commit the failing tests**
 
 ```powershell
 rtk git add -- tests/test_tactile_handoff.py tests/test_tactile_training_notebook.py
@@ -125,7 +125,7 @@ rtk git commit -m "test: define tactile Colab handoff contract"
 - Create: `data/public/guidetwsi-rbar-v1/guidetwsi-rbar-v1.zip`
 - Create: `data/public/guidetwsi-rbar-v1/sha256.txt`
 
-- [ ] **Step 1: Add a path-scoped LFS rule**
+- [x] **Step 1: Add a path-scoped LFS rule**
 
 Append this exact rule to `.gitattributes`:
 
@@ -133,7 +133,7 @@ Append this exact rule to `.gitattributes`:
 data/public/guidetwsi-rbar-v1/*.zip filter=lfs diff=lfs merge=lfs -text
 ```
 
-- [ ] **Step 2: Copy the already verified cache to its tracked location**
+- [x] **Step 2: Copy the already verified cache to its tracked location**
 
 Run:
 
@@ -143,7 +143,7 @@ rtk powershell -NoProfile -Command "New-Item -ItemType Directory -Force -Path 'd
 
 Expected: the tracked copy is exactly `345332596` bytes; the original ignored cache remains untouched.
 
-- [ ] **Step 3: Record the SHA-256 checksum**
+- [x] **Step 3: Record the SHA-256 checksum**
 
 Create `data/public/guidetwsi-rbar-v1/sha256.txt` with the checksum already verified from the source ZIP:
 
@@ -151,7 +151,7 @@ Create `data/public/guidetwsi-rbar-v1/sha256.txt` with the checksum already veri
 4796d2eea993f62b2db0934b3fe639c4d33b7bf481281509d33e3901c8dbd99e  guidetwsi-rbar-v1.zip
 ```
 
-- [ ] **Step 4: Verify LFS and archive integrity**
+- [x] **Step 4: Verify LFS and archive integrity**
 
 Run:
 
@@ -162,7 +162,7 @@ rtk python -m unittest tests.test_tactile_handoff.TactileHandoffTest.test_public
 
 Expected: `filter: lfs`; the checksum test passes.
 
-- [ ] **Step 5: Commit the immutable cache**
+- [x] **Step 5: Commit the immutable cache**
 
 ```powershell
 rtk git add -- .gitattributes data/public/guidetwsi-rbar-v1/guidetwsi-rbar-v1.zip data/public/guidetwsi-rbar-v1/sha256.txt
@@ -175,7 +175,7 @@ rtk git commit -m "data: publish GuideTWSI cache for Colab"
 - Create: `AGENTS.md`
 - Create: `docs/HANDOFF_TACTILE_V3.md`
 
-- [ ] **Step 1: Create the concise Codex entrypoint**
+- [x] **Step 1: Create the concise Codex entrypoint**
 
 Create `AGENTS.md` with these exact sections and rules:
 
@@ -193,7 +193,7 @@ Read `docs/HANDOFF_TACTILE_V3.md` before changing training data, notebooks, mode
 - Keep large binary artifacts in Git LFS.
 ```
 
-- [ ] **Step 2: Write the full collaborator handoff**
+- [x] **Step 2: Write the full collaborator handoff**
 
 Create `docs/HANDOFF_TACTILE_V3.md` using the approved design as the source of truth. It must contain:
 
@@ -208,7 +208,7 @@ Create `docs/HANDOFF_TACTILE_V3.md` using the approved design as the source of t
 9. exact notebook path and branch;
 10. explicit warning that 5 meter is an observation target, not a monocular safety guarantee.
 
-- [ ] **Step 3: Run the handoff content test**
+- [x] **Step 3: Run the handoff content test**
 
 ```powershell
 rtk python -m unittest tests.test_tactile_handoff.TactileHandoffTest.test_codex_entrypoint_and_handoff_cover_progress_and_targets -v
@@ -216,7 +216,7 @@ rtk python -m unittest tests.test_tactile_handoff.TactileHandoffTest.test_codex_
 
 Expected: PASS.
 
-- [ ] **Step 4: Commit the documentation**
+- [x] **Step 4: Commit the documentation**
 
 ```powershell
 rtk git add -- AGENTS.md docs/HANDOFF_TACTILE_V3.md
@@ -228,7 +228,7 @@ rtk git commit -m "docs: add tactile training handoff"
 **Files:**
 - Modify: `notebooks/train_tactile_v3_public_colab.ipynb`
 
-- [ ] **Step 1: Replace all existing notebook cells**
+- [x] **Step 1: Replace all existing notebook cells**
 
 Keep exactly six purposeful cells in this order:
 
@@ -269,11 +269,11 @@ if actual_sha256 != expected_sha256:
     raise ValueError(f"SHA-256 dataset publik tidak cocok: {actual_sha256}")
 ```
 
-- [ ] **Step 2: Remove all stale and manual-upload content**
+- [x] **Step 2: Remove all stale and manual-upload content**
 
 Ensure the notebook contains no saved output, execution count, trial cells, ad-hoc diagnostics, manual file upload, public downloader, protected evaluation, or protected-data path. The notebook must never train ratio 4 by default.
 
-- [ ] **Step 3: Run notebook contract and compilation tests**
+- [x] **Step 3: Run notebook contract and compilation tests**
 
 ```powershell
 rtk python -m unittest tests.test_tactile_training_notebook -v
@@ -281,7 +281,7 @@ rtk python -m unittest tests.test_tactile_training_notebook -v
 
 Expected: all notebook tests PASS, including exact six-cell count, targeted LFS paths, SHA-256 verification, GPU requirement, output validation, and empty outputs.
 
-- [ ] **Step 4: Commit the cleaned notebook**
+- [x] **Step 4: Commit the cleaned notebook**
 
 ```powershell
 rtk git add -- notebooks/train_tactile_v3_public_colab.ipynb
@@ -293,7 +293,7 @@ rtk git commit -m "feat: make tactile Colab training self-contained"
 **Files:**
 - Verify: all files changed in Tasks 1–4
 
-- [ ] **Step 1: Run the focused suite**
+- [x] **Step 1: Run the focused suite**
 
 ```powershell
 rtk python -m unittest tests.test_tactile_handoff tests.test_tactile_training_notebook tests.test_build_tactile_v3_dataset tests.test_train_tactile_v3 -v
@@ -301,7 +301,7 @@ rtk python -m unittest tests.test_tactile_handoff tests.test_tactile_training_no
 
 Expected: all tests PASS.
 
-- [ ] **Step 2: Validate notebook JSON and repository whitespace**
+- [x] **Step 2: Validate notebook JSON and repository whitespace**
 
 ```powershell
 rtk python -m json.tool notebooks/train_tactile_v3_public_colab.ipynb
@@ -310,7 +310,7 @@ rtk git diff --check
 
 Expected: valid JSON and no whitespace errors.
 
-- [ ] **Step 3: Confirm every required large object is in LFS**
+- [x] **Step 3: Confirm every required large object is in LFS**
 
 ```powershell
 rtk git lfs ls-files
@@ -319,7 +319,7 @@ rtk git lfs fsck
 
 Expected: the public ZIP, GuideTWSI checkpoint, dataset images, and candidate model are listed; `git lfs fsck` reports `Git LFS fsck OK`.
 
-- [ ] **Step 4: Push commits and LFS objects**
+- [x] **Step 4: Push commits and LFS objects**
 
 ```powershell
 rtk git push origin codex/model-first-mobile-ready
@@ -328,14 +328,14 @@ rtk git lfs push origin codex/model-first-mobile-ready
 
 Expected: Git and LFS uploads complete without error.
 
-- [ ] **Step 5: Perform a clean-clone smoke check**
+- [x] **Step 5: Perform a clean-clone smoke check**
 
 Use a fixed, validated temporary path and clone with LFS smudging disabled:
 
 ```powershell
-rtk powershell -NoProfile -Command '$smokePath = "C:\Users\riyadh\Downloads\AI Camera\.handoff-smoke"; if (Test-Path -LiteralPath $smokePath) { throw "Refusing to overwrite existing smoke directory" }; $env:GIT_LFS_SKIP_SMUDGE = "1"; rtk git clone --branch codex/model-first-mobile-ready --single-branch https://github.com/Riqqi15/Yoloooo.git $smokePath'
-rtk git -C "C:\Users\riyadh\Downloads\AI Camera\.handoff-smoke" lfs pull --include "models/guidetwsi/yolo11n_tactile.pt,artifacts/datasets/station-tactile-v2/**,artifacts/candidates/tactile-one-class-v3-public4-station1/**,data/public/guidetwsi-rbar-v1/guidetwsi-rbar-v1.zip"
-rtk powershell -NoProfile -Command '$smokePath = "C:\Users\riyadh\Downloads\AI Camera\.handoff-smoke"; if ((Get-Item -LiteralPath "$smokePath\data\public\guidetwsi-rbar-v1\guidetwsi-rbar-v1.zip").Length -ne 345332596) { throw "Public ZIP size mismatch" }; @("models\guidetwsi\yolo11n_tactile.pt", "artifacts\datasets\station-tactile-v2\tactile\images", "artifacts\candidates\tactile-one-class-v3-public4-station1\best.pt") | ForEach-Object { if (-not (Test-Path -LiteralPath "$smokePath\$_")) { throw "Missing smoke artifact: $_" } }'
+rtk powershell -NoProfile -Command '$smokePath = "C:\ys"; if (Test-Path -LiteralPath $smokePath) { throw "Refusing to overwrite existing smoke directory" }; $env:GIT_LFS_SKIP_SMUDGE = "1"; rtk git clone --branch codex/model-first-mobile-ready --single-branch https://github.com/Riqqi15/Yoloooo.git $smokePath'
+rtk git -C "C:\ys" lfs pull --include "models/guidetwsi/yolo11n_tactile.pt,artifacts/datasets/station-tactile-v2/**,artifacts/candidates/tactile-one-class-v3-public4-station1/**,data/public/guidetwsi-rbar-v1/guidetwsi-rbar-v1.zip"
+rtk powershell -NoProfile -Command '$smokePath = "C:\ys"; if ((Get-Item -LiteralPath "$smokePath\data\public\guidetwsi-rbar-v1\guidetwsi-rbar-v1.zip").Length -ne 345332596) { throw "Public ZIP size mismatch" }; @("models\guidetwsi\yolo11n_tactile.pt", "artifacts\datasets\station-tactile-v2\tactile\images", "artifacts\candidates\tactile-one-class-v3-public4-station1\best.pt") | ForEach-Object { if (-not (Test-Path -LiteralPath "$smokePath\$_")) { throw "Missing smoke artifact: $_" } }'
 ```
 
 Expected verification:
@@ -350,10 +350,10 @@ artifacts/candidates/tactile-one-class-v3-public4-station1/best.pt exists
 Resolve and verify the exact cleanup target, then remove only that temporary clone:
 
 ```powershell
-rtk powershell -NoProfile -Command '$smokePath = "C:\Users\riyadh\Downloads\AI Camera\.handoff-smoke"; $resolvedSmoke = (Resolve-Path -LiteralPath $smokePath).Path; if ($resolvedSmoke -ne "C:\Users\riyadh\Downloads\AI Camera\.handoff-smoke") { throw "Unsafe cleanup target: $resolvedSmoke" }; Remove-Item -LiteralPath $resolvedSmoke -Recurse -Force'
+rtk powershell -NoProfile -Command '$smokePath = "C:\ys"; $resolvedSmoke = (Resolve-Path -LiteralPath $smokePath).Path; if ($resolvedSmoke -ne "C:\ys") { throw "Unsafe cleanup target: $resolvedSmoke" }; Remove-Item -LiteralPath $resolvedSmoke -Recurse -Force'
 ```
 
-- [ ] **Step 6: Verify remote branch equality**
+- [x] **Step 6: Verify remote branch equality**
 
 ```powershell
 rtk git fetch origin codex/model-first-mobile-ready
