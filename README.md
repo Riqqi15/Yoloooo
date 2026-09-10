@@ -1,5 +1,7 @@
 # Dokumentasi AI Camera Guide
 
+> **Untuk Codex/kontributor:** mulai dari [`CODEX_START_HERE.md`](CODEX_START_HERE.md), lalu baca [`AGENTS.md`](AGENTS.md) dan handoff model sebelum mengubah repository.
+
 Dokumentasi ini menjadi acuan pembuatan fitur pemandu kamera untuk pengguna tunanetra. Isi dibagi menjadi dua kategori: training model dan implementasi aplikasi.
 
 > **Batas keselamatan:** fitur ini merupakan prototipe bantuan orientasi. Fitur tidak menggantikan tongkat, anjing pemandu, pendamping, atau alat mobilitas tersertifikasi. Saat sistem ragu, terlambat, kehilangan kamera, atau gagal membaca lingkungan, hasil wajib `STOP`; sistem tidak boleh menebak bahwa jalan aman.

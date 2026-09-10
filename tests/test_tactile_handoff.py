@@ -13,8 +13,13 @@ CHECKSUM = ROOT / "data/public/guidetwsi-rbar-v1/sha256.txt"
 class TactileHandoffTest(unittest.TestCase):
     def test_codex_entrypoint_and_handoff_cover_progress_and_targets(self) -> None:
         agents = (ROOT / "AGENTS.md").read_text(encoding="utf-8")
+        start_here = (ROOT / "CODEX_START_HERE.md").read_text(encoding="utf-8")
         handoff = (ROOT / "docs/HANDOFF_TACTILE_V3.md").read_text(encoding="utf-8")
+        self.assertIn("CODEX_START_HERE.md", agents)
         self.assertIn("docs/HANDOFF_TACTILE_V3.md", agents)
+        self.assertIn("AGENTS.md", start_here)
+        self.assertIn("Wajib dibaca oleh Codex", start_here)
+        self.assertIn("README.md", start_here)
         for required in (
             "82.50%",
             "56.41%",
