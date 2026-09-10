@@ -88,6 +88,8 @@ The handoff must preserve this order. Later-stage work must not hide an unresolv
 - Test 20 repetitions per controlled scenario and record critical misses, unstable direction changes, time-to-alert, and recovery after brief occlusion.
 - Test the 5-metre observation target using measured distances, multiple camera heights and angles, day/night lighting, motion blur, and representative phone cameras. Do not infer a guaranteed distance from pixel area alone.
 
+Before implementation, define system-level acceptance criteria in addition to model metrics: correct left/right/straight decision rate, path-departure rate, hazard recall, false alarms per walking minute, warning lead time, stale-frame detection time, and end-to-end response latency. Critical scenarios keep the stricter requirement of zero critical misses in 20 controlled repetitions; an average score must never hide a dangerous individual failure.
+
 ### P2 — add the missing safety components
 
 - Add a separate people/obstacle detector and intersect its detections with the tactile corridor. A person or object outside the corridor should not trigger the same warning as one blocking the route.
@@ -102,6 +104,23 @@ The handoff must preserve this order. Later-stage work must not hide an unresolv
 - Benchmark the exported model on the actual target phone. The current `92.1 ms` median CPU measurement is provisional and includes slow outliers; it is not a mobile real-time guarantee.
 - Measure end-to-end camera latency, thermal throttling, memory use, battery draw, and speech/haptic delay, not just neural-network inference time.
 - Re-run mask agreement and protected safety gates after FP32, FP16, or INT8 conversion. A successful export is not proof of equivalent behaviour.
+
+### P2 — supervised accessibility and safety validation
+
+- Co-design instruction wording, repetition rate, vibration patterns, and interruption priority with blind or low-vision users; engineering assumptions alone do not establish usable guidance.
+- Progress through staged environments: recorded video, indoor mock route, closed outdoor route, protected platform simulation, and only then a station trial authorized and supervised by responsible personnel.
+- Never start live testing beside operational tracks. Use a sighted safety observer, a physical exclusion zone, a stop procedure, and an immediately available manual override.
+- Verify that audio prompts do not mask train, announcement, crowd, or emergency sounds. Provide distinct haptic fallback and concise Indonesian prompts.
+- Test phone mounting/orientation, camera obstruction, dropped frames, low battery, overheating, loss of depth, poor lighting, rain, reflections, crowds, and scenes unlike the training distribution. Out-of-distribution or degraded input must fail closed to `STOP` or `Uncertain`.
+- Obtain informed consent for user studies and avoid retaining identifiable faces, voices, or location metadata unless explicitly required and approved.
+
+### P2 — release and data governance
+
+- Version every dataset, manifest, model, threshold, calibration profile, and decision-rule configuration. A deployed result must be traceable to one Git commit and checksums for all large artifacts.
+- Keep a license and provenance inventory for every public source. Do not treat GitHub Student storage as permission to redistribute data whose license is incompatible.
+- Add automated checks for missing Git LFS objects, corrupted archives, class-map mismatches, duplicate scenes, protected-data references, and incomplete candidate bundles.
+- Keep a structured failure log and regression set. Every confirmed field failure must become a reproducible test before a replacement model is promoted.
+- Define rollback and kill-switch procedures before any field build. If monitoring detects changed camera calibration, repeated uncertainty, or a regression, disable guidance rather than silently continuing.
 
 ## Repository layout
 
