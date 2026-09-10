@@ -1,0 +1,17 @@
+{
+  "dataset_yaml": "/content/Yoloooo/artifacts/datasets/tactile-v3-public4-station1/dataset.yaml",
+  "dataset_version": "tactile-v3-public4-station1",
+  "validation_manifest_version": "station-tactile-v2",
+  "init_checkpoint": "/content/Yoloooo/models/guidetwsi/yolo11n_tactile.pt",
+  "init_checkpoint_sha256": "79f0bb39a354dd66d367bb5b97184df626c85f91568456e099e49a8cdbfcd878",
+  "run_name": "tactile-one-class-v3-public4-station1",
+  "runs_root": "/content/Yoloooo/runs/segment",
+  "seed": 42,
+  "imgsz": 640,
+  "epochs": 80,
+  "batch": 8,
+  "patience": 15,
+  "device": "0",
+  "workers": 0,
+  "ultralytics_version": "8.4.138"
+}
