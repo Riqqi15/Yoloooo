@@ -65,7 +65,7 @@ class TactileTrainingNotebookTest(unittest.TestCase):
                 continue
             compile(source, f"notebook-cell-{index}", "exec")
 
-    def test_v3_notebook_acquires_builds_and_trains_without_protected_data(self) -> None:
+    def test_v3_notebook_uses_uploaded_cache_and_trains_selected_ratios(self) -> None:
         notebook = json.loads(V3_NOTEBOOK.read_text(encoding="utf-8"))
         source = "\n".join(
             "".join(cell.get("source", []))
@@ -73,9 +73,10 @@ class TactileTrainingNotebookTest(unittest.TestCase):
             if cell.get("cell_type") == "code"
         )
         for required in (
-            "kagglehub==1.0.2",
-            "acquire_guidetwsi_subset.py",
-            "prepare_guidetwsi_subset.py",
+            "guidetwsi-rbar-v1.zip",
+            "EXPECTED_CACHE_FILES = 3960",
+            "ZipFile",
+            "TRAIN_RATIOS = (2,)",
             "build_tactile_v3_dataset.py",
             "train_tactile_v3.py",
             "models/guidetwsi/yolo11n_tactile.pt",
@@ -83,9 +84,12 @@ class TactileTrainingNotebookTest(unittest.TestCase):
             "codex/model-first-mobile-ready",
         ):
             self.assertIn(required, source)
-        self.assertIn("for ratio in (4, 2)", source)
+        self.assertIn("for ratio in TRAIN_RATIOS", source)
+        self.assertNotIn("acquire_guidetwsi_subset.py", source)
+        self.assertNotIn("prepare_guidetwsi_subset.py", source)
         self.assertNotIn("evaluate_tactile_candidate.py", source)
         self.assertNotIn("data/ground_truth", source)
+        self.assertNotIn("data/samples", source)
         for cell in notebook["cells"]:
             if cell.get("cell_type") == "code":
                 self.assertIsNone(cell.get("execution_count"))
